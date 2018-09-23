@@ -1,0 +1,64 @@
+{% if site.footer-links.twitter %}
+<li>
+	<a href="https://twitter.com/{{ site.footer-links.twitter }}">
+        <span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+        </span>
+	</a>
+</li>
+{% endif %}
+{% if site.footer-links.facebook %}
+<li>
+	<a href="https://www.facebook.com/{{ site.footer-links.facebook }}">
+		<span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+        </span>
+	</a>
+</li>
+{% endif %}
+
+{% if site.footer-links.github %}
+<li>
+	<a href="https://github.com/{{ site.footer-links.github }}">
+		<span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+        </span>
+	</a>
+</li>
+{% endif %}
+{% if site.footer-links.linkedin %}
+<li>
+	<a href="http://linkedin.com/in/{{ site.footer-links.linkedin }}">
+		<span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+        </span>
+	</a>
+</li>
+
+{% endif %}
+{% if site.footer-links.rss %}
+<li>
+	<a href="{{ site.baseurl }}/feed.xml">
+		<span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+        </span>
+	</a>
+</li>
+{% endif %}
+
+
+{% if site.footer-links.email %}
+<li>
+	<a href="mailto:{{ site.footer-links.email }}">
+		<span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+        </span>
+	</a>
+</li>
+{% endif %}

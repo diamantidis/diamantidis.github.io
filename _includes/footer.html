@@ -1,0 +1,15 @@
+<footer class="site-footer">
+	<data class="u-url" href="{{ "/" | relative_url }}"></data>
+
+  	<div class="footer-icons">
+   		<ul>
+    		{% include icons.html %}
+    	</ul>
+  	</div>
+  	<div class="wrapper">
+    	<p>Built with 
+    		<i class="fa fa-heart" aria-hidden="true"></i>, <a href="https://jekyllrb.com/">Jekyll</a> and <a href="https://pages.github.com/"> Github Pages</a>
+    	</p>
+  		<p> © Copyright {{ site.time | date: '%Y' }} {{ site.author.name }} </p>	
+  	</div>
+</footer>

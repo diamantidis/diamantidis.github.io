@@ -1,0 +1,50 @@
+---
+layout: default
+---
+
+<div class="home">
+  {%- if page.title -%}
+    <h1 class="page-heading">{{ page.title }}</h1>
+  {%- endif -%}
+
+  {{ content }}
+
+  {%- if site.posts.size > 0 -%}
+    <ul class="post-list">
+      {%- for post in site.posts -%}
+      <li class="post-item">
+        <h1>
+          <a class="post-link" href="{{ post.url | relative_url }}">
+            {{ post.title | escape }}
+          </a>
+        </h1>
+        <p class="excerpt">
+              {{ post.excerpt | strip_html | truncate: 156 }}
+        </p>
+
+        <div class="post-footer">
+          <span class="post-date">
+            {{ post.date | date: "%B %-d, %Y" }}
+          </span>
+          <span class="post-divider">-</span>
+          <span class="post-minutes">
+            {% capture words %}
+              {{ post.content | number_of_words }}
+            {% endcapture %}
+            {% unless words contains "-" %}
+              {{ words | plus: 250 | divided_by: 250 | append: " minute read" }}
+            {% endunless %}
+          </span>
+          <span class="post-divider">-</span>
+          <div class="post-tags">
+            {% for tag in post.tags %}
+              <a class="post-tag" href="/tags#{{ tag }}">{{ tag }}</a>
+            {% endfor %}
+          </div>
+        </div>
+      </li>
+      {%- endfor -%}
+    </ul>
+  {%- endif -%}
+
+</div>

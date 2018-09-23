@@ -1,0 +1,65 @@
+title: Ioannis Diamantidis
+email: diamantidis@outlook.com
+description: >- # this means to ignore newlines until "baseurl:"
+  A blog to publish my ideas and thoughts about software developer
+baseurl: ""
+url: "http://ioannis-blog.com"
+
+# Author
+author:
+  name: Ioannis Diamantidis
+  url: http://ioannis-blog.com
+  email: diamantidis@outlook.com
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+  - jemoji
+  - jekyll-sitemap
+
+sass:
+  sass_dir: _scss
+  style: :compressed
+
+footer-links:
+  rss: rss
+  # twitter: TDB
+  github: diamantidis
+  email: diamantidis@outlook.com
+  # facebook:
+  linkedin: ioannis-diamantidis-04413273
+
+# Exclude from processing.
+exclude:
+  - Rakefile
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+
+# Google Analytics
+google_analytics: UA-121787430-1
+
+# Disqus
+disqus:
+  shortname: ioannisblog-1
+
+
+social:
+  - name: Twitter
+    icon: twitter
+    desc: Follow me on Twitter
+    share: true
+
+  - name: Facebook
+    icon: facebook
+    desc: Friend me on Facebook
+    share: true
+
+  - name: LinkedIn
+    icon: linkedin
+    desc: Connect with me on LinkedIn
+    share: true
+
+
