@@ -3,12 +3,12 @@ email: diamantidis@outlook.com
 description: >- # this means to ignore newlines until "baseurl:"
   A blog to publish my ideas and thoughts about software developer
 baseurl: ""
-url: "http://ioannis-blog.com"
+url: "https://diamantidis.github.io/"
 
 # Author
 author:
   name: Ioannis Diamantidis
-  url: http://ioannis-blog.com
+  url: https://diamantidis.github.io/
   email: diamantidis@outlook.com
 
 # Build settings
