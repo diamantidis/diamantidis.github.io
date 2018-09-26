@@ -1,5 +1,10 @@
 
 
+body {
+    font-family: 'Lucida Grande', "Helvetica Neue", Verdana, Arial, sans-serif; 
+    word-wrap: break-word;
+}
+
 a:hover, a:visited {
     text-decoration: none;
     color: #22527b;
@@ -101,6 +106,10 @@ article.post {
     color: #22527b;
 }
 
+.footer-icons ul {
+    margin-left: 0px;
+}
+
 .footer-icons li {
 	display: inline;
 }
@@ -122,11 +131,6 @@ article.post {
     margin-bottom: 1em;
     color: #383838;
     font-size: 1.25em;
-    word-wrap: break-word;
-}
-
-body {
-    font-family: "Source Sans Pro", Helvetica,Arial,sans-serif;    
     word-wrap: break-word;
 }
 
