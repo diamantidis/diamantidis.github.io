@@ -15,7 +15,7 @@ There are many reasons that lead me to the decision of starting my own blog.
 
 **Improve my writing skills** 
 
-I am of the opinion that practise makes perfection. So, by writing more often, I will eventually improve my ability to express and describe my ideas and thoughts better.
+I am of the opinion that practice makes perfection. So, by writing more often, I will eventually improve my ability to express and describe my ideas and thoughts better.
 
 
 **Improve my overall skills** 
@@ -26,16 +26,16 @@ Furthermore, publicly expressing ideas and opinions is a great way to receive so
 
 **Give back to the community**
 
-Throughout my career so far, I have learned a lot from the community and I consider this blog as a way to give back to the community and help other people get better through my blog posts. Writing about problems that I faced, technologies that I used -and I feel is worth writing(for me) and worth reading and learning( for the reader)- and practices that I follow and help me develop thought my career, I hope that will be beneficial for some of the readers.
+Throughout my career so far, I have learned a lot from the community and I consider this blog as a way to give back to the community and help other people get better through my blog posts. Writing about problems that I faced, technologies that I used - and I feel is worth writing(for me) and worth reading and learning(for the reader) - and practices that I follow and help me develop through my career, I hope that will be beneficial for some of the readers.
 
 
-**Explore some new techologies/tools**
+**Explore some new technologies/tools**
 
 I have a long list of technologies that I want to experiment with but I couldn't find any opportunity to try them. Writing a blog post or a tutorial maybe it's a good way to remove some of them from my todo list.
 
 **Reference for the future** 
 
-When I am exploring a new technology or doing something I wasn't aware before, I have the tendency to keep a "How to" record as a reference for the future. So, instead of keeping files for these records(and strungle to find them when I need them), I will have this blog and use some of the blogposts as a reference for the future me(and others of course).
+When I am exploring a new technology or doing something I wasn't aware before, I have the tendency to keep a "How to" record as a reference for the future. So, instead of keeping files for these records(and struggle to find them when I need them), I will have this blog and use some of the blogposts as a reference for the future me(and others of course).
 
 **Explore Jekyll**
 
