@@ -46,7 +46,6 @@ google_analytics: UA-121787430-1
 disqus:
   shortname: ioannisblog-1
 
-
 social:
   - name: Twitter
     icon: twitter
@@ -62,5 +61,3 @@ social:
     icon: linkedin
     desc: Connect with me on LinkedIn
     share: true
-
-
