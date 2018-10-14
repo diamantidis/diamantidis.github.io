@@ -50,12 +50,12 @@ def command_function(debugger, command, result, internal_dict):
 
 The type and the description of each of these variables, according to the [LLDB python reference](https://lldb.llvm.org/python-reference.html), is the following:
 
-Argument           		    | Type  				 |  Description
-:-------------------------:|:-------------------------:|:-------------------------:
-debugger  |  lldb.SBDebugger | The current debugger object.
-command  |  python string | A python string containing all arguments for your command. If you need to chop up the arguments try using the shlex module's shlex.split(command) to properly extract the arguments.
-result  |  lldb.SBCommandReturnObject | A return object which encapsulates success/failure information for the command and output text that needs to be printed as a result of the command. The plain Python "print" command also works but text won't go in the result by default (it is useful as a temporary logging facility).
-internal_dict  |  python dict object | The dictionary for the current embedded script session which contains all variables and functions.
+- `debugger` (type: `lldb.SBDebugger`): The current debugger object.
+- `command` (type: `python string`): A python string containing all arguments for your command. If you need to chop up the arguments try using the shlex module's shlex.split(command) to properly extract the arguments.
+- `result` (type: `lldb.SBCommandReturnObject`): A return object which encapsulates success/failure information for the command and output text that needs to be printed as a result of the command. The plain Python "print" command also works but text won't go in the result by default (it is useful as a temporary logging facility).
+- `internal_dict` (type: `python dict object`): The dictionary for the current embedded script session which contains all variables and functions.
+
+
 
 If you are using the `command script import` approach, you can define the function `__lldb_init_module` like below:
 ```python
