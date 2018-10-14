@@ -171,3 +171,15 @@ article.post {
 .gist .blob-code-inner {
     white-space: pre-wrap !important;
 }
+
+ @media only screen and (max-width: 480px) {
+    .gist .gist-file {
+        max-width: 350px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+        .gist .gist-file {
+        max-width: 300px;
+    }
+}
