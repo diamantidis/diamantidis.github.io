@@ -173,13 +173,25 @@ article.post {
 }
 
  @media only screen and (max-width: 480px) {
+
+    iframe#ghcard-gohugoio-1,
+    iframe#ghcard-jekyll-1 {
+        max-width: 350px;
+    }
+
     .gist .gist-file {
         max-width: 350px;
     }
 }
 
 @media only screen and (max-width: 320px) {
-        .gist .gist-file {
+    .gist .gist-file {
+        max-width: 300px;
+    }
+
+    iframe#ghcard-gohugoio-1,
+    iframe#ghcard-jekyll-1 {
         max-width: 300px;
     }
 }
+
