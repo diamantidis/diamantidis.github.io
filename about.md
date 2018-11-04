@@ -6,14 +6,19 @@ permalink: /about
 
 Hi, my name is Ioannis Diamantidis!!
 
-I am a polyglot software developer, living in Stockholm. I am self-motivated and I strive for being more efficient and becoming better every day in both my personal and professional life. Currently I am working as an iOS developer at Qliro Financial Services.
+I am a polyglot software developer, living in Stockholm. I am self-motivated and I strive for being more efficient and becoming better every day in both my personal and professional life. Furthermore, I am always looking for new challenges that will help me to progress and further develop both my skills and my personality. Currently I am working as an iOS developer at Qliro Financial Services.
 
 # Bio
 
-Throughout my career so far I had the chance to work on a wide range of technologies, ranging 
+I studied at the Athens University of Economics and Business and more specifically at the Department of Management Science and Technology.
+Briefly, the objective of this programme is the use of quantitative methods in conjunction with information and communication technologies in decision making, the design of business strategy and the re-engineering of business processes.
+
+During my studies, I manage to develop T-shaped skills due to multi-disciplinary curriculum that consist of courses ranging from Finance, Programming and Business Management to name a few and the required stream selection during the 6th semester.
+I follow the "Quantitative method in Economics and Management Science" stream, which gives my the opportunity to delve deeper on the mathematical and algorithmic foundations needed to model and solve decision problems. 
+
+As part of the required internship on the last semester of my studies at February 2013, I started my career as a software developer. Throughout my career so far, I had the chance to work on a wide range of technologies, ranging 
 from front-end and back-end development to building integrations, mobile apps and developing analytics pipelines. 
 Working on so many different stacks and technologies helped me to improve my learning skills and my ability to adapt to different stacks quickly.
-
 
 # Personal
 
