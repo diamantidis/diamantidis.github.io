@@ -165,14 +165,23 @@ article.post {
 }
 
 .highlight pre code {
-    white-space: pre-wrap;
+     overflow-x: scroll;
 }
 
 .gist .blob-code-inner {
     white-space: pre-wrap !important;
 }
 
- @media only screen and (max-width: 480px) {
+.list_item_description { 
+    font-size: 0.8em;
+}
+
+ .highlighter-rouge .highlight {
+    overflow-x: scroll;
+    max-width: 740px;
+}
+
+@media only screen and (max-width: 480px) {
 
     iframe#ghcard-gohugoio-1,
     iframe#ghcard-jekyll-1 {
@@ -181,6 +190,11 @@ article.post {
 
     .gist .gist-file {
         max-width: 350px;
+    }
+
+    .highlighter-rouge .highlight {
+        overflow-x: scroll;
+        max-width: 400px;
     }
 }
 
@@ -193,5 +207,9 @@ article.post {
     iframe#ghcard-jekyll-1 {
         max-width: 300px;
     }
-}
 
+    .highlighter-rouge .highlight {
+        overflow-x: scroll;
+        max-width: 280px;
+    }
+}
