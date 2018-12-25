@@ -38,7 +38,7 @@ In such cases, Python comes to the rescue to provide extendability.
 
 An easy way to start writing a python command is to use the Xcode console and just type `command script add help` and follow the instructions.
 
-![command script add help screenshot](/assets/lldb2/script_add_help_commmand.png)
+![command script add help screenshot]({{site.url}}/assets/lldb2/script_add_help_commmand.png)
 
 Alternatively, you can create a script file, that can be added to the repo and a version control system, and then run the command `command script import <script_file_path>` on the Xcode console or better add it to the `~/.lldbinit` file. 
 
@@ -84,7 +84,7 @@ This is an example of how to get the memory address of a button from the text of
 
 So the whole flow of changing the color of a button has changed to:
 
-![final flow to change button screenshot](/assets/lldb2/final_commands.png)
+![final flow to change button screenshot]({{site.url}}/assets/lldb2/final_commands.png)
 
 which is much shorter and easier to remember and therefore use compared to the first implementation.
 

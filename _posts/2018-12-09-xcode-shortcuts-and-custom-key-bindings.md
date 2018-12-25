@@ -17,7 +17,7 @@ A list of the "default" Xcode shortucts, as listed by Apple, can be found [here]
 
 Also this list can be found in Xcode by following Xcode > Preferences (or better `⌘` + `,`) > Key bindings, where you can also edit or add new shortcuts to the commands not yet set. 
 
-![key bindings menu in xcode screenshot]({{ site.url }}/assets/shortcuts/key_bindings_menu.png)
+![key bindings menu in xcode screenshot]({{site.url}}/assets/shortcuts/key_bindings_menu.png)
 
 
 ## Key mapping 
@@ -34,7 +34,7 @@ Those symbols will be later used in conjunction with a primary key to form the s
 A list of commands that I primarily use are listed below: 
 
 * Go to line (`⌘` + `L`) <br><span class="list_item_description">As a result, an input text will pop up, and there you can add the number of the line you want to move to.
-![go to line screenshot]({{ site.url }}/assets/shortcuts/line_number.png)
+![go to line screenshot]({{site.url}}/assets/shortcuts/line_number.png)
 </span>
 
 * Add breakpoint ( `⌘`+ `\`) <br><span class="list_item_description">A breakpoint will be added to the line.  To activate/deactivate the debugger use `⌘` + `Y`.
