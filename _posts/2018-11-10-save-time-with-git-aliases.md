@@ -20,9 +20,9 @@ Alternatively, you can edit the git config file, usually located at `~/.gitconfi
 
 > `Hint:` The location of the file can be found by running: `git config --list --show-origin` or by running `git config --global -e`. The first command will list all the git-related configuration, along with the file they are placed, and the second command will open the global config file for edit with the default editor.
 
-![Git Config list screenshot](/assets/git_aliases/git_config_list.png)
+![Git Config list screenshot]({{site.url}}/assets/git_aliases/git_config_list.png)
 <sub><sup>Screenshot for `git config --list --show-origin`</sup></sub>
-![Git Config global -e screenshot](/assets/git_aliases/git_config_global_e.png)
+![Git Config global -e screenshot]({{site.url}}/assets/git_aliases/git_config_global_e.png)
 <sub><sup>Screenshot for `git config --global -e`</sup></sub>
 
 To add an alias to the global git config file, you can simply add a section for alias (if it doesn't exist) and start writing your aliases like:
@@ -33,7 +33,7 @@ To add an alias to the global git config file, you can simply add a section for 
   s = status
 ```
 
-![Git Config aliases screenshot](/assets/git_aliases/git_config_aliases.png)
+![Git Config aliases screenshot]({{site.url}}/assets/git_aliases/git_config_aliases.png)
 
 ## Shell level aliases
 If your shell supports aliases or shortcuts, you can add aliases on this level, too. For example, edit the `.bash_profile` by running the command
@@ -43,7 +43,7 @@ alias g='git'
 alias ga='git add'
 ```
 
-![Bash profile screenshot](/assets/git_aliases/bash_profile.png)
+![Bash profile screenshot]({{site.url}}/assets/git_aliases/bash_profile.png)
 
 After saving and exiting, run `source ~/.bash_profile` or `. ~/.bash_profile` to source the modified file.
 
@@ -52,7 +52,7 @@ The answer is yes. [Oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh). Above
 
 The only thing you have to do is to enable it in the `.zshrc` file by editing this file and more precisely the `plugins` sector to add the git plugin, like in the screenshot below.
 
-![Oh-my-zsh plugins screenshot](/assets/git_aliases/oh_my_zsh_plugins.png)
+![Oh-my-zsh plugins screenshot]({{site.url}}/assets/git_aliases/oh_my_zsh_plugins.png)
 
 Then, you have to source the file by running either `source ~/.zshrc` or `. ~/.zshrc`
 

@@ -26,12 +26,12 @@ With LLDB expressions, it is possible to modify the UI of a running app without 
 ## Basic commands 
 
 To be able to run an LLDB expression, you only have to press the pause button on tool bar. 
-![Pause button screenshot](/assets/lldb/pause_button.png)
+![Pause button screenshot]({{site.url}}/assets/lldb/pause_button.png)
 
 In the debugger area, on the bottom right corner, there is a command line prompt.
 There, the LLDB expressions are entered. You can start by typing `help` to see the range of the available commands. Also by running `help <command>`, some information about this command will be presented.
 
-![Help Command screenshot](/assets/lldb/help_command.png)
+![Help Command screenshot]({{site.url}}/assets/lldb/help_command.png)
 
 
 > Hint: You can even type `help help` to see what `help` command does. :stuck_out_tongue_closed_eyes:
@@ -42,7 +42,7 @@ You can use this command when using a breakpoint and you want to see the value o
 One more command is the `expression`, which can be use to modify (and not only) some value.
 If you have a variable `var foo = "bar"`, and you have a breakpoint after this command, you can modify the value by running `expression foo = "hoo"`.
 
-![Print and Expression Command screenshot](/assets/lldb/print_command.png)
+![Print and Expression Command screenshot]({{site.url}}/assets/lldb/print_command.png)
 
 > Hint: You can also create temporal variable for debugging by running `expression int $variable = 1`. The variables are defined in the same way they are defined in C. 
 
@@ -64,7 +64,7 @@ A disadvantage of the `print` command is when printing objects. For example, `p 
 
 Don't worry though, you don't have to type `e -O --` every time you have to print an object, as it also comes with an alias `po`(as of print object), so `po @[ @1, @2 ]` can be used instead.
 
-![Printing objects screenshot](/assets/lldb/printing_objects.png)
+![Printing objects screenshot]({{site.url}}/assets/lldb/printing_objects.png)
 
 Knowing this, we can proceed to more advanced usage and combination of these commands to reach our goal.
 
@@ -73,7 +73,7 @@ Knowing this, we can proceed to more advanced usage and combination of these com
 As in the previous example, `po` command can be used to print Objective-C expressions, thus it can be used to print all the information about the view hierarchy on a running application. 
 By running `po [[[UIApplication sharedApplication] keyWindow] recursiveDescription]`, you can see all the view in the view hierarchy along with their memory address and their layout.
 
-![Printing view hierarchy screenshot](/assets/lldb/view_hierarchy.png)
+![Printing view hierarchy screenshot]({{site.url}}/assets/lldb/view_hierarchy.png)
 
 Then, by using the `expression` we can create a variable from the memory address. By running the command  `e id $myButton = (id)0x7fb3e3608520`, the button is assign to the variable `$myButton`.
 
@@ -81,14 +81,14 @@ Next, we want to modify the color of the button, again by using the `expression`
 
 Last but not least, we have to refresh the UI to be able to see the change. This can be done by running `e (void)[CATransaction flush]`. 
 
-![Changing button background commands screenshot](/assets/lldb/changing_button_background_commands.png)
+![Changing button background commands screenshot]({{site.url}}/assets/lldb/changing_button_background_commands.png)
 
 And voilà, that's it, the UIButton now has blue background!! :tada:
 
 
 Initial button             |  Final Button
 :-------------------------:|:-------------------------:
-![Initial button screenshot](/assets/lldb/initial_button.png)  |  ![Final button screenshot](/assets/lldb/final_button.png)
+![Initial button screenshot]({{site.url}}/assets/lldb/initial_button.png)  |  ![Final button screenshot]({{site.url}}/assets/lldb/final_button.png)
 
 
 ## Conclusion
