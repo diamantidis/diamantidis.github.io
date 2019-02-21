@@ -14,12 +14,29 @@ a:visited {
 	color: #383838;
 }
 
-.site-title {
-	color: #555;
-	font-size: 18px;
+.site-header {
+    box-shadow: 0 2px 2px -2px rgba(0,0,0,0.2);
+    border: none;
 }
 
-.site-title  h2 {
+.site-header > .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 32px;
+}
+
+.site-header nav a:hover {
+    color: #337ab7;
+}
+
+.site-title {
+	color: #555;
+    font-size: 18px;
+    flex-grow: 1;
+}
+
+.site-title  h1 {
 	margin-bottom: 0px;
 }
 
@@ -28,14 +45,6 @@ a:visited {
     opacity: 0.6;
 }
 
-.site-header nav a:hover {
-    color: #337ab7;
-}
-
-.site-header {
-    box-shadow: 0 2px 2px -2px rgba(0,0,0,0.2);
-    border: none;
-}
 
 .post-item,
 .post-content,
@@ -151,7 +160,7 @@ article.post {
     font-size: 1.2em;
 }
 
-.tags-post, 
+.tags-post,
 .archive-year-content,
 .archive-month-content {
     padding-left: 30px;
@@ -172,13 +181,25 @@ article.post {
     white-space: pre-wrap !important;
 }
 
-.list_item_description { 
+.list_item_description {
     font-size: 0.8em;
 }
 
  .highlighter-rouge .highlight {
     overflow-x: scroll;
     max-width: 740px;
+}
+
+@media only screen and (max-width: 600px) {
+    .site-header>.wrapper {
+        padding: 16px 24px;
+    }
+    .site-nav {
+        top: 24px;
+    }
+    .site-title {
+        font-size: 16px;
+    }
 }
 
 @media only screen and (max-width: 480px) {
