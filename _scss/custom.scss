@@ -1,240 +1,241 @@
-
-
 body {
-    font-family: 'Lucida Grande', "Helvetica Neue", Verdana, Arial, sans-serif; 
-    word-wrap: break-word;
+  font-family: 'Lucida Grande', 'Helvetica Neue', Verdana, Arial, sans-serif;
+  word-wrap: break-word;
 }
 
-a:hover, a:visited {
-    text-decoration: none;
-    color: #22527b;
+a:hover,
+a:visited {
+  text-decoration: none;
+  color: #22527b;
 }
 
 a:visited {
-	color: #383838;
+  color: #383838;
 }
 
 .site-header {
-    box-shadow: 0 2px 2px -2px rgba(0,0,0,0.2);
-    border: none;
+  box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2);
+  border: none;
 }
 
 .site-header > .wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 16px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 32px;
 }
 
 .site-header nav a:hover {
-    color: #337ab7;
+  color: #337ab7;
 }
 
 .site-title {
-	color: #555;
-    font-size: 18px;
-    flex-grow: 1;
+  color: #555;
+  font-size: 18px;
+  flex-grow: 1;
 }
 
-.site-title  h1 {
-	margin-bottom: 0px;
+.site-title h1 {
+  margin-bottom: 0px;
 }
 
 .site-nav .page-link {
-    color: #555;
-    opacity: 0.6;
+  color: #555;
+  opacity: 0.6;
 }
-
 
 .post-item,
 .post-content,
 article.post {
-	border-bottom: 1px solid #e5e5e5;
-    color: #555;
-    display: inline-block;
-    padding: 2rem 0;
+  border-bottom: 1px solid #e5e5e5;
+  color: #555;
+  display: inline-block;
+  padding: 2rem 0;
 }
 
 .post-link,
 .post-title,
 .page-title {
-	color: #383838;
-	font-weight: bold;
-	font-size: 1.3em;
-	margin: 0;
-	line-height: 1.3;
+  color: #383838;
+  font-weight: bold;
+  font-size: 1.3em;
+  margin: 0;
+  line-height: 1.3;
 }
 
 .post-link:hover {
-    text-decoration: none;
-    color: #337ab7;
+  text-decoration: none;
+  color: #337ab7;
 }
 
-.post-footer span, .post-footer a,
-.post-meta span, .post-meta a, .page-tags a {
-    display: inline-block;
-    font-size: 12px;
-    color: #ada8a8;
-    text-transform: uppercase;
-    vertical-align: middle;
+.post-footer span,
+.post-footer a,
+.post-meta span,
+.post-meta a,
+.page-tags a {
+  display: inline-block;
+  font-size: 12px;
+  color: #ada8a8;
+  text-transform: uppercase;
+  vertical-align: middle;
 }
 
 .post-tags {
-    display: inline-block;
-    vertical-align: top;
+  display: inline-block;
+  vertical-align: top;
 }
 
 .excerpt {
-	margin: 12px 0 10px;
+  margin: 12px 0 10px;
 }
 
-.post-tag, .page-tag {
-    padding: 0.3em 0.9em;
-    margin: 0 0.5em 0.5em 0;
-    white-space: nowrap;
-    background-color: #f1f8ff;
-    border-radius: 3px;
+.post-tag,
+.page-tag {
+  padding: 0.3em 0.9em;
+  margin: 0 0.5em 0.5em 0;
+  white-space: nowrap;
+  background-color: #f1f8ff;
+  border-radius: 3px;
 }
-
 
 .site-footer {
-    border-top: none;
-    color: #858585;
-    font-size: 0.9em;
-    text-align: center;
+  border-top: none;
+  color: #858585;
+  font-size: 0.9em;
+  text-align: center;
 }
 
 .site-footer a,
 .share a {
-    color: #337ab7;
-    text-decoration: none;
+  color: #337ab7;
+  text-decoration: none;
 }
 
 .site-footer a:hover,
 .share a:hover {
-    color: #22527b;
+  color: #22527b;
 }
 
 .footer-icons ul {
-    margin-left: 0px;
+  margin-left: 0px;
 }
 
 .footer-icons li {
-	display: inline;
+  display: inline;
 }
 
 .site-footer i.fa.fa-heart {
-    color: red;
+  color: red;
 }
 
 .share {
-    float: right;
+  float: right;
 }
 
 .page-header {
-    text-align: center;
+  text-align: center;
 }
 
 .page-content p {
-    line-height: 1.5;
-    margin-bottom: 1em;
-    color: #383838;
-    font-size: 1.25em;
-    word-wrap: break-word;
+  line-height: 1.5;
+  margin-bottom: 1em;
+  color: #383838;
+  font-size: 1.25em;
+  word-wrap: break-word;
 }
 
 .page-tags {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
-.tag-title, .archive-year {
-    color: #ada8a8;
-    font-weight: bold;
-    font-size: 1.8em;
-    line-height: 1.3;
+.tag-title,
+.archive-year {
+  color: #ada8a8;
+  font-weight: bold;
+  font-size: 1.8em;
+  line-height: 1.3;
 }
 
 .archive-month {
-    color: #ada8a8;
-    font-weight: bold;
-    font-size: 1.2em;
+  color: #ada8a8;
+  font-weight: bold;
+  font-size: 1.2em;
 }
 
 .tags-post,
 .archive-year-content,
 .archive-month-content {
-    padding-left: 30px;
-    margin: 10px 0px;
+  padding-left: 30px;
+  margin: 10px 0px;
 }
 
 .archive-post a.post-link,
 .tags-post a.post-link {
-    font-size: 1.7em;
-    letter-spacing: -1px;
+  font-size: 1.7em;
+  letter-spacing: -1px;
 }
 
 .highlight pre code {
-     overflow-x: scroll;
+  overflow-x: scroll;
 }
 
 .gist .blob-code-inner {
-    white-space: pre-wrap !important;
+  white-space: pre-wrap !important;
 }
 
 .list_item_description {
-    font-size: 0.8em;
+  font-size: 0.8em;
 }
 
- .highlighter-rouge .highlight {
-    overflow-x: scroll;
-    max-width: 740px;
+.highlighter-rouge .highlight {
+  overflow-x: scroll;
+  max-width: 740px;
 }
 
 @media only screen and (max-width: 600px) {
-    .site-header>.wrapper {
-        padding: 16px 24px;
-    }
-    .site-nav {
-        top: 24px;
-    }
-    .site-title {
-        font-size: 16px;
-    }
+  .site-header > .wrapper {
+    padding: 16px 24px;
+  }
+  .site-nav {
+    top: 24px;
+  }
+  .site-title {
+    font-size: 16px;
+  }
 }
 
 @media only screen and (max-width: 480px) {
+  iframe#ghcard-gohugoio-1,
+  iframe#ghcard-jekyll-1 {
+    max-width: 350px;
+  }
 
-    iframe#ghcard-gohugoio-1,
-    iframe#ghcard-jekyll-1 {
-        max-width: 350px;
-    }
+  .gist .gist-file {
+    max-width: 350px;
+  }
 
-    .gist .gist-file {
-        max-width: 350px;
-    }
-
-    .highlighter-rouge .highlight {
-        overflow-x: scroll;
-        max-width: 400px;
-    }
+  .highlighter-rouge .highlight {
+    overflow-x: scroll;
+    max-width: 400px;
+  }
 }
 
 @media only screen and (max-width: 320px) {
-    .gist .gist-file {
-        max-width: 300px;
-    }
+  .gist .gist-file {
+    max-width: 300px;
+  }
 
-    iframe#ghcard-gohugoio-1,
-    iframe#ghcard-jekyll-1 {
-        max-width: 300px;
-    }
+  iframe#ghcard-gohugoio-1,
+  iframe#ghcard-jekyll-1 {
+    max-width: 300px;
+  }
 
-    .highlighter-rouge .highlight {
-        overflow-x: scroll;
-        max-width: 280px;
-    }
+  .highlighter-rouge .highlight {
+    overflow-x: scroll;
+    max-width: 280px;
+  }
 }
 
 blockquote {
-    font-size: 15px;
+  font-size: 15px;
 }
