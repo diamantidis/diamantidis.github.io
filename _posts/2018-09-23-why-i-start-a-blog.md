@@ -6,7 +6,7 @@ comments: true
 tags: [personal, blog]
 ---
 
-## Hello world, this is my first blog post!! :rocket:
+## Hello world, this is my first blog post!! 🚀
 My name is Ioannis Diamantidis, I am a software developer and a few months ago I decided to start my own blog. Reading other developer's blogposts every day, I decided that it is worth trying to start writing too, about my ideas and topics that I am interested in. The content of the blog will be related to software development(or at least I will try to). My intent is not to focus on one specific area, like iOS, but rather be more diverse.
 
 ## Why?
