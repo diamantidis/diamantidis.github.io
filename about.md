@@ -6,7 +6,7 @@ permalink: /about
 
 Hi, my name is Ioannis Diamantidis!!
 
-I am a polyglot software developer, living in Stockholm. I am self-motivated and I strive for being more efficient and becoming better every day in both my personal and professional life. Furthermore, I am always looking for new challenges that will help me to progress and further develop both my skills and my personality. Currently I am working as an iOS developer at Qliro Financial Services.
+I am a polyglot software developer, living in Stockholm. I am self-motivated and I strive for being more efficient and becoming better every day in both my personal and professional life. Furthermore, I am always looking for new challenges that will help me to progress and further develop both my skills and my personality. Currently I am working as an iOS developer at Schibsted Media Group.
 
 # Bio
 
