@@ -4,7 +4,8 @@ ruby RUBY_VERSION
 # Needed for TravisCI
 gem "rake", "~> 12"
 gem "jekyll", "~> 3.7.4"
-
+gem 'danger'
+gem 'danger-prose'
 
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 gem "minima", "~> 2.0"

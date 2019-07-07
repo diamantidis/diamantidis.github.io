@@ -3,6 +3,9 @@ rvm:
   - 2.5.1
 install:
   - bundle install
+script:
+  - bundle exec jekyll build
+  - bundle exec danger
 deploy:
   provider: pages
   skip_cleanup: true
