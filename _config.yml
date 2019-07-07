@@ -39,6 +39,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - vendor
+  - Dangerfile
 
 # Google Analytics
 google_analytics: UA-121787430-1
