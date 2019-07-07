@@ -239,3 +239,16 @@ article.post {
 blockquote {
   font-size: 15px;
 }
+
+.pagination-link {
+  color: #337ab7;
+  border: black;
+  border-width: 1pt;
+  border-style: solid;
+  padding: 12pt;
+}
+
+.pagination-link i {
+  padding-left: 5px;
+  padding-right: 5px;
+}

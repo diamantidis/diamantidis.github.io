@@ -19,6 +19,7 @@ plugins:
   - jekyll-feed
   - jemoji
   - jekyll-sitemap
+  - jekyll-paginate
 
 sass:
   sass_dir: _scss
@@ -61,3 +62,7 @@ social:
     icon: linkedin
     desc: Connect with me on LinkedIn
     share: true
+
+# Pagination
+paginate: 7
+paginate_path: /page/:num/
