@@ -9,9 +9,9 @@ layout: default
 
   {{ content }}
 
-  {%- if site.posts.size > 0 -%}
+  {%- if paginator.posts.size > 0 -%}
     <ul class="post-list">
-      {%- for post in site.posts -%}
+      {%- for post in paginator.posts -%}
       <li class="post-item">
         <h2>
           <a class="post-link" href="{{ post.url | relative_url }}" title="{{ post.title | escape | strip }}" >
@@ -48,3 +48,19 @@ layout: default
   {%- endif -%}
 
 </div>
+
+
+{% if paginator.total_pages > 1 %}
+<div>
+  {% if paginator.previous_page %}
+  <div>
+    <a class="pagination-link" href="{{ paginator.previous_page_path | prepend: site.baseurl }}" title="Newer" style="float:left;"><i class="fa fa-chevron-left"></i>Newer</a>
+  </div>
+  {% endif %}
+  {% if paginator.next_page %}
+  <div>
+    <a class="pagination-link" href="{{ paginator.next_page_path | prepend: site.baseurl }}" title="Older" style="float:right;">Older<i class="fa fa-chevron-right"></i></a>
+  </div>
+  {% endif %}
+</div>
+{% endif %}
