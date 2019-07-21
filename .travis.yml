@@ -6,6 +6,8 @@ install:
 script:
   - bundle exec jekyll build
   - bundle exec danger
+env:
+  - JEKYLL_ENV=production
 deploy:
   provider: pages
   skip_cleanup: true
