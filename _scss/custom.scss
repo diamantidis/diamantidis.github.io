@@ -214,9 +214,13 @@ article.post {
     max-width: 350px;
   }
 
+  .highlighter-rouge {
+    max-width: 350px;
+  }
+
   .highlighter-rouge .highlight {
     overflow-x: scroll;
-    max-width: 400px;
+    max-width: 350px;
   }
 }
 
@@ -228,6 +232,10 @@ article.post {
   iframe#ghcard-gohugoio-1,
   iframe#ghcard-jekyll-1 {
     max-width: 300px;
+  }
+
+  .highlighter-rouge {
+    max-width: 280px;
   }
 
   .highlighter-rouge .highlight {
