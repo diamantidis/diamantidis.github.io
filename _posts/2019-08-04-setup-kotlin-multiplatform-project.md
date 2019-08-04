@@ -28,7 +28,7 @@ So, be careful and think twice before taking the decision to use it on a real pr
 Let's try to create our first project!!
 
 
-## How to create a project with Intellij
+## How to create a project with IntelliJ
 
 For this tutorial, I am using IntelliJ IDEA CE 2019.1.3 to create the initial project, Android Studio 3.4.2 and Xcode 10.2.1. Apart from those, I am using Kotlin 1.3.41 and Gradle 5.4.1
 
@@ -38,9 +38,9 @@ To create the initial project:
 3. In the next screen, make sure to have checked the `Use default Gradle wrapper` and press `Next`
 4. Then choose a name for your project and press `Next`.
 
-![Intellij kmp projects screenshot]({{site.url}}/assets/kmp/intellij_kmp_project.png)
+![IntelliJ KMP projects screenshot]({{site.url}}/assets/kmp/intellij_kmp_project.png)
 
-The project is created and it will try to sync gradle and build. But it will fail with an error saying 
+The project is created and it will try to sync Gradle and build. But it will fail with an error saying 
 ```
 The SDK directory '<projectDir>/PleaseSpecifyAndroidSdkPathHere' does not exist.
 
