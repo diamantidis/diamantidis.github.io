@@ -6,5 +6,5 @@ prose.ignore_numbers = true
 prose.lint_files
 
 # Look for spelling issues
-prose.ignored_words = ["Swift", "Multiplatform", "Xcode", "iOS", "Kotlin"]
+prose.ignored_words = ["Swift", "Multiplatform", "Xcode", "iOS", "Kotlin", "fastlane", "Fastfile", "Gradle", "macOS"]
 prose.check_spelling
