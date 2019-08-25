@@ -67,3 +67,7 @@ social:
 # Pagination
 paginate: 7
 paginate_path: /page/:num/
+
+twitter:
+  username: diamantidis_io
+  card: summary
