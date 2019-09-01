@@ -8,6 +8,6 @@ prose.lint_files
 # Look for spelling issues
 prose.ignored_words = [
 	"Swift", "Multiplatform", "Xcode", "iOS", "Kotlin", "fastlane", "Fastfile", 
-	"Gradle", "macOS", "SwiftLint", "detekt", "CocoaPods", "html", "txt", "xml
+	"Gradle", "macOS", "SwiftLint", "detekt", "CocoaPods", "html", "txt", "xml"
 ]
 prose.check_spelling
