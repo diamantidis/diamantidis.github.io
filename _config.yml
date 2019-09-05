@@ -45,8 +45,8 @@ exclude:
 google_analytics: UA-121787430-1
 
 # Disqus
-disqus:
-  shortname: ioannisblog-1
+# disqus:
+#   shortname: ioannisblog-1
 
 social:
   - name: Twitter
