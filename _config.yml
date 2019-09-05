@@ -71,3 +71,13 @@ paginate_path: /page/:num/
 twitter:
   username: diamantidis_io
   card: summary
+
+compress_html:
+  clippings: []
+  comments: []
+  endings: []
+  ignore:
+    envs: []
+  blanklines: false
+  profile: false
+  startings: []
