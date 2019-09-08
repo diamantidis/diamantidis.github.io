@@ -1,3 +1,7 @@
+@import
+  "minima/syntax-highlighting"
+;
+
 body {
   font-family: 'Lucida Grande', 'Helvetica Neue', Verdana, Arial, sans-serif;
   word-wrap: break-word;
@@ -222,6 +226,14 @@ article.post {
     overflow-x: scroll;
     max-width: 350px;
   }
+
+  li .highlighter-rouge {
+    max-width: 315px;
+  }
+
+  li .highlighter-rouge .highlight {
+    max-width: 315px;
+  }
 }
 
 @media only screen and (max-width: 320px) {
@@ -241,6 +253,14 @@ article.post {
   .highlighter-rouge .highlight {
     overflow-x: scroll;
     max-width: 280px;
+  }
+
+  li .highlighter-rouge {
+    max-width: 260px;
+  }
+
+  li .highlighter-rouge .highlight {
+    max-width: 260px;
   }
 }
 
