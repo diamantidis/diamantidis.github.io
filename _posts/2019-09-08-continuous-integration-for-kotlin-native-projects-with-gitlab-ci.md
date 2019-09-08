@@ -36,7 +36,7 @@ To check about the Runners, you can go to GitLab, open the project, and choose `
 
 There are a few [`Shared Runners`](https://docs.gitlab.com/ee/user/gitlab_com/#shared-runners) but sadly they are not suitable for our project since none of them comes with Xcode. Other solutions for Runners, like Docker are also rejected for the same reason. So, this leads me to `Set up a specific Runner manually` on my local machine. 
 
-The process of running a gitlab runner on MacOS is quite straight-forward and you can follow the steps described on the [documentation](https://docs.gitlab.com/runner/install/osx.html).
+The process of running a GitLab Runner on MacOS is quite straight-forward and you can follow the steps described on the [documentation](https://docs.gitlab.com/runner/install/osx.html).
 
 Briefly,
 
@@ -74,7 +74,7 @@ If you refresh the CI/CD page on Gitlab, you will be able to see the new runner 
 
 After this, let's create create a file named `.gitlab-ci.yml` on the root directory of our project and define the jobs that we want to run.
 
-First, we have to install bundler and then use `bundle install` to install `fastlane` and `cocoapods`. Furthermore, we have to setup a few environmental variables for fastlane.  This step is supposed to run regardless of the directory of the change.
+First, we have to install bundler and then use `bundle install` to install `fastlane` and `cocoapods`. Furthermore, we have to setup a few environmental variables for fastlane. This step is supposed to run regardless of the directory of the change.
 
 ![GitLab CI setup stage screenshot]({{site.url}}/assets/kmp/setup_stage.png)
 
@@ -93,7 +93,7 @@ Similarly, the Android lint job should run only if there is a change on the `and
 ![GitLab CI code quality stage screenshot]({{site.url}}/assets/kmp/code_quality_stage.png)
 > Here you can find the [commit on GitLab](https://gitlab.com/diamantidis_io/kmp_template/commit/9cdef12ad6cc6aa5740830f822e5eca7e4a50abe)
 
-Lastly, we add another stage for the tests. Following the same logic, we define three jobs to run the unit tests for iOS, Android and the shared library using the commands from a [previous post]({%post_url 2019-08-25-kotlin-multiplatform-project-unit-tests-for-ios-and-android %}) on how to run unit tests. Each of these jobs will be dependant on the respective linting job and follow the same rules for when they should be executed.
+Lastly, we add another stage for the tests. Following the same logic, we define three jobs to run the unit tests for iOS, Android and the shared library using the commands from a [previous post]({%post_url 2019-08-25-kotlin-multiplatform-project-unit-tests-for-ios-and-android %}) on how to run unit tests. Each of these jobs will be dependent on the respective linting job and follow the same rules for when they should be executed.
 
 ![GitLab CI test stage screenshot]({{site.url}}/assets/kmp/tests_stage.png)
 > Here you can find the [commit on GitLab](https://gitlab.com/diamantidis_io/kmp_template/commit/29edcbfe279753e2dbac2339f4406da83fe9585a)
