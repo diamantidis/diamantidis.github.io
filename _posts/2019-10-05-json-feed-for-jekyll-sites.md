@@ -93,6 +93,6 @@ If you try to run `bundle exec jekyll build` and navigate to the `_site` directo
 
 To sum up, in this post we have seen how easy it is to add support for JSON feed on a Jekyll site. 
 
-Now, you can find a feed reader app and use either the [Atom]({{ "feed.xml" | absolute_url }}) or the [JSON]({{ "feed.json" | absolute_url }}) feed to get notified when some new post is published!! In the meanwhile, I will be able to focus on to the actual implementation of my feed reader using Kotlin Native!
+Now, you can find a feed reader app and use either the [Atom]({{ "feed.xml" | absolute_url }}) or the [JSON]({{ "feed.json" | absolute_url }}) feed to get notified when some new post is published! In the meantime, I will be able to focus on to the actual implementation of my feed reader using Kotlin Native!
 
 Thanks for reading, I hope that you found this post useful and should you have any suggestions on any other questions or comments, just let me know on [Twitter](https://twitter.com/diamantidis_io) or by [email](mailto:diamantidis@outlook.com)!
