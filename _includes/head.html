@@ -13,6 +13,15 @@
   <title>{{ site_title | strip }}</title>
 
   {%- seo title=false -%}
+
+  <!-- Temporary fix until gh-pages support jekyll-seo-tag v2.6.0 which has a fix for the twitter (https://pages.github.com/versions/) -->
+  {% if page.image %}
+      <meta property="twitter:image" content="{{ page.image | absolute_url }}">
+  {% endif %}
+  <meta property="twitter:title" content="{{site_title}}">
+  {% if page.description %}
+      <meta property="twitter:description" content="{{ page.description }}">
+  {% endif %}
   
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
   
