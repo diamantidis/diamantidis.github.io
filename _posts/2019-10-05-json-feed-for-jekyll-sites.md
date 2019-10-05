@@ -21,9 +21,10 @@ So, why do I need a JSON feed if I already have an Atom one?
 
 First and foremost, it doesn't hurt to support yet another format that may be used by some readers. 
 
-Furthermore, on top of what I previously mentioned about the popularity of JSON compared to XML, JSON files are easier to read, write, and when it comes to developing an application that will have to parse a JSON. In most programming languages, it's just a matter of a few lines of code. As a result, having a JSON-formatted feed will allow me to focus on more interesting stuff in the future that can make use of this feed.
+Furthermore, on top of what I previously mentioned about the popularity of JSON compared to XML, JSON files are easier to read, write, and also when it comes to developing an application that will have to parse a JSON. In most programming languages, it's just a matter of a few lines of code. As a result, having a JSON-formatted feed will allow me to implement more interesting stuff in the future based on this feed.
 
-Recently, I have been exploring the potential of Kotlin Native. So far, my main focus was on the fundamentals and I have recorded my process in a series of posts. And now, time has come to try it out on a more real-world use case that will help be to get better insights on the benefits and the shortcomings of Kotlin Native. 
+Recently, I have been exploring the potential of Kotlin Native. So far, my main focus was on the fundamentals and the whole process have been recorded in [a series of posts]({{"tags#KMP" | absolute_url }}). And now, time has come to try it out on a more real-world use case that will help be to get better insights on the benefits and the shortcomings of Kotlin Native. 
+
 After a lot of consideration, I ended up choosing to build a feed reader for this site. Implementing such a project will give me the opportunity to use a shared library for features like networking, data de-serialization, storing user preferences and much more yet to be found. 
 
 To be honest, the existing Atom feed could also have be used, but the lack of options for parsing an XML from a Kotlin Native library and the fact that [KotlinX serialization](https://github.com/Kotlin/kotlinx.serialization) makes it a breeze to de-serialize a JSON string, make it a no-brainer for me!
@@ -93,6 +94,8 @@ If you try to run `bundle exec jekyll build` and navigate to the `_site` directo
 
 To sum up, in this post we have seen how easy it is to add support for JSON feed on a Jekyll site. 
 
-Now, you can find a feed reader app and use either the [Atom]({{ "feed.xml" | absolute_url }}) or the [JSON]({{ "feed.json" | absolute_url }}) feed to get notified when some new post is published! In the meantime, I will be able to focus on to the actual implementation of my feed reader using Kotlin Native!
+Now, all you have to do is to find a feed reader app and use either the [Atom]({{ "feed.xml" | absolute_url }}) or the [JSON]({{ "feed.json" | absolute_url }}) feed to get notified when some new post is published! :smile:
+
+In the meantime, I will be able to focus on to the actual implementation of my feed reader using Kotlin Native!
 
 Thanks for reading, I hope that you found this post useful and should you have any suggestions on any other questions or comments, just let me know on [Twitter](https://twitter.com/diamantidis_io) or by [email](mailto:diamantidis@outlook.com)!
