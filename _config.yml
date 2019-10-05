@@ -6,11 +6,20 @@ baseurl: ""
 url: "https://diamantidis.github.io"
 permalink: /:categories/:year/:month/:day/:title
 
+# Logo & images
+logo: /assets/socialIcon.png
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/socialIcon.png
+
 # Author
 author:
   name: Ioannis Diamantidis
   url: https://diamantidis.github.io
   email: diamantidis@outlook.com
+  twitter: diamantidis_io
 
 # Build settings
 markdown: kramdown
