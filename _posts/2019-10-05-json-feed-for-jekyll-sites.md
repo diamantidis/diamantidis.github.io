@@ -23,7 +23,7 @@ First and foremost, it doesn't hurt to support yet another format that may be us
 
 Furthermore, on top of what I previously mentioned about the popularity of JSON compared to XML, JSON files are easier to read, write, and also when it comes to developing an application that will have to parse a JSON. In most programming languages, it's just a matter of a few lines of code. As a result, having a JSON-formatted feed will allow me to implement more interesting stuff in the future based on this feed.
 
-Recently, I have been exploring the potential of Kotlin Native. So far, my main focus was on the fundamentals and the whole process have been recorded in [a series of posts]({{"tags#KMP" | absolute_url }}). And now, time has come to try it out on a more real-world use case that will help be to get better insights on the benefits and the shortcomings of Kotlin Native. 
+Recently, I have been exploring the potential of Kotlin Native. So far, my main focus was on the fundamentals and the whole process has been recorded in [a series of posts]({{"tags#KMP" | absolute_url }}). And now, time has come to try it out on a more real-world use case that will help be to get better insights on the benefits and the shortcomings of Kotlin Native. 
 
 After a lot of consideration, I ended up choosing to build a feed reader for this site. Implementing such a project will give me the opportunity to use a shared library for features like networking, data de-serialization, storing user preferences and much more yet to be found. 
 
