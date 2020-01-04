@@ -60,7 +60,7 @@ So, let's use this command to find which files take the most space.
 
 As a developer, regardless of the stack, be it iOS, Android, front-end or back-end, it is quite common that the tools that we are using require a decent amount of disk space. 
 
-In my case, my first suspicion was that Xcode and the simulators would occupy a big portion of my storage disk. It was quite easy to validate my assumption, just by running `dirinfo ~/Library/Developer/Xcode` amd `dirinfo ~/Library/Developer/CoreSimulator`. By deleting some files on these directories, I manage to recover dozens of Gigabytes of storage disk, most of which are occupied by files you no longer need. 
+In my case, my first suspicion was that Xcode and the simulators would occupy a big portion of my storage disk. It was quite easy to validate my assumption, just by running `dirinfo ~/Library/Developer/Xcode` and `dirinfo ~/Library/Developer/CoreSimulator`. By deleting some files on these directories, I manage to recover dozens of Gigabytes of storage disk, most of which are occupied by files you no longer need. 
 
 > Hint: If you are an iOS developer, a neat command that can help you recover some disk space is the `xcrun simctl delete unavailable` which will delete all the old simulators.
 
