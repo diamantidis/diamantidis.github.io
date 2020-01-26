@@ -4,14 +4,16 @@ title: A step-by-step guide to create a custom Xcode template
 description: A step-by-step guide on how to create a Xcode template with coordinator and folder structure
 date: 2019-07-21 08:00 +0200
 comments: true
-tags: [iOS, Xcode]
+tags: [iOS, Xcode, Productivity]
 ---
 
-For quite a long time I wanted to experiment with the creation of a custom Xcode template and finally the time has come!! In this article, I will try to describe step-by-step the process of creating a custom Xcode template from scratch. For those unfamiliar with the term, Xcode template is something we use quite often. When creating a new file or a new project, Xcode offers a wide variety of template options to choose from. For example, when creating a Cocoa Touch Class, you select the superclass and and the preferred language, either Swift or Objective-C. Based on the these choices, a file (or more) will be created. In case of a UIViewController subclass, the end result will be a file with a subclass of UIVIewController alongside with the viewDidLoad implementation in the selected language. Though, apart from those predefined templates, we are also able to create and add our own custom Xcode templates, or use some custom templates developed by the community.
+For quite a long time I wanted to experiment with the creation of a custom Xcode template and finally the time has come!! In this article, I will try to describe step-by-step the process of creating a custom Xcode template from scratch. For those unfamiliar with the term, Xcode template is something we use quite often. When creating a new file or a new project, Xcode offers a wide variety of template options to choose from. 
+
+For example, when creating a `Cocoa Touch Class`, you select the superclass and the preferred language, be it `Swift` or `Objective-C`. Based on these choices, a file (or more) will be created. In case of a `UIViewController` subclass, the end result will be a file with a subclass of `UIVIewController` containing the `viewDidLoad` implementation in the selected language. Though, apart from those predefined templates, we are also able to create and add our own custom Xcode templates, or use some custom templates developed by the community.
 
 # What is the end result?
 
-In my case, what I would like to achieve is to create a template for when I add a new feature/module to an existing project. Depending on the architecture of the project and the team, each feature usually follows some specific conventions regarding the folder structure and the required components. That means that every time a new feature is added, we have to do some manual steps to create the folder structure and the classes. For this article, I am going to use  Coordinators and MVVM, so every new feature follows the following folder and naming conventions
+In my case, what I would like to achieve is to create a template for when I add a new feature/module to an existing project. Depending on the architecture of the project and the team, each feature usually follows some specific conventions regarding the folder structure and the required components. That means that every time a new feature is added, we have to do some manual steps to create the folder structure and the classes. For this article, I am going to use  Coordinators and MVVM, so every new feature adheres to the following folder and naming conventions
 
 ```
 <MODULE_NAME>
@@ -69,7 +71,7 @@ Lastly is the `Options` key which can be used to allow users to customize the te
 `Name`, `Required` and `Type`. We use `productName` as an identifier so that Xcode will know that this is the name of the module and using it will populate some Xcode so-called text macros (`___FILEBASENAME___` and `___FILEBASENAMEASIDENTIFIER___`) that will later be used to create the directory and the files.
 
 
-> To find more information about the Xcode text macros, refer to the documentation provided by Apple and more specifically to [Text macros reference](https://help.apple.com/xcode/mac/10.2/#/dev7fe737ce0) and [Text macro format](https://help.apple.com/xcode/mac/10.2/#/devc8a500cb9)
+> To find more information about the Xcode text macros, refer to the documentation provided by Apple and more specifically to [Text macros reference](https://help.apple.com/xcode/mac/10.2/#/dev7fe737ce0) and [Text macro format](https://help.apple.com/xcode/mac/10.2/#/devc8a500cb9).
 
 Without further ado, we can now try to create a new template on Xcode and the module will be there but no file will be created yet.
 
@@ -82,7 +84,7 @@ So let's move on to creating the actual template!!
 
 As we mention before, there are some macros that can be used when creating a template. One of those is `___FILEBASENAME___`, and it's value is what we typed on the `productName` field when creating the module. To make our template create a folder with the name that we typed on the field, we will create a new folder inside the `IDModule.xctemplate` folder, and we will name it `___FILEBASENAME___` . 
 
-Next, we will create three more folders, named `Coordinators`, `ViewControllers` and `ViewModels` inside the `___FILEBASENAME___` folder. Finally, we will create three swift files named `___FILEBASENAME___Coordinator.swift`, `___FILEBASENAME___ViewController.swift` and  `___FILEBASENAME___ViewModel.swift` inside `Coordinators`, `ViewControllers` and `ViewModels` folder respectively. 
+Next, we will create three more folders, named `Coordinators`, `ViewControllers` and `ViewModels` inside the `___FILEBASENAME___` folder. Finally, we will create three files named `___FILEBASENAME___Coordinator.swift`, `___FILEBASENAME___ViewController.swift` and  `___FILEBASENAME___ViewModel.swift` inside `Coordinators`, `ViewControllers` and `ViewModels` folders respectively. 
 
 
 The final structure of the `IDModule.xctemplate` folder will be something like this:
@@ -102,7 +104,7 @@ The final structure of the `IDModule.xctemplate` folder will be something like t
 
 Until now, we have created the folder structure and the files. Let's now move to the contents of each of those files.
 
-For the files we will use a few more text macros like `___FILEHEADER___`, `___FILEBASENAMEASIDENTIFIER___` and `___VARIABLE_productName:identifier___` that will allow us to set the set the file header and set the proper name for each class, struct and variable in the files.
+For the files we are going to use a few more text macros like `___FILEHEADER___`, `___FILEBASENAMEASIDENTIFIER___` and `___VARIABLE_productName:identifier___` that will allow us to set the file header and the proper name for each class, struct and variable in the files.
 
 {% gist be9f31b35d301fa97c5f3531adde86c3 ___FILEBASENAME___Coordinator.swift %}
 {% gist be9f31b35d301fa97c5f3531adde86c3 ___FILEBASENAME___ViewController.swift %}
@@ -134,5 +136,9 @@ The new module is ready to be used!
 
 # Conclusion
 
-To sum up, this article can be used as a guide to create a custom template and presents how easy and straight-forward is to do so. Of course it doesn't cover all the available options such as adding more fields/options when creating a template and not only the name and based on them to create different file (like the case with Swift or Objective-C option) and maybe creating a base template that can be used by many child templates (the case for most of the Xcode predefined templates). In general, Xcode custom templates can be used to ease, in some extend, the process of creating a new file or a new module, eventually resulting in a more efficient way for working since it will remove some time-consuming and not so interesting tasks. And maybe guarantee some consistency amongst team members in the way modules and files are created. Let me know what's your opinion about Xcode templates and whether you are using them in your projects.
+To sum up, this article can be used as a guide to create a custom template and presents how easy and straight-forward is to do so. Of course it doesn't cover all the available options such as adding more fields/options when creating a template and not only the name and based on them to create different file (like the case with `Swift` or `Objective-C` option) and maybe creating a base template that can be used by many child templates (the case for most of the Xcode predefined templates). In general, Xcode custom templates can be used to ease, in some extend, the process of creating a new file or a new module, eventually resulting in a more efficient way for working since it will remove some time-consuming and not so interesting tasks. And maybe guarantee some consistency amongst team members in the way modules and files are created. 
+
+Thanks for reading, I hope you find this post useful!
+
+Feel free to follow me on [Twitter](https://twitter.com/diamantidis_io) and let me know what's your opinion about Xcode templates and whether you are using them in your projects!
 

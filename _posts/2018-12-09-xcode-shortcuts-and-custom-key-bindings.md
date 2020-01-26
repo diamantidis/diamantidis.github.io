@@ -60,7 +60,7 @@ A list of commands that I primarily use are listed below:
 
 * Center selection (`⌃` + `L`) <br><span class="list_item_description">This can be used to move the screen so the selected area is in the center of the screen.</span>
 
-These are only a subset of the available commands that I found really useful. Of course there are plenty more and I am trying to always enrich my list, so feel free to share with me which one you are using.
+These are only a subset of the available commands that I found really useful. Of course there are plenty more and I am trying to always enrich my list, so feel free to share with me on [Twitter](https://twitter.com/diamantidis_io) which one you are using.
  
 
 ## Custom key bindings 
@@ -92,4 +92,6 @@ To add a custom key binding someone has to follow the next steps:
 ![custom bindings menu in xcode screenshot]({{ site.url }}/assets/shortcuts/custom_key_bindings.png)
 
 ## Conclusion
-Hope you find those shortcuts and start using on your daily routine to save some time. Furthermore, being able to add custom bindings can prove to be really useful especially on cases that are not supported by Xcode and are quite common, like quickly moving up and down on a file. 
+I hope you find those shortcuts useful and start using them on your daily routine to save some time. Furthermore, being able to add custom bindings can prove to be really useful especially on cases that are not currently supported by Xcode and are quite common, like quickly moving up and down on a file. 
+
+Thanks for reading, and feel free to follow me on [Twitter](https://twitter.com/diamantidis_io) and share your questions, suggestions or comments about this post about this post!!
