@@ -13,7 +13,7 @@ The use of keyboard shortcuts can result in greater productivity because it enab
 
 Apart from this, writing this blog post is also a great opportunity for me to learn more about Xcode shortcuts.
 
-A list of the "default" Xcode shortucts, as listed by Apple, can be found [here](https://developer.apple.com/library/archive/documentation/IDEs/Conceptual/xcode_help-command_shortcuts/Introduction/Introduction.html#//apple_ref/doc/uid/TP40010560-CH1-SW1)
+A list of the "default" Xcode shortcuts, as listed by Apple, can be found [here](https://developer.apple.com/library/archive/documentation/IDEs/Conceptual/xcode_help-command_shortcuts/Introduction/Introduction.html#//apple_ref/doc/uid/TP40010560-CH1-SW1)
 
 Also this list can be found in Xcode by following Xcode > Preferences (or better `⌘` + `,`) > Key bindings, where you can also edit or add new shortcuts to the commands not yet set. 
 
@@ -37,7 +37,7 @@ A list of commands that I primarily use are listed below:
 ![go to line screenshot]({{site.url}}/assets/shortcuts/line_number.png)
 </span>
 
-* Add breakpoint ( `⌘`+ `\`) <br><span class="list_item_description">A breakpoint will be added to the line.  To activate/deactivate the debugger use `⌘` + `Y`.
+* Add breakpoint ( `⌘`+ `\`) <br><span class="list_item_description">A breakpoint will be added to the line. To activate/deactivate the debugger use `⌘` + `Y`.
 </span>
 
 * Fold method (`⇧` + `⌥` + `⌘` + `←`) <br><span class="list_item_description">To unfold method (`⇧` + `⌥` + `⌘` + `→`)</span>
