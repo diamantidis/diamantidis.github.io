@@ -13,7 +13,7 @@ The use of keyboard shortcuts can result in greater productivity because it enab
 
 Apart from this, writing this blog post is also a great opportunity for me to learn more about Xcode shortcuts.
 
-A list of the "default" Xcode shortucts, as listed by Apple, can be found [here](https://developer.apple.com/library/archive/documentation/IDEs/Conceptual/xcode_help-command_shortcuts/Introduction/Introduction.html#//apple_ref/doc/uid/TP40010560-CH1-SW1)
+A list of the "default" Xcode shortcuts, as listed by Apple, can be found [here](https://developer.apple.com/library/archive/documentation/IDEs/Conceptual/xcode_help-command_shortcuts/Introduction/Introduction.html#//apple_ref/doc/uid/TP40010560-CH1-SW1)
 
 Also this list can be found in Xcode by following Xcode > Preferences (or better `⌘` + `,`) > Key bindings, where you can also edit or add new shortcuts to the commands not yet set. 
 
@@ -37,7 +37,7 @@ A list of commands that I primarily use are listed below:
 ![go to line screenshot]({{site.url}}/assets/shortcuts/line_number.png)
 </span>
 
-* Add breakpoint ( `⌘`+ `\`) <br><span class="list_item_description">A breakpoint will be added to the line.  To activate/deactivate the debugger use `⌘` + `Y`.
+* Add breakpoint ( `⌘`+ `\`) <br><span class="list_item_description">A breakpoint will be added to the line. To activate/deactivate the debugger use `⌘` + `Y`.
 </span>
 
 * Fold method (`⇧` + `⌥` + `⌘` + `←`) <br><span class="list_item_description">To unfold method (`⇧` + `⌥` + `⌘` + `→`)</span>
@@ -60,7 +60,7 @@ A list of commands that I primarily use are listed below:
 
 * Center selection (`⌃` + `L`) <br><span class="list_item_description">This can be used to move the screen so the selected area is in the center of the screen.</span>
 
-These are only a subset of the available commands that I found really useful. Of course there are plenty more and I am trying to always enrich my list, so feel free to share with me which one you are using.
+These are only a subset of the available commands that I found really useful. Of course there are plenty more and I am trying to always enrich my list, so feel free to share with me on [Twitter](https://twitter.com/diamantidis_io) which one you are using.
  
 
 ## Custom key bindings 
@@ -92,4 +92,6 @@ To add a custom key binding someone has to follow the next steps:
 ![custom bindings menu in xcode screenshot]({{ site.url }}/assets/shortcuts/custom_key_bindings.png)
 
 ## Conclusion
-Hope you find those shortcuts and start using on your daily routine to save some time. Furthermore, being able to add custom bindings can prove to be really useful especially on cases that are not supported by Xcode and are quite common, like quickly moving up and down on a file. 
+I hope you find those shortcuts useful and start using them on your daily routine to save some time. Furthermore, being able to add custom bindings can prove to be really useful especially on cases that are not currently supported by Xcode and are quite common, like quickly moving up and down on a file. 
+
+Thanks for reading, and feel free to follow me on [Twitter](https://twitter.com/diamantidis_io) and share your questions, suggestions or comments about this post about this post!!
