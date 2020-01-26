@@ -54,7 +54,7 @@ private lazy var customStack: UIStackView = {
 }()
 ```
 
-To create a new snipper, you will have to select this exact chunk of code, press right click and select the option `Create Code Snippet`.
+To create a new snippet, you will have to select this exact chunk of code, press right click and select the option `Create Code Snippet`.
 
 ![Xcode menu options screenshot]({{site.url}}/assets/xcode_snippets/xcode_menu_options.png)
 
