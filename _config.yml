@@ -1,7 +1,7 @@
 title: Ioannis Diamantidis
 email: diamantidis@outlook.com
 description: >- # this means to ignore newlines until "baseurl:"
-  A blog to publish my ideas and thoughts about software developer
+  A blog where I publish posts about my learnings on software development, my thoughts, my ideas and topics that I find interesting.
 baseurl: ""
 url: "https://diamantidis.github.io"
 permalink: /:categories/:year/:month/:day/:title
