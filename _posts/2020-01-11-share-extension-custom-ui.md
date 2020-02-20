@@ -115,7 +115,7 @@ Let's start by adding the following key-value pair inside the `NSExtension` dict
 
 ```xml
 <key>NSExtensionPrincipalClass</key>
-<string>CustomShareViewController</string>
+<string>CustomShareNavigationController</string>
 ```
 
 After that we can remove the Storyboard related entry:
