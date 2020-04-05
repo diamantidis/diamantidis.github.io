@@ -134,7 +134,7 @@ And that's about it! In this post, we have examined some terminology related to 
 Definitely, after writing this post, I now acknowledge why it is important to have one license in every repository and what are the differences between the licenses, which is quite useful when the time comes to choose one for your repository.
 
 Thanks for reading, I hope you find this post useful too!
-Feel free to reach me out on [Twitter] and share your comments about this post!
+Feel free to reach out to me on [Twitter] and share your comments about this post!
 
 
 [GitHub Pages]: https://pages.github.com/
