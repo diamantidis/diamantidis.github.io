@@ -7,26 +7,9 @@ layout: default
     <h1>
       <span class="post-title">{{ page.title | escape }}</span>
     </h1>
-    <div class="post-meta">
-      <span class="post-date">
-        {{ page.date | date: "%B %-d, %Y" }}
-      </span>
-      <span class="post-divider">-</span>
-      <span class="post-minutes">
-        {% capture words %}
-          {{ page.content | number_of_words }}
-        {% endcapture %}
-        {% unless words contains "-" %}
-          {{ words | plus: 250 | divided_by: 250 | append: " minute read" }}
-        {% endunless %}
-      </span>
-      <span class="post-divider">-</span>
-      <div class="post-tags">
-        {% for tag in page.tags %}
-          <a class="post-tag" href="/tags#{{ tag }}">{{ tag }}</a>
-        {% endfor %}
-      </div>
-    </div>
+
+    {% assign page_content = page %}
+    {% include post-subheader.html %}
   </header>
 
   <div class="post-content">

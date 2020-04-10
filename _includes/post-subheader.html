@@ -1,0 +1,21 @@
+<div class="post-subheader">
+  <span class="post-date">
+    {{ page_content.date | date: "%B %-d, %Y" }}
+  </span>
+  <span class="post-divider">-</span>
+  <span class="post-minutes">
+    {% capture words %} 
+      {{ page_content.content | number_of_words }} 
+    {% endcapture %}
+    {% unless words contains "-" %} 
+      {{ words | plus: 250 | divided_by: 250 | append: " min read" }} 
+    {% endunless %}
+  </span>
+  <div class="post-tags">
+    {% for tag in page_content.tags %}
+      <a class="post-tag" href="/tags#{{ tag }}" title="{{ tag | strip }}">
+        {{ tag }}
+      </a>
+    {% endfor %}
+  </div>
+</div>

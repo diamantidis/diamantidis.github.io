@@ -20,26 +20,8 @@ permalink: /archive
                   <a class="post-link" href="{{ post.url | relative_url }}">
                     {{ post.title | escape }}
                   </a>
-                <div class="post-meta">
-                  <span class="post-date">
-                    {{ post.date | date: "%B %-d, %Y" }}
-                  </span>
-                  <span class="post-divider">-</span>
-                  <span class="post-minutes">
-                    {% capture words %}
-                      {{ post.content | number_of_words }}
-                    {% endcapture %}
-                    {% unless words contains "-" %}
-                      {{ words | plus: 250 | divided_by: 250 | append: " minute read" }}
-                    {% endunless %}
-                  </span>
-                  <span class="post-divider">-</span>
-                  <div class="post-tags">
-                    {% for tag in post.tags %}
-                      <a class="post-tag" href="/tags#{{ tag }}">{{ tag }}</a>
-                    {% endfor %}
-                  </div>
-                </div>
+                  {% assign page_content = post %}
+                  {% include post-subheader.html %}
               </div>
             {% endfor %}
         </div>
