@@ -18,30 +18,19 @@ layout: default
             {{ post.title | escape  }}
           </a>
         </h2>
+        {% assign page_content = post %}
+        {% include post-subheader.html %}
         <p class="excerpt">
-              {{ post.excerpt | strip_html | truncate: 156 }}
+            {{ post.excerpt | strip_html | truncate: 156 }}
         </p>
-
         <div class="post-footer">
-          <span class="post-date">
-            {{ post.date | date: "%B %-d, %Y" }}
-          </span>
-          <span class="post-divider">-</span>
-          <span class="post-minutes">
-            {% capture words %}
-              {{ post.content | number_of_words }}
-            {% endcapture %}
-            {% unless words contains "-" %}
-              {{ words | plus: 250 | divided_by: 250 | append: " minute read" }}
-            {% endunless %}
-          </span>
-          <span class="post-divider">-</span>
-          <div class="post-tags">
-            {% for tag in post.tags %}
-              <a class="post-tag" href="/tags#{{ tag }}" title="{{ tag | strip }}">{{ tag }}</a>
-            {% endfor %}
+          <div>
+            <a class="read-more animatable" href="{{ post.url | relative_url }}" title="Read more">
+              Read more 
+              <svg focusable="false"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="fa fa-arrow-right fa-w-14"><path fill="currentColor" d="M216.464 36.465l-7.071 7.07c-4.686 4.686-4.686 12.284 0 16.971L387.887 239H12c-6.627 0-12 5.373-12 12v10c0 6.627 5.373 12 12 12h375.887L209.393 451.494c-4.686 4.686-4.686 12.284 0 16.971l7.071 7.07c4.686 4.686 12.284 4.686 16.97 0l211.051-211.05c4.686-4.686 4.686-12.284 0-16.971L233.434 36.465c-4.686-4.687-12.284-4.687-16.97 0z" class=""></path></svg>
+            </a>
           </div>
-        </div>
+        <div>
       </li>
       {%- endfor -%}
     </ul>

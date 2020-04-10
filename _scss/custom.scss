@@ -1,9 +1,7 @@
-@import
-  "minima/syntax-highlighting"
-;
+@import "minima/syntax-highlighting";
 
 body {
-  font-family: 'Lucida Grande', 'Helvetica Neue', Verdana, Arial, sans-serif;
+  font-family: "Lucida Grande", "Helvetica Neue", Verdana, Arial, sans-serif;
   word-wrap: break-word;
 }
 
@@ -20,6 +18,10 @@ a:visited {
 .site-header {
   box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2);
   border: none;
+}
+
+.home .post-list > li {
+  margin-bottom: 0px;
 }
 
 .site-header > .wrapper {
@@ -44,7 +46,7 @@ a:visited {
 }
 
 .site-nav .page-link {
-  color: #555;
+  color: #757575;
   opacity: 0.6;
 }
 
@@ -54,7 +56,14 @@ article.post {
   border-bottom: 1px solid #e5e5e5;
   color: #555;
   display: inline-block;
-  padding: 2rem 0;
+  padding-top: 1rem;
+  padding-right: 0px;
+  padding-bottom: 0.8rem;
+  padding-left: 0px;
+}
+
+.post-item h2 {
+  margin-bottom: 0px;
 }
 
 .post-link,
@@ -72,21 +81,67 @@ article.post {
   color: #337ab7;
 }
 
+.post-link {
+  letter-spacing: -1px;
+}
+
+.post-link:after {
+  content: "";
+  display: block;
+  width: 50%;
+  max-width: 200px;
+  height: 1px;
+  background-color: #337ab7;
+  margin: 5px 0 5px;
+}
+
 .post-footer span,
 .post-footer a,
 .post-meta span,
-.post-meta a,
-.page-tags a {
+.post-meta a {
   display: inline-block;
   font-size: 12px;
-  color: #ada8a8;
+  color: #757575;
   text-transform: uppercase;
   vertical-align: middle;
+}
+
+.post-footer {
+  float: right;
+  display: block;
+  clear: both;
+}
+
+.post-subheader span {
+  font-size: 12px;
+  color: #757575;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+
+.post-tags a,
+.page-tags a {
+  /* display: inline-block; */
+  font-size: 12px;
+  color: #ffffff;
+  /* text-transform: uppercase; */
+  vertical-align: middle;
+  letter-spacing: 1.3px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+.post-subheader {
+  /* margin-bottom: 5px;
+  display: inline;
+  margin-right: 11px; */
+  padding: 5px 0px 5px 0px;
 }
 
 .post-tags {
   display: inline-block;
   vertical-align: top;
+  float: right;
 }
 
 .excerpt {
@@ -96,15 +151,19 @@ article.post {
 .post-tag,
 .page-tag {
   padding: 0.3em 0.9em;
-  margin: 0 0.5em 0.5em 0;
+  margin: 0 0.5em 0 0;
   white-space: nowrap;
-  background-color: #f1f8ff;
-  border-radius: 3px;
+  background-color: #337ab7;
+  border-radius: 12px;
+}
+
+.post-tag:hover {
+  background-color: #01549d;
 }
 
 .site-footer {
   border-top: none;
-  color: #858585;
+  color: #757575;
   font-size: 0.9em;
   text-align: center;
 }
@@ -146,6 +205,15 @@ article.post {
   color: #383838;
   font-size: 1.25em;
   word-wrap: break-word;
+}
+
+.page-content .post-header {
+  margin-bottom: 10px;
+}
+
+p.excerpt {
+  margin-bottom: 0.1em;
+  float: left;
 }
 
 .page-tags {
@@ -222,7 +290,8 @@ article.post {
     max-width: 350px;
   }
 
-  .highlighter-rouge .highlight, figure.highlight {
+  .highlighter-rouge .highlight,
+  figure.highlight {
     overflow-x: scroll;
     max-width: 350px;
   }
@@ -250,7 +319,8 @@ article.post {
     max-width: 280px;
   }
 
-  .highlighter-rouge .highlight, figure.highlight {
+  .highlighter-rouge .highlight,
+  figure.highlight {
     overflow-x: scroll;
     max-width: 280px;
   }
@@ -279,4 +349,61 @@ blockquote {
 .pagination-link i {
   padding-left: 5px;
   padding-right: 5px;
+}
+
+a.pagination-link,
+a.read-more {
+  color: #383838;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  background: transparent;
+  float: right;
+}
+
+svg.fa.fa-arrow-right.fa-w-14 {
+  height: 14px;
+  width: 16px;
+}
+
+.read-more.animatable:hover > svg.fa.fa-arrow-right.fa-w-14 {
+  color: #0c5449;
+  -webkit-transform: translateX(4px);
+  -moz-transform: translateX(4px);
+  -ms-transform: translateX(4px);
+  -o-transform: translateX(4px);
+  transform: translateX(4px);
+
+  -webkit-animation-name: arrow-right;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes arrow-right {
+  0% {
+    -webkit-transform: translateX(0px);
+  }
+  50% {
+    -webkit-transform: translateX(4px);
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .post-tags {
+    display: block;
+    float: none;
+    clear: right;
+    margin-top: 5px;
+  }
+}
+
+
+.page-content .post-header h1 {
+      margin-bottom: 0px;
 }
