@@ -1,6 +1,6 @@
 ---
 layout: post
-title: A Scala script to take full size webpage sreenshots for different screen dimensions
+title: A Scala script to take full size webpage screenshots for different screen dimensions
 description: A post on how to use Selenium on a Scala sbt project to take fullpage screenshots of a website in different screen sizes
 date: 2020-04-19 06:00 +0200
 comments: true
