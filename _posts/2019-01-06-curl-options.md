@@ -135,4 +135,4 @@ Again, a more detailed description about this option can be found on the man pag
 ## Conclusion
 
 These are a few examples of curl usage that I found useful for me and I want to share as it could come handy for others too. Obviously, there are a lot more options and the way to find them is by searching the man page. 
-Hope that you find it useful too, and if want to mention some other options that I haven't mentioned, feel free to write a comment!!!
+Hope that you find it useful too, and if want to mention some other options that I haven't mentioned, just let me know on [Twitter](https://twitter.com/diamantidis_io)!!
