@@ -151,4 +151,4 @@ In this post, we have seen how to install, configure and use those tools. I opt 
 
 A potential next step is to configure some Continuous integration solution to take care of all these commands (and the unit tests as well) every time we check in some code, which is probably something I will cover in one of my next posts. 
 
-Thanks for reading, and should you have any questions or comments, just let me know on Twitter, email or in the comment section below!! 
+Thanks for reading, and should you have any questions or comments, just let me know on [Twitter](https://twitter.com/diamantidis_io) or by [email](mailto:diamantidis@outlook.com)!
