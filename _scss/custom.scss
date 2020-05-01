@@ -9,16 +9,11 @@ body {
 a:hover,
 a:visited {
   text-decoration: none;
-  /*color: #22527b;*/
-  color: var(--link-color);
-}
-
-a:visited {
-  color: var(--text-color);
+  color: var(--hover-color);
 }
 
 .site-header {
-  box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 2px -2px var(--divider-color);
   border: none;
 }
 
@@ -34,10 +29,10 @@ a:visited {
 }
 
 .site-header nav a:hover {
-  color: #337ab7;
+  color: var(--hover-color);
 }
 
-.site-title {
+.site-title, .site-title:visited {
   color: var(--title-color);
   font-size: 18px;
   flex-grow: 1;
@@ -48,14 +43,13 @@ a:visited {
 }
 
 .site-nav .page-link {
-  color: var(--link-color);
-  opacity: 0.6;
+  color: var(--nav-color);
 }
 
 .post-item,
 .post-content,
 article.post {
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid var(--border-color);
   color: var(--title-color);
   display: inline-block;
   padding-top: 1rem;
@@ -80,7 +74,7 @@ article.post {
 
 .post-link:hover {
   text-decoration: none;
-  color: #337ab7;
+  color: var(--hover-color);
 }
 
 .post-link {
@@ -93,7 +87,7 @@ article.post {
   width: 50%;
   max-width: 200px;
   height: 1px;
-  background-color: #337ab7;
+  background-color: var(--base-color);
   margin: 5px 0 5px;
 }
 
@@ -124,7 +118,8 @@ article.post {
 .post-tags a,
 .page-tags a {
   font-size: 12px;
-  color: #ffffff;
+  display: inline-block;
+  color: var(--tag-color);
   vertical-align: middle;
   letter-spacing: 1.3px;
   margin-top: 2px;
@@ -150,12 +145,12 @@ article.post {
   padding: 0.3em 0.9em;
   margin: 0 0.5em 0 0;
   white-space: nowrap;
-  background-color: #337ab7;
+  background-color: var(--base-color);
   border-radius: 12px;
 }
 
 .post-tag:hover {
-  background-color: #01549d;
+  background-color: var(--hover-color);
 }
 
 .site-footer {
@@ -165,15 +160,22 @@ article.post {
   text-align: center;
 }
 
-.site-footer a,
+.site-footer a {
+  color: var(--link-color);
+}
+
 .share a {
-  color: #337ab7;
+  color: var(--base-color);
   text-decoration: none;
 }
 
 .site-footer a:hover,
 .share a:hover {
-  color: #22527b;
+  color: var(--hover-color);
+}
+
+.footer-icons a {
+  color: var(--base-color);
 }
 
 .footer-icons ul {
@@ -218,15 +220,16 @@ p.excerpt {
 }
 
 .tag-title,
-.archive-year {
-  color: #ada8a8;
+.archive-year,
+h1#bio, h1#personal, h1#stack {
+  color: var(--title-color);
   font-weight: bold;
   font-size: 1.8em;
   line-height: 1.3;
 }
 
 .archive-month {
-  color: #ada8a8;
+  color: var(--title-color);
   font-weight: bold;
   font-size: 1.2em;
 }
@@ -265,9 +268,11 @@ p.excerpt {
   .site-header > .wrapper {
     padding: 16px 24px;
   }
+
   .site-nav {
     top: 24px;
   }
+
   .site-title {
     font-size: 16px;
   }
@@ -336,7 +341,7 @@ blockquote {
 }
 
 .pagination-link {
-  color: #337ab7;
+  color: var(--base-color);
   border: var(--border-color);
   border-width: 1pt;
   border-style: solid;
@@ -367,13 +372,12 @@ svg.fa.fa-arrow-right.fa-w-14 {
 }
 
 .read-more.animatable:hover > svg.fa.fa-arrow-right.fa-w-14 {
-  color: #0c5449;
+  color: var(--hover-color);
   -webkit-transform: translateX(4px);
   -moz-transform: translateX(4px);
   -ms-transform: translateX(4px);
   -o-transform: translateX(4px);
   transform: translateX(4px);
-
   -webkit-animation-name: arrow-right;
   -webkit-animation-duration: 1s;
   -webkit-animation-iteration-count: infinite;
@@ -383,9 +387,11 @@ svg.fa.fa-arrow-right.fa-w-14 {
   0% {
     -webkit-transform: translateX(0px);
   }
+
   50% {
     -webkit-transform: translateX(4px);
   }
+
   100% {
     -webkit-transform: translateX(0px);
   }
@@ -400,59 +406,59 @@ svg.fa.fa-arrow-right.fa-w-14 {
   }
 }
 
-
 .page-content .post-header h1 {
-      margin-bottom: 0px;
+  margin-bottom: 0px;
 }
-
-
 
 :root {
-    color-scheme: light dark;
-    --text-color: #383838;
-    --metatext-color: #4a4a4a; /*#757575*/
-    --page-color: #ffffff;
-    --border-color: #000000;
-    --link-color: #757575;
-    --title-color: #555;
-
-
-    --code-color: #212121;
-    --codeblock-color: #f8f8f8;
-    
-    --quotetext-color: #4a4a4a;
-    
-    
-    --accent-color: #268bd2;
-    --card-color: #fafafa;
-    --form-color: #dff7fe;
-    --alert-color: #CC0000;
-    --ok-color: green;
-    --highlight-color: yellow;
+  color-scheme: light dark;
+  --base-color: hsla(208, 56%, 46%, 1);
+  --hover-color: hsla(208, 75%, 31%, 1);
+  --text-color: hsla(0, 0%, 22%, 1);
+  --metatext-color: hsla(0, 0%, 29%, 1);
+  --page-color: hsla(0, 0%, 100%, 1);
+  --divider-color: hsla(0, 0%, 0%, 0.2);
+  --border-color: hsla(208, 27%, 65%, 1);
+  --nav-color: hsla(0, 0%, 46%, 1);
+  --link-color: hsla(208, 56%, 46%, 1);
+  --title-color: hsla(0, 0%, 33%, 1);
+  --tag-color: hsla(0, 0%, 100%, 1);
+  --highlight-color: hsla(208, 5%, 30%, 1);
+  --highlight-background-color: hsla(208, 75%, 85%, 1);
 }
 
-
-/* 
 @media screen and (prefers-color-scheme: dark) {
-:root {
-    --page-color: #212121;
-    --text-color: #eeeeee;
-    --metatext-color: #cacaca;
-    --border-color: #cacaca;
-    --link-color: #eeeeee;
-    --title-color: #eeeeee;
-
-
-    --codeblock-color: #000000;
-    --code-color: #ffffff;
-    
-    --quotetext-color: #cacaca;
-    
-    
-    --card-color: #000000;
-    --form-color: #268bd2;
-    --ok-color: #80ff80;
-    --highlight-color: #268bd2;
+  :root {
+    --base-color: hsla(208, 56%, 46%, 1);
+    --hover-color: hsla(208, 73%, 55%, 1);
+    --metatext-color: hsla(208, 15%, 70%, 1);
+    --nav-color: hsla(208, 75%, 75%, 1);
+    --link-color: hsla(208, 75%, 75%, 1);
+    --page-color: hsla(208, 7%, 24%, 1);
+    --text-color: hsla(0, 0%, 93%, 1);
+    --divider-color: hsla(208, 27%, 65%, 1);
+    --border-color: hsla(208, 27%, 65%, 1);
+    --title-color: hsla(0, 0%, 93%, 1);
+    --tag-color: hsla(0, 0%, 100%, 1);
+    --highlight-color: hsla(208, 75%, 99%, 1);
+    --highlight-background-color: hsla(208, 75%, 25%, 1);
+  }
 }
+
+.post-content a:not(:visited):not(:hover):not(:active) {
+  color: var(--link-color);
+  text-decoration: none;
 }
-*/
+
+code.highlighter-rouge {
+  color: var(--highlight-color);
+  background-color: var(--highlight-background-color);
+}
+
+.tags-post {
+  margin-top: 20px;
+  border-width: 1px;
+  border: solid var(--border-color);
+  border-radius: 12px;
+  padding: 13px;
+}
