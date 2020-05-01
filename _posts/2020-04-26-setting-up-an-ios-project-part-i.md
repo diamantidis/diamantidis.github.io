@@ -4,6 +4,7 @@ title: Setting up a new iOS project (Part I)
 description: A post about the steps I take every time I create a new iOS project(.gitignore, Bundler, CocoaPods, configurations & SwiftLint)
 date: 2020-04-26 06:00 +0200
 comments: true
+excerpt_separator: And of course
 tags: [iOS, Swift, Bundler, CocoaPods, SwiftLint]
 ---
 
