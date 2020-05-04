@@ -13,7 +13,7 @@
   </span>
   <div class="post-tags">
     {% for tag in page_content.tags %}
-      <a class="post-tag" href="/tags#{{ tag }}" title="{{ tag | strip }}">{{ tag | strip }}</a>
+      <a class="post-tag" href="/tags#{{ tag | cgi_escape }}" title="{{ tag | strip }}">{{ tag | strip }}</a>
     {% endfor %}
   </div>
 </div>

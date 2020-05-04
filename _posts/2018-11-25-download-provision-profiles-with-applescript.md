@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Download provision profiles with applescript
-description: How to use applescript, or other Open Scripting Architecture(OSA) languages, like Javascript, to automate downloading provision profiles from Xcode
+title: Download provision profiles with AppleScript
+description: How to use AppleScript, or other Open Scripting Architecture(OSA) languages, like JavaScript, to automate downloading provision profiles from Xcode
 date: 2018-11-25 08:00 +0200
 comments: true
-tags: [Applescript, Xcode, Javascript, OSA]
+tags: [AppleScript, Xcode, JavaScript, OSA]
 ---
 
 In my try to empty my To-do list, one item that caught my attention and I decided to give it a try is Applescript.

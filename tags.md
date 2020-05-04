@@ -18,7 +18,7 @@ permalink: /tags
 <div class="page-tags">
   {% for item in (0..site.tags.size) %}{% unless forloop.last %}
   {% assign tag = tag_words[item] %}  
-    <a class="page-tag" href="/tags#{{ tag }}">{{ tag }} ({{ site.tags[tag].size }}) </a>
+    <a class="page-tag" href="/tags#{{ tag | cgi_escape }}">{{ tag }} ({{ site.tags[tag].size }}) </a>
   {% endunless %}{% endfor %}
 </div>
 

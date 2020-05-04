@@ -22,6 +22,7 @@ layout: default
       {% capture full_url %}{{ site.url }}{{ site.baseurl }}{{ page.url }}{% endcapture %}
       {% if social.name == "Twitter" and social.share == true %}
         <a href="//twitter.com/share?text={{ page.title | cgi_escape }}&url={{ full_url | cgi_escape}}"
+          aria-label="Share on Twitter"
           onclick="window.open(this.href, '{{ social.icon }}-share', 'width=550,height=255');return false;">
           <span class="fa-stack fa-lg">
               <i class="fa fa-circle fa-stack-2x"></i>
@@ -31,6 +32,7 @@ layout: default
       {% endif %}
       {% if social.name == "Facebook" and social.share == true %}
         <a href="//www.facebook.com/sharer.php?t={{ page.title | cgi_escape }}&u={{ full_url | cgi_escape}}"
+          aria-label="Share on Facebook"
           onclick="window.open(this.href, '{{ social.icon }}-share', 'width=550,height=255');return false;">
           <span class="fa-stack fa-lg">
               <i class="fa fa-circle fa-stack-2x"></i>
@@ -40,6 +42,7 @@ layout: default
       {% endif %}
       {% if social.name == "LinkedIn" and social.share == true %}
         <a href="//www.linkedin.com/shareArticle?mini=true&url={{ full_url | cgi_escape}}"
+          aria-label="Share on LinkedIn"
           onclick="window.open(this.href, '{{ social.icon }}-share', 'width=550,height=255');return false;">
               <span class="fa-stack fa-lg">
               <i class="fa fa-circle fa-stack-2x"></i>

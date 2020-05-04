@@ -3,7 +3,7 @@ layout: post
 title: Why I start a blog
 date: 2018-09-23 10:15 +0200
 comments: true
-tags: [personal, blog]
+tags: [Personal, Blog]
 ---
 
 ## Hello world, this is my first blog post!! 🚀

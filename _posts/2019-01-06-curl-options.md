@@ -4,7 +4,7 @@ title: Useful Curl features
 description: A list of options when using curl to send API requests to a server from the terminal like timing breakdown, file upload, proxy and url specification
 date: 2019-01-06 08:00 +0200
 comments: true
-tags: [Curl, API, Terminal, File Upload]
+tags: [Curl, "Command Line", "File Upload"]
 ---
 
 Happy New Year everyone!! This is my first post of the year!!  

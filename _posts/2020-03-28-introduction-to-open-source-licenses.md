@@ -4,7 +4,7 @@ title: A brief introduction to open source licenses
 description: A brief guide to open source licenses and a presentation of the most popular licenses (MIT, BSD, Apache License, GNU GPL).
 date: 2020-03-28 06:00 +0200
 comments: true
-tags: ["Open Source", licenses]
+tags: ["Open Source", Licenses]
 ---
 
 As you may have noticed from the URL, I am using [GitHub Pages] to host this blog, which means that the whole code is open-sourced. Amongst other things, and one thing that I totally missed until recently, is that an open source repository should have a LICENSE.
