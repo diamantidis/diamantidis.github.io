@@ -4,7 +4,7 @@ title: How to find large files from the command line
 description: A post about how to find out which files consume most of the storage disk and how to clean them to recover disk space
 date: 2020-01-04 06:00 +0200
 comments: true
-tags: [Unix, storage, "command line"]
+tags: [Unix, Storage, "Command Line"]
 ---
 
 Have you ever ran into issues with your storage disk being full?  

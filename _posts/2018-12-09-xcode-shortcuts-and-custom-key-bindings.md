@@ -4,7 +4,7 @@ title: Xcode shortcuts and custom key bindings
 description: A list of useful Xcode shortcuts and the steps to add a custom key binding
 date: 2018-12-08 00:00 +0200
 comments: true
-tags: [Xcode, Shortcuts, Productivity]
+tags: [Xcode, Productivity]
 ---
 
 A recent discussion with a colleague about the use of the Xcode shortcuts is the reason behind this blog post.

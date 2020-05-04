@@ -4,7 +4,7 @@ title: Why I choose Jekyll over competition
 description: Why I choose Jekyll over Hugo, CMSs and Medium
 date: 2018-10-23 08:02 +0200
 comments: true
-tags: [Jekyll, personal, blog]
+tags: [Jekyll, Personal, Blog]
 ---
 
 A few months ago, I took the decision that I wanted to start writing some articles. At that time, one of the first things to consider, and that would definitely affect my efforts, was the decision of the platform where I would host the posts. The options were countless. For this reason, I created a list of criteria that were important to me, and based on those I came to the decision to try Jekyll. 

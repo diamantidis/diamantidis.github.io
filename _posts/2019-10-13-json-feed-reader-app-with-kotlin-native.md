@@ -4,7 +4,7 @@ title: JSON feed reader app with Kotlin Native
 description: A post describing how to create a JSON feed reader library with Kotlin Native and how to later use it from an iOS and an Android app
 date: 2019-10-13 06:00 +0200
 comments: true
-tags: ["JSON feed", Kotlin, KN]
+tags: ["JSON feed", Kotlin, "Kotlin Native"]
 ---
 
 Having spent some time exploring and learning more about Kotlin Native, time has come to start building an app where I can use Kotlin Native in a real world use case. After a lot of ideas, I finally decided to build a feed reader app for this blog. 

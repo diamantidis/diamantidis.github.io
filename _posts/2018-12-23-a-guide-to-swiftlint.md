@@ -1,10 +1,10 @@
 ---
 layout: post
 title: A guide to SwiftLint
-description: An introduction guide to setup and use SwiftLint in Xcode, Fastlane and command line
+description: An introduction guide to setup and use SwiftLint in Xcode, fastlane and command line
 date: 2018-12-23 10:30 +0200
 comments: true
-tags: [SwiftLint, Xcode, Fastlane, CI]
+tags: [SwiftLint, Xcode, fastlane, CI]
 ---
 
 [SwiftLint](https://github.com/realm/SwiftLint) is a great tool to enforce Swift style and conventions.
