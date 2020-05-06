@@ -23,7 +23,6 @@ a:visited {
 
 .site-header > .wrapper {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   padding: 16px 32px;
 }
@@ -38,7 +37,20 @@ a:visited {
   flex-grow: 1;
 }
 
+.title-wrapper {
+  display: flex;
+}
+
 .site-title h1 {
+  margin-bottom: 0px;
+}
+
+.site-header > .wrapper > .left-container {
+  display: block;
+  flex-grow: 1;
+}
+
+.site-header ul {
   margin-bottom: 0px;
 }
 
@@ -123,7 +135,7 @@ article.post {
   vertical-align: middle;
   letter-spacing: 1.3px;
   margin-top: 2px;
-  margin-bottom: 2px;
+  margin-bottom: 5px;
 }
 
 .post-subheader {
@@ -131,8 +143,7 @@ article.post {
 }
 
 .post-tags {
-  display: inline-block;
-  vertical-align: top;
+  display: block;
   float: right;
 }
 
@@ -174,8 +185,17 @@ article.post {
   color: var(--hover-color);
 }
 
+.social-icon {
+  min-width: 42px;
+    display: table;
+    min-height: 42px;
+}
+
 .footer-icons a {
   color: var(--base-color);
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
 }
 
 .footer-icons ul {
@@ -183,7 +203,7 @@ article.post {
 }
 
 .footer-icons li {
-  display: inline;
+  display: inline-block;
 }
 
 .site-footer i.fa.fa-heart {

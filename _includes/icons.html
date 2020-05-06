@@ -1,64 +1,81 @@
+{% assign size = dimension | strip | default: "lg" %}
+
 {% if site.footer-links.twitter %}
 <li>
-	<a href="https://twitter.com/{{ site.footer-links.twitter }}" aria-label="Twitter">
-        <span class="fa-stack fa-lg">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-        </span>
-	</a>
+    <div class="social-icon">
+        <a href="https://twitter.com/{{ site.footer-links.twitter }}" aria-label="Twitter">
+            <span class="fa-stack fa-{{ size }}">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+            </span>
+        </a>
+    </div>
+
 </li>
 {% endif %}
 {% if site.footer-links.facebook %}
 <li>
-	<a href="https://www.facebook.com/{{ site.footer-links.facebook }}" aria-label="Facebook">
-		<span class="fa-stack fa-lg">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-        </span>
-	</a>
+    <div class="social-icon">
+
+        <a href="https://www.facebook.com/{{ site.footer-links.facebook }}" aria-label="Facebook">
+            <span class="fa-stack fa-{{ size }}">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+            </span>
+        </a>
+    </div>
+
 </li>
 {% endif %}
 
 {% if site.footer-links.github %}
 <li>
-	<a href="https://github.com/{{ site.footer-links.github }}" aria-label="GitHub">
-		<span class="fa-stack fa-lg">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-        </span>
-	</a>
+    <div class="social-icon">
+        <a href="https://github.com/{{ site.footer-links.github }}" aria-label="GitHub">
+            <span class="fa-stack fa-{{ size }}">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+            </span>
+        </a>
+    </div>
 </li>
 {% endif %}
 {% if site.footer-links.linkedin %}
 <li>
-	<a href="http://linkedin.com/in/{{ site.footer-links.linkedin }}" aria-label="LinkedIn">
-		<span class="fa-stack fa-lg">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-        </span>
-	</a>
+    <div class="social-icon">
+        <a href="http://linkedin.com/in/{{ site.footer-links.linkedin }}" aria-label="LinkedIn">
+            <span class="fa-stack fa-{{ size }}">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+            </span>
+        </a>
+    </div>
 </li>
 
 {% endif %}
 {% if site.footer-links.rss %}
 <li>
-	<a href="{{ site.baseurl }}/feed.xml" aria-label="RSS Feed">
-		<span class="fa-stack fa-lg">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
-        </span>
-	</a>
+    <div class="social-icon">
+        <a href="{{ site.baseurl }}/feed.xml" aria-label="RSS Feed">
+            <span class="fa-stack fa-{{ size }}">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+            </span>
+        </a>
+    </div>
 </li>
 {% endif %}
 
 
 {% if site.footer-links.email %}
 <li>
-	<a href="mailto:{{ site.footer-links.email }}" aria-label="Email">
-		<span class="fa-stack fa-lg">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
-        </span>
-	</a>
+    <div class="social-icon">
+        <a href="mailto:{{ site.footer-links.email }}" aria-label="Email">
+            <span class="fa-stack fa-{{ size }}">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+            </span>
+        </a>
+    </div>
 </li>
 {% endif %}
