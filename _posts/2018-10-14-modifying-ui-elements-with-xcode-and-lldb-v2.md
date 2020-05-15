@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Modifying UI elements with Xcode and LLDB v2 
+title: Modifying UI elements with Xcode and LLDB v2
 description: Modifying UI elements with Xcode and LLDB v2 (Aliases, Python and Chisel)
 date: 2018-10-14 08:02 +0200
 comments: true
 tags: [iOS, Xcode, LLDB, Python]
 ---
 
-In a [previous post](/2018/09/30/modifying-ui-elements-with-lldb), I wrote an introduction about the use of LLDB expressions to modify the UI elements. In this post, I will continue on the same topics and I will focus on how to get the most out of the LLDB expressions. 
-No tool will ever work and get user adoption if it is too complicated. 
+In a [previous post](/2018/09/30/modifying-ui-elements-with-lldb), I wrote an introduction about the use of LLDB expressions to modify the UI elements. In this post, I will continue on the same topics and I will focus on how to get the most out of the LLDB expressions.
+No tool will ever work and get user adoption if it is too complicated.
 For this reason, I will write about a number of alternatives to make LLDB expressions easier to use.
 
-## Command aliases 
+## Command aliases
 First and foremost, having to type (or copy) a command of this length (e.g `po [[[UIApplication sharedApplication] keyWindow] recursiveDescription]`) may discourage developers from using these LLDB commands. Fortunately, there is a solution to this problem.
 
 It is called `Command Aliases`.
@@ -24,7 +24,7 @@ command alias flush expression -l objc -- (void)[CATransaction flush]
 command regex change_color 's/(.+) (.+)/e (void)[(id)%1 setBackgroundColor:[UIColor %2]]/'
  ```
 
-The first two commands are already described in the previous post. The first one is to print the view hierarchy and from there get the memory address of the button, and the second one is to refresh the UI. 
+The first two commands are already described in the previous post. The first one is to print the view hierarchy and from there get the memory address of the button, and the second one is to refresh the UI.
 
 The last one is an example of how to use `regex` to create a command with parameters. In this particular case, a memory address and the name of the color (blueColor) is expected. As an outcome, the background color of the button will change.
 For example, running `change_color 0x7f9f7e40cd70  blueColor` and `flush` will result in changing the background color of the button to blue.
@@ -40,7 +40,7 @@ An easy way to start writing a python command is to use the Xcode console and ju
 
 ![command script add help screenshot]({{site.url}}/assets/lldb2/script_add_help_commmand.png)
 
-Alternatively, you can create a script file, that can be added to the repo and a version control system, and then run the command `command script import <script_file_path>` on the Xcode console or better add it to the `~/.lldbinit` file. 
+Alternatively, you can create a script file, that can be added to the repo and a version control system, and then run the command `command script import <script_file_path>` on the Xcode console or better add it to the `~/.lldbinit` file.
 
 To write a python function that will be used as a new LLDB command, a function that takes four arguments should be implemented:
 ```python
@@ -76,9 +76,62 @@ In the example above:
 	- `filter_button_by_label`: is the command function. (the one described previously as `command_function(debugger, command, result, internal_dict)`)
 - `last argument` (for example, `filter_button_by_label`): is the command that will be used in the Xcode console to invoke this function.
 
-The full example can be found in the following gist: 
+The full example can be found either on this [gist] or on the snippet below:
 
-{% gist d95531fd571c360078fcc795d1967ded filter.py %}
+```python
+import lldb
+import commands
+import optparse
+import shlex
+import re
+
+def create_options():
+    usage = "usage: filter_button_by_label [options]"
+    description='''
+        This command is used to find a UIButton with a label matching the option provided as option
+    '''
+    parser = optparse.OptionParser(description=description, prog='filter_button_by_label', usage=usage)
+    parser.add_option('-n', '--needle', type='string', dest='needle', help='Text to search on UIButton labels.')
+
+    return parser
+
+def filter_button_by_label(debugger, command, result, internal_dict):
+
+    target = debugger.GetSelectedTarget()
+    process = target.GetProcess()
+    mainThread = process.GetThreadAtIndex(0)
+    currentFrame = mainThread.GetSelectedFrame()
+
+    # Parse arguments and options
+    command_args = shlex.split(command)
+    parser = create_options()
+    try:
+        (options, args) = parser.parse_args(command_args)
+        # if needle is not provided
+        if not options.needle:
+            parser.print_help()
+            return
+    except:
+        return
+
+    view_hierarchy_command = '(id)[[[UIApplication sharedApplication] keyWindow] recursiveDescription]'
+    view_hierarchy = currentFrame.EvaluateExpression(view_hierarchy_command).GetObjectDescription()
+
+    for match in re.finditer('.*<UIButton: (0x[0-9a-fA-F]*);.*', view_hierarchy, re.IGNORECASE):
+
+        view = match.groups()[-1]
+
+        created_command = '(NSString *)[ (id)' + view + ' currentTitle]'
+        title = currentFrame.EvaluateExpression(created_command).GetObjectDescription()
+
+        if title == options.needle:
+            print >>result, view
+        else:
+            print >>result, "Not Found"
+
+def __lldb_init_module(debugger, internal_dict):
+    debugger.HandleCommand('command script add -f ' + __name__ + '.filter_button_by_label filter_button_by_label')
+```
 
 This is an example of how to get the memory address of a button from the text of the button label. It can be called like `filter_button_by_label -n "Press me"` and it will return the memory address of that button.
 
@@ -96,7 +149,7 @@ It provides a plethora of commands that probably solves most of the problems any
 
 Two of my favourite commands are the following:
 
-* `findinstances` which can be used to find instances of specified ObjC classes, and 
+* `findinstances` which can be used to find instances of specified ObjC classes, and
 * `pcurl` which can be used to print the NSURLRequest as curl command, that can later be used for debugging purposes.
 
 ## Conclusion
@@ -107,3 +160,6 @@ Furthermore, I decided to follow this flow and not just mention the final soluti
 
 > There is nothing impossible to him who will try.
 > - Alexander the Great
+
+
+[gist]: https://gist.github.com/diamantidis/d95531fd571c360078fcc795d1967ded
