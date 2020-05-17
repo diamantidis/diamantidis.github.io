@@ -9,6 +9,6 @@ prose.lint_files
 prose.ignored_words = [
 	"Swift", "Multiplatform", "Xcode", "iOS", "Kotlin", "fastlane", "Fastfile", 
 	"Gradle", "macOS", "SwiftLint", "detekt", "CocoaPods", "html", "txt", "xml",
-	"GitLab", "repo", "bundler", "AppCenter", "TestFlight"
+	"GitLab", "repo", "bundler", "AppCenter", "TestFlight", "Codecov"
 ]
 prose.check_spelling
