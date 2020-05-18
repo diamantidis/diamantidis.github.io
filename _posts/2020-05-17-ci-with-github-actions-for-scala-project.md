@@ -123,17 +123,8 @@ Now, let's define our workflow. In our case, we want to run unit tests, generate
 Here is a example of such a workflow:
 ```yml
 jobs:
-  setup:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v2
-    - name: Set up JDK 1.8
-      uses: actions/setup-java@v1
-      with:
-        java-version: 1.8
   test:
     runs-on: ubuntu-latest
-    needs: setup
     steps:
     - uses: actions/checkout@v2
     - name: Run tests
@@ -146,7 +137,6 @@ jobs:
         fail_ci_if_error: true
   lint:
     runs-on: ubuntu-latest
-    needs: setup
     steps:
     - uses: actions/checkout@v2
     - name: Formatting
@@ -155,7 +145,7 @@ jobs:
 
 > **Note**: This snippet is also available in [this gist].
 
-Let's explain what we are doing in this snippet. In total we have 3 jobs: `setup`, `test`, and `lint`. On the `setup` job, we setup the JDK which is required for the two other. To declare this kind of relationship between the jobs, we use the `needs: setup` on the two other jobs. Then, on the `test` job, we define three steps: one to run the test with coverage, one to generate the coverage report and one to upload the coverage to `Codecov`(More on that [in a while](#codecov)). Finally, on the `lint` job, we define one step that run a command to check for any `scalafmt` issues.
+Let's explain what we are doing in this snippet. In total we have 2 jobs named `test` and `lint`. On the `test` job, we define three steps: one to run the test with coverage, one to generate the coverage report and one to upload the coverage to `Codecov`(More on that [in a while](#codecov)). On the `lint` job, we define one step that run a command to check for any `scalafmt` issues.
 
 Our GitHub Action workflow is ready!!
 
