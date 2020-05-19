@@ -13,7 +13,7 @@ Until the moment I found that Chrome DevTools has an option to capture full size
 
 ![Chrome's DevTool capture full size screenshots screenshot]({{site.url}}/assets/screenshot_script/devTools_capture_screenshot.png)
 
-My first thought was that this is great, I could use to track the evolution of the UI on my blog over time. A second later though, a light bulb went on in my head. :bulb:
+My first thought was that this is great, I could use it to track the evolution of the UI on my blog over time. A second later though, a light bulb went on in my head. :bulb:
 
 What if I could write a script that would do the same? This would not only help me keep a record of the UI changes over time but potentially could ease the tedious and inefficient process of changing devices and making sure that everything looks good. :thinking: :thought_balloon: 
 
