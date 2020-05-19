@@ -13,8 +13,8 @@ I am a polyglot software developer, living in Stockholm. I am self-motivated and
 I studied at the Athens University of Economics and Business and more specifically at the Department of Management Science and Technology.
 Briefly, the objective of this programme is the use of quantitative methods in conjunction with information and communication technologies in decision making, the design of business strategy and the re-engineering of business processes.
 
-During my studies, I manage to develop T-shaped skills due to multi-disciplinary curriculum that consist of courses ranging from Finance, Programming and Business Management to name a few and the required stream selection during the 6th semester.
-I follow the "Quantitative method in Economics and Management Science" stream, which gives my the opportunity to delve deeper on the mathematical and algorithmic foundations needed to model and solve decision problems. 
+During my studies, I managed to develop T-shaped skills due to the multi-disciplinary curriculum that consists of courses ranging from Finance, Programming and Business Management to name a few and the required stream selection during the 6th semester.
+I followed the `Quantitative method in Economics and Management Science` stream, which gave me the opportunity to delve deeper on the mathematical and algorithmic foundations needed to model and solve decision problems. 
 
 As part of the required internship on the last semester of my studies at February 2013, I started my career as a software developer. Throughout my career so far, I had the chance to work on a wide range of technologies, ranging 
 from front-end and back-end development to building integrations, mobile apps and developing analytics pipelines. 
