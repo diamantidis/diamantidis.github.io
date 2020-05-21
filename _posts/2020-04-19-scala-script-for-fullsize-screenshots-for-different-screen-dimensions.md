@@ -250,7 +250,7 @@ Feel free to reach out to me on [Twitter] and share your comments about this pos
 [page about supported Browser Drivers]: https://www.selenium.dev/ecosystem/
 [ChromeDriver]: https://sites.google.com/a/chromium.org/chromedriver/
 
-[GitHub project]: https://github.com/diamantidis/scala-screenshots
+[GitHub project]: https://github.com/diamantidis/scala-screenshots/tree/31d1b6b
 
 [ZIO]: https://zio.dev/
 
