@@ -1,0 +1,10 @@
+language: ruby
+rvm:
+  - 2.6.6
+cache:
+  - bundler
+install:
+  - gem install bundler -v '2.1.4'
+  - bundle install
+script:
+  - 'if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then bundle exec danger; fi'
