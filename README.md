@@ -1,7 +1,7 @@
 # [diamantidis.github.io](https://diamantidis.github.io) 
 
 [![Jekyll](https://img.shields.io/badge/powered%20by-jekyll-blue)](https://jekyllrb.com/)
-[![Build Status](https://travis-ci.org/diamantidis/diamantidis.github.io.svg?branch=source)](https://travis-ci.org/diamantidis/diamantidis.github.io) 
+![CI](https://github.com/diamantidis/diamantidis.github.io/workflows/CI/badge.svg)
 [![License](https://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://github.com/diamantidis/diamantidis.github.io/blob/source/LICENSE)
 [![Twitter: @diamantidis_io](https://img.shields.io/badge/twitter-@diamantidis_io-blue.svg?style=flat)](https://twitter.com/diamantidis_io)
 
@@ -18,7 +18,7 @@ This blog is built with [Jekyll], an open source static site generator. The cont
 
 The repository has two main branches: [`source`] and [`master`]. The `source` branch contains the Jekyll project while the `master` branch contains the final version of the site, as it is served on [`diamantidis.github.io`].
 
-The release process is handled by [Travis CI]. On every PR against the `source` branch, a `Travis CI` job runs using [Danger] and [Danger-prose] to perform a check for typos and lint prose. When the PR is approved and merged to `source`, another `Travis CI` job runs to build the Jekyll project and push the generated site onto the `master` branch. 
+On every PR against the `source` branch, a `Travis CI` job runs using [Danger] and [Danger-prose] to perform a check for typos and lint prose. When the PR is approved and merged to `source`, a  `GitHub Actions` workflow builds the Jekyll project and push the generated site onto the `master` branch. 
 
 ## How to setup locally
 
@@ -68,7 +68,6 @@ This project is licensed under the terms of the MIT license. See the [LICENSE] f
 [`source`]: https://github.com/diamantidis/diamantidis.github.io/tree/source
 [`master`]: https://github.com/diamantidis/diamantidis.github.io/tree/master
 [`diamantidis.github.io`]: https://diamantidis.github.io
-[Travis CI]: https://travis-ci.org/
 [Danger]: https://github.com/danger/danger
 [Danger-prose]: https://github.com/dbgrandi/danger-prose
 [Git]: http://git-scm.com/
