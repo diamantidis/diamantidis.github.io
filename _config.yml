@@ -34,6 +34,13 @@ sass:
   sass_dir: _scss
   style: :compressed
 
+include:
+  - _pages
+header_pages:
+  - _pages/about.md
+  - _pages/archive.md
+  - _pages/tags.md
+
 footer-links:
   rss: rss
   twitter: diamantidis_io
@@ -44,7 +51,6 @@ footer-links:
 
 # Exclude from processing.
 exclude:
-  - Rakefile
   - Gemfile
   - Gemfile.lock
   - vendor
@@ -74,8 +80,13 @@ social:
     share: true
 
 # Pagination
-paginate: 7
-paginate_path: /page/:num/
+pagination:
+  enabled: true
+  collection: 'posts'
+  per_page: 7
+  permalink: '/page/:num/'
+  sort_field: 'date'
+  sort_reverse: true
 
 twitter:
   username: diamantidis_io

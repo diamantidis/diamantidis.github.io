@@ -3,13 +3,9 @@ layout: default
 ---
 
 <div class="home">
-  {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
-  {%- endif -%}
-
   {{ content }}
 
-  {%- if paginator.posts.size > 0 -%}
+  {%- if paginator.total_pages > 0 -%}
     <ul class="post-list">
       {%- for post in paginator.posts -%}
       <li class="post-item">
