@@ -140,11 +140,19 @@ article.post {
 
 .post-subheader {
   padding: 5px 0px 5px 0px;
+  overflow: auto;
+  display: inline-block;
+  width: 100%;
 }
 
 .post-tags {
-  display: block;
+  display: inline-block;
   float: right;
+}
+
+.outer-post-tags {
+  float: right;
+  display: inline-block;
 }
 
 .excerpt {
@@ -424,6 +432,11 @@ svg.fa.fa-arrow-right.fa-w-14 {
     clear: right;
     margin-top: 5px;
   }
+  .outer-post-tags {
+    display: block;
+    float: none;
+    clear: right;
+  }
 }
 
 .page-content .post-header h1 {
@@ -475,7 +488,7 @@ code.highlighter-rouge {
   background-color: var(--highlight-background-color);
 }
 
-.tags-post {
+.archive-post, .tags-post {
   margin-top: 20px;
   border-width: 1px;
   border: solid var(--border-color);
