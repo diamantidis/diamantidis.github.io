@@ -5,6 +5,12 @@ description: A post about the use of GraphQL custom types like scalar, object, e
 date: 2020-05-31 06:00 +0200
 comments: true
 tags: [Swift, Vapor, GraphQL, Apollo, iOS]
+image:
+    path: /assets/social/graphql-types-swift.jpg
+    width: 769
+    height: 512
+twitter:
+    card: summary_large_image
 ---
 
 By default, [GraphQL] supports only a handful of basic types that we can use on the schema definition. This list includes `Int`, `Float`, `String`, `Boolean` and `ID`. But as you can easily understand relying solely on these types is quite restrictive. What if we want to add a date field? Or some other kind of data?
