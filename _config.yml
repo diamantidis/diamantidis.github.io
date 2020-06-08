@@ -101,3 +101,8 @@ compress_html:
   blanklines: false
   profile: false
   startings: []
+
+collections:
+  tips:
+    output: true
+    output_tags: true

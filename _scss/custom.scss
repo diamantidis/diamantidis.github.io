@@ -458,6 +458,8 @@ svg.fa.fa-arrow-right.fa-w-14 {
   --tag-color: hsla(0, 0%, 100%, 1);
   --highlight-color: hsla(208, 5%, 30%, 1);
   --highlight-background-color: hsla(208, 75%, 85%, 1);
+  --tips-card-background-color: hsla(0, 0%, 100%, 1);
+  --tips-card-shadow-color: hsla(0, 0%, 46%, 1);
 }
 
 @media screen and (prefers-color-scheme: dark) {
@@ -475,6 +477,8 @@ svg.fa.fa-arrow-right.fa-w-14 {
     --tag-color: hsla(0, 0%, 100%, 1);
     --highlight-color: hsla(208, 75%, 99%, 1);
     --highlight-background-color: hsla(208, 75%, 25%, 1);
+    --tips-card-background-color: hsla(208, 7%, 21%, 1);
+    --tips-card-shadow-color: hsla(0, 0%, 15%, 1);
   }
 }
 
@@ -494,4 +498,74 @@ code.highlighter-rouge {
   border: solid var(--border-color);
   border-radius: 12px;
   padding: 13px;
+}
+
+.tips-post {
+  border-width: 1px;
+  border-radius: 12px;
+  padding: 13px;
+  display: block;
+  background: var(--tips-card-background-color);
+  box-shadow: 4px 4px 10px 5px var(--tips-card-shadow-color);
+  display: grid;
+  grid-gap: 0px;
+  grid-template-rows: max-content max-content max-content auto max-content;
+}
+
+.tips-post > .post-footer {
+  display: block;
+}
+
+.tips-post h2 {
+  margin-bottom: 0px;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.tips-post > .post-subheader {
+  display: block;
+}
+
+.tips-post .post-tags {
+  display: block;
+  float: none;
+}
+
+.tips-post .post-tags {
+  display: block;
+  float: none;
+}
+
+.tips ul.post-list {
+  grid-template-columns: repeat(2, 1fr);
+  display: grid;
+  grid-gap: 15px 50px;
+}
+
+@media only screen and (max-width: 600px) {
+  .tips ul.post-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+span.posts-type-label,
+span.tips-type-label {
+  font-size:0.8em;
+}
+
+span.posts-type-label:before,
+span.tips-type-label:before {
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  padding-right: 0.5em;
+}
+
+span.posts-type-label:before {
+  content: "\f0f6";
+}
+
+span.tips-type-label:before {
+  content: "\f0eb";
 }

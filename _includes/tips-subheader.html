@@ -1,0 +1,14 @@
+<div class="post-subheader">
+  <span class="post-date">
+    {{ page_content.date | date: "%B %-d, %Y" }}
+  </span>
+  <span class="post-divider">-</span>
+  <span class="post-minutes">
+    {% capture words %} 
+      {{ page_content.content | number_of_words }} 
+    {% endcapture %}
+    {% unless words contains "-" %} 
+      {{ words | plus: 250 | divided_by: 250 | append: " min read" }} 
+    {% endunless %}
+  </span>
+</div>
