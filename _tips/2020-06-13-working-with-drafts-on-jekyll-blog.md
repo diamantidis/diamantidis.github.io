@@ -1,8 +1,8 @@
 ---
 layout: tips
 title: Working with drafts on a Jekyll blog
-description: "How to create and serve drafts when working on a blog built with Jekyll"
-date: 2020-06-08 06:00 +0200
+description: How to create and serve drafts when working on a blog built with Jekyll
+date: 2020-06-13 06:00 +0200
 tags: [Jekyll]
 image:
     path: /assets/social/tips/working-with-drafts-on-a-jekyll-blog.png
@@ -14,7 +14,7 @@ twitter:
 
 Did you know that Jekyll supports drafts by default?
 
-The process of writing a post may span to multiple days; from ideation to writing the post, polishing and eventually publishing.
+The process of writing a post may span to multiple days; from the time you jot down an idea, to writing the post, polishing and eventually publishing it.
 
 Instead of creating a post, you can start using drafts for those unfinished posts that you don't want to publish yet.
 
@@ -33,4 +33,4 @@ jekyll server --watch --drafts
 ```
 And that's it!
 
-You can now start writing your posts using drafts! :rocket:
+You can now streamline your writing process using drafts! :rocket:
