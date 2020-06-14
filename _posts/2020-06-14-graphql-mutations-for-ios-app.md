@@ -64,7 +64,7 @@ let future = Future<String, AppError> { promise in
 ```
 In this example, our Future can either generate a `String` value or it will fail with an error of type `AppError`. Then, inside the closure, we are passing the result to the promise closure.
 
-And that'a brief intro to Combine's Future. Let's now jump to the GraphQL mutations!
+And that's brief intro to Combine's Future. Let's now jump to the GraphQL mutations!
 
 ## Implementation
 
