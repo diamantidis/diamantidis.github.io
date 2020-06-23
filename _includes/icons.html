@@ -13,6 +13,7 @@
 
 </li>
 {% endif %}
+
 {% if site.footer-links.facebook %}
 <li>
     <div class="social-icon">
@@ -40,6 +41,7 @@
     </div>
 </li>
 {% endif %}
+
 {% if site.footer-links.linkedin %}
 <li>
     <div class="social-icon">
@@ -51,8 +53,21 @@
         </a>
     </div>
 </li>
-
 {% endif %}
+
+{% if site.footer-links.instagram %}
+<li>
+    <div class="social-icon">
+        <a href="https://instagram.com/{{ site.footer-links.instagram }}" aria-label="Instagram">
+            <span class="fa-stack fa-{{ size }}">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+            </span>
+        </a>
+    </div>
+</li>
+{% endif %}
+
 {% if site.footer-links.rss %}
 <li>
     <div class="social-icon">
@@ -65,7 +80,6 @@
     </div>
 </li>
 {% endif %}
-
 
 {% if site.footer-links.email %}
 <li>
