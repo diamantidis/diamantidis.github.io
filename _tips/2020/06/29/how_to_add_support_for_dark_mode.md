@@ -33,7 +33,7 @@ On the `:root` level, we will define two variables; one with the color of the ba
 }
 ```
 
-Then, we will define a `prefers-color-scheme` media query for the dark color theme. In this media query, we will override the values of the variables that we defined in the previous step
+Then, we will define a `prefers-color-scheme` media query for the dark color theme. In this media query, we will override the values of the variables that we defined in the previous step.
 
 
 ```css
@@ -45,7 +45,7 @@ Then, we will define a `prefers-color-scheme` media query for the dark color the
 }
 ```
 
-Lastly, we will use those variables to assign their values to CSS properties. In our case, we will use the variable to set the background and the color of the body
+Lastly, we will use those variables to assign their values to CSS properties. In our case, we will use the variable to set the background and the color of the body.
 
 ```css
 body {
