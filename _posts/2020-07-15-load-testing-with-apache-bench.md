@@ -125,7 +125,7 @@ Until next time!
 [Apache Bench]: https://httpd.apache.org/docs/2.4/programs/ab.html
 [documentation]: https://httpd.apache.org/docs/2.4/programs/ab.html
 
-[JMeter]: [https://jmeter.apache.org/]
+[JMeter]: https://jmeter.apache.org/
 [K6]: https://k6.io/
 [Gatling]: https://gatling.io/
 
