@@ -36,8 +36,8 @@ Then, we will use the `grep` and `sed` command to get the name of the target and
 
 help:
 	@grep -E '^[a-zA-Z0-9_-]+:.*?## .*$$' $(MAKEFILE_LIST) \
-	| sed -n 's/^\(.*\): \(.*\)##\(.*\)/\1\3/p' \
-	| column -t  -s ' '
+	| sed -n 's/^\(.*\): \(.*\)##\(.*\)/\1{{MAKEFILE_TARGET_SEPARATOR}}\3/p' \
+	| column -t  -s '{{MAKEFILE_TARGET_SEPARATOR}}'
 ```
 
 We will also set the `.PHONY` and the `.DEFAULT_GOAL` variables. The last one will make `help` the default target when running `make` without a specific target.
