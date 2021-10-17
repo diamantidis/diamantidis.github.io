@@ -31,7 +31,7 @@ Let's get started!
 Flutter doesn't have built in support for WebViews.
 As a result, we are going to use a package with name [webview_flutter].
 
-So first thing first is to edit `pubspeck.yaml` and add the dependency:
+So first thing first is to edit `pubspec.yaml` and add the dependency:
 ```yaml
 dependencies:
   flutter:
@@ -81,7 +81,7 @@ Then, we will open this file and add the following content:
 
 This HTML file produces a web page with a label and a toggle switch. Our goal for this article is to listen to the toggle events from the app and update the text on the label to represent the corresponding state of the toggle switch.
 
-To be able to access this `html` file from our application, we have to edit `pubspeck.yaml` and add the following under the `flutter` section:
+To be able to access this `html` file from our application, we have to edit `pubspec.yaml` and add the following under the `flutter` section:
 ```yaml
 flutter:
 
