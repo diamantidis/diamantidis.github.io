@@ -58,12 +58,22 @@ a:visited {
   color: var(--nav-color);
 }
 
-.post-item,
+
+.post-item {
+  border-bottom: 1px solid var(--border-color);
+  color: var(--title-color);
+  display: inline-block;
+  padding-top: 1rem;
+  padding-right: 0px;
+  padding-bottom: 0.8rem;
+  padding-left: 0px;
+}
+
 .post-content,
 article.post {
   border-bottom: 1px solid var(--border-color);
   color: var(--title-color);
-  display: inline-block;
+  display: block;
   padding-top: 1rem;
   padding-right: 0px;
   padding-bottom: 0.8rem;
@@ -219,7 +229,7 @@ article.post {
 }
 
 .share {
-  float: right;
+  text-align: right;
 }
 
 .page-header {
