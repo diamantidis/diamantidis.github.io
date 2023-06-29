@@ -104,3 +104,6 @@ collections:
   tips:
     output: true
     output_tags: true
+
+## Telemetry Deck
+telemetry_deck_app_id: 38585865-E115-4830-8D37-7A8F1213DC6B
