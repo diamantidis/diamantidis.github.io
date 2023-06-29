@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-gem 'jekyll', "~> 3.9.0"
+gem 'jekyll', "~> 3.9.2"
 gem 'danger'
 gem 'danger-prose'
 
@@ -12,6 +12,6 @@ group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.15.1"
   gem "jemoji", "~> 0.12.0"
   gem "jekyll-sitemap", "~> 1.4.0"
-  gem "github-pages", "~> 215"
+  gem "github-pages", "~> 227"
   gem "jekyll-paginate-v2"
 end
