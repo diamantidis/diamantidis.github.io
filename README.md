@@ -18,7 +18,7 @@ This blog is built with [Jekyll], an open source static site generator. The cont
 
 The repository has two main branches: [`source`] and [`master`]. The `source` branch contains the Jekyll project while the `master` branch contains the final version of the site, as it is served on [`diamantidis.github.io`].
 
-On every PR against the `source` branch, a `Travis CI` job runs using [Danger] and [Danger-prose] to perform a check for typos and lint prose. When the PR is approved and merged to `source`, a  `GitHub Actions` workflow builds the Jekyll project and push the generated site onto the `master` branch. 
+On every PR against the `source` branch, a `GitHub Actions` workflow runs using [Danger] and [Danger-prose] to perform a check for typos and lint prose. When the PR is approved and merged to `source`, a `GitHub Actions` workflow builds the Jekyll project and push the generated site onto the `master` branch. 
 
 ## How to setup locally
 
