@@ -23,4 +23,9 @@
   {%- if jekyll.environment == 'production' and site.telemetry_deck_app_id -%}
     {%- include telemetry-deck.html -%}
   {%- endif -%}
+
+  {%- if jekyll.environment == 'production' and site.posthog_app_id -%}
+    {%- include posthog.html -%}
+  {%- endif -%}
+
 </head>
