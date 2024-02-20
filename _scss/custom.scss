@@ -228,8 +228,17 @@ article.post {
   color: red;
 }
 
-.share {
-  text-align: right;
+.socials {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 600px) {
+  .socials {
+    display: grid;
+    grid-gap: 1em;
+  }
 }
 
 .page-header {
