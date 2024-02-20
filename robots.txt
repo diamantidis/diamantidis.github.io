@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://diamantidis.github.io/sitemap.xml
