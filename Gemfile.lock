@@ -180,6 +180,7 @@ GEM
     jekyll-paginate (1.1.0)
     jekyll-paginate-v2 (3.0.0)
       jekyll (>= 3.0, < 5.0)
+    jekyll-postcss (0.5.0)
     jekyll-readme-index (0.3.0)
       jekyll (>= 3.0, < 5.0)
     jekyll-redirect-from (0.16.0)
@@ -264,7 +265,7 @@ GEM
     multipart-post (2.3.0)
     nap (1.1.0)
     no_proxy_fix (0.1.2)
-    nokogiri (1.15.2)
+    nokogiri (1.15.3)
       mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
     octokit (4.25.1)
@@ -317,9 +318,10 @@ DEPENDENCIES
   jekyll (~> 3.9.2)
   jekyll-feed (~> 0.15.1)
   jekyll-paginate-v2
+  jekyll-postcss
   jekyll-sitemap (~> 1.4.0)
   jemoji (~> 0.12.0)
   minima (~> 2.4)
 
 BUNDLED WITH
-   2.2.32
+   2.4.19
