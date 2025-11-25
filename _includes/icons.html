@@ -1,9 +1,9 @@
 {% assign size = dimension | strip | default: "lg" %}
 
 {% if site.footer-links.twitter %}
-<li>
-    <div class="social-icon">
-        <a href="https://twitter.com/{{ site.footer-links.twitter }}" aria-label="Twitter">
+<li class="inline-block">
+    <div class="min-w-[42px] table min-h-[42px]">
+        <a href="https://twitter.com/{{ site.footer-links.twitter }}" aria-label="Twitter" class="text-[var(--base-color)] table-cell align-middle text-center hover:text-[var(--hover-color)]">
             <span class="fa-stack fa-{{ size }}">
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
@@ -15,10 +15,10 @@
 {% endif %}
 
 {% if site.footer-links.facebook %}
-<li>
-    <div class="social-icon">
+<li class="inline-block">
+    <div class="min-w-[42px] table min-h-[42px]">
 
-        <a href="https://www.facebook.com/{{ site.footer-links.facebook }}" aria-label="Facebook">
+        <a href="https://www.facebook.com/{{ site.footer-links.facebook }}" aria-label="Facebook" class="text-[var(--base-color)] table-cell align-middle text-center hover:text-[var(--hover-color)]">
             <span class="fa-stack fa-{{ size }}">
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
@@ -30,9 +30,9 @@
 {% endif %}
 
 {% if site.footer-links.github %}
-<li>
-    <div class="social-icon">
-        <a href="https://github.com/{{ site.footer-links.github }}" aria-label="GitHub">
+<li class="inline-block">
+    <div class="min-w-[42px] table min-h-[42px]">
+        <a href="https://github.com/{{ site.footer-links.github }}" aria-label="GitHub" class="text-[var(--base-color)] table-cell align-middle text-center hover:text-[var(--hover-color)]">
             <span class="fa-stack fa-{{ size }}">
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa fa-github fa-stack-1x fa-inverse"></i>
@@ -43,9 +43,9 @@
 {% endif %}
 
 {% if site.footer-links.linkedin %}
-<li>
-    <div class="social-icon">
-        <a href="http://linkedin.com/in/{{ site.footer-links.linkedin }}" aria-label="LinkedIn">
+<li class="inline-block">
+    <div class="min-w-[42px] table min-h-[42px]">
+        <a href="http://linkedin.com/in/{{ site.footer-links.linkedin }}" aria-label="LinkedIn" class="text-[var(--base-color)] table-cell align-middle text-center hover:text-[var(--hover-color)]">
             <span class="fa-stack fa-{{ size }}">
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
@@ -56,9 +56,9 @@
 {% endif %}
 
 {% if site.footer-links.instagram %}
-<li>
-    <div class="social-icon">
-        <a href="https://instagram.com/{{ site.footer-links.instagram }}" aria-label="Instagram">
+<li class="inline-block">
+    <div class="min-w-[42px] table min-h-[42px]">
+        <a href="https://instagram.com/{{ site.footer-links.instagram }}" aria-label="Instagram" class="text-[var(--base-color)] table-cell align-middle text-center hover:text-[var(--hover-color)]">
             <span class="fa-stack fa-{{ size }}">
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
@@ -69,9 +69,9 @@
 {% endif %}
 
 {% if site.footer-links.rss %}
-<li>
-    <div class="social-icon">
-        <a href="{{ site.baseurl }}/feed.xml" aria-label="RSS Feed">
+<li class="inline-block">
+    <div class="min-w-[42px] table min-h-[42px]">
+        <a href="{{ site.baseurl }}/feed.xml" aria-label="RSS Feed" class="text-[var(--base-color)] table-cell align-middle text-center hover:text-[var(--hover-color)]">
             <span class="fa-stack fa-{{ size }}">
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
@@ -82,9 +82,9 @@
 {% endif %}
 
 {% if site.footer-links.email %}
-<li>
-    <div class="social-icon">
-        <a href="mailto:{{ site.footer-links.email }}" aria-label="Email">
+<li class="inline-block">
+    <div class="min-w-[42px] table min-h-[42px]">
+        <a href="mailto:{{ site.footer-links.email }}" aria-label="Email" class="text-[var(--base-color)] table-cell align-middle text-center hover:text-[var(--hover-color)]">
             <span class="fa-stack fa-{{ size }}">
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
