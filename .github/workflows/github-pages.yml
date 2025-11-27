@@ -43,6 +43,10 @@ jobs:
           node-version: '22.2.0'
           cache: npm
 
+      - name: Install Tailwind CSS and other Node.js dependencies
+        run: |
+          npm install
+
       - name: Build
         env:
           JEKYLL_ENV: production
