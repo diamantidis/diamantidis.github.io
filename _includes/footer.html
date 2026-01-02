@@ -1,16 +1,16 @@
-<footer class="site-footer">
+<footer class="border-t-0 text-[var(--metatext-color)] text-sm text-center py-[30px]">
     <data class="u-url" href="{{ "/" | relative_url }}"></data>
 
-    <div class="footer-icons">
-        <ul>
+    <div>
+        <ul class="ml-0">
             {% assign dimension = "lg" %}
             {% include icons.html %}
         </ul>
     </div>
-    <div class="wrapper">
+    <div class="mx-auto max-w-[740px] px-[30px] lg:max-w-[770px] lg:px-[15px] after:content-[''] after:table after:clear-both">
         <p>Built with
-            <i class="fa fa-heart" aria-hidden="true"></i>, <a href="https://jekyllrb.com/">Jekyll</a> and <a
-                href="https://pages.github.com/"> Github Pages</a>
+            <i class="fa fa-heart text-red-500" aria-hidden="true"></i>, <a href="https://jekyllrb.com/" class="text-[var(--link-color)] hover:text-[var(--hover-color)]">Jekyll</a> and <a
+                href="https://pages.github.com/" class="text-[var(--link-color)] hover:text-[var(--hover-color)]">Github Pages</a>
         </p>
         <p> © Copyright {{ site.time | date: '%Y' }} {{ site.author.name }} </p>
     </div>
