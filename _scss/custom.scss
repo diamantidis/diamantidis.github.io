@@ -182,45 +182,13 @@ article.post {
   background-color: var(--hover-color);
 }
 
-.site-footer {
-  border-top: none;
-  color: var(--metatext-color);
-  font-size: 0.9em;
-  text-align: center;
-}
-
-.site-footer a {
-  color: var(--link-color);
-}
-
 .share a {
   color: var(--base-color);
   text-decoration: none;
 }
 
-.site-footer a:hover,
 .share a:hover {
   color: var(--hover-color);
-}
-
-
-.footer-icons a {
-  color: var(--base-color);
-  display: table-cell;
-  vertical-align: middle;
-  text-align: center;
-}
-
-.footer-icons ul {
-  margin-left: 0px;
-}
-
-.footer-icons li {
-  display: inline-block;
-}
-
-.site-footer i.fa.fa-heart {
-  color: red;
 }
 
 .socials {
