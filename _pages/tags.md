@@ -18,11 +18,11 @@ permalink: /tags
 
 {% assign grouped_tip_tags = site.tips | map: 'tags' | join: ',' | split: ',' | group_by: tag %}
 
-<div class="page-tags">
+<div class="mb-8">
   {% for item in (0..tag_words.size) %}{% unless forloop.last %}
   {% assign tag = tag_words[item] %}
   {% assign tip_tag = grouped_tip_tags | where:"name", tag | first %}
-    <a class="page-tag" href="/tags#{{ tag | cgi_escape }}">{{ tag }} ({{ site.tags[tag].size | plus: tip_tag.size }})  </a>
+    <a class="inline-block px-[0.9em] py-[0.3em] mb-1 mr-[0.5em] whitespace-nowrap bg-[var(--base-color)] text-[var(--tag-color)] rounded-[12px] text-[12px] align-middle tracking-[1.3px] hover:bg-[var(--hover-color)]" href="/tags#{{ tag | cgi_escape }}">{{ tag }} ({{ site.tags[tag].size | plus: tip_tag.size }})  </a>
   {% endunless %}{% endfor %}
 </div>
 
@@ -35,8 +35,8 @@ permalink: /tags
       <h2 id="{{ this_word | cgi_escape }}" class="tag-title">{{ this_word }}</h2>
       {% for post in site.tags[this_word] %}{% if post.title != null %}
         <div class="tags-post">
-            <div class="post-subheader post-type">
-              <span>Post</span>
+            <div class="py-1 overflow-auto inline-block w-full p-0">
+              <span class="text-[0.8em] text-[var(--metatext-color)] uppercase align-middle"><i class="fa fa-file-text-o" style="margin-right: 0.5em; font-family: FontAwesome; font-style: normal; font-weight: normal; text-decoration: inherit;"></i>Post</span>
             </div>
             <a class="post-link" href="{{ post.url | relative_url }}">
               {{ post.title | escape }}
@@ -49,8 +49,8 @@ permalink: /tags
       {% for tip in site.tips %}
         {% if tip.tags contains this_word %}
           <div class="tags-post">
-            <div class="post-subheader tip-type">
-              <span>Tip</span>
+            <div class="py-1 overflow-auto inline-block w-full p-0">
+              <span class="text-[0.8em] text-[var(--metatext-color)] uppercase align-middle"><i class="fa fa-lightbulb-o" style="margin-right: 0.5em; font-family: FontAwesome; font-style: normal; font-weight: normal; text-decoration: inherit;"></i>Tip</span>
             </div>
             <a class="post-link" href="{{ tip.url | relative_url }}">
               {{ tip.title | escape }}
