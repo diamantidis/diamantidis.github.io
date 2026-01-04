@@ -130,56 +130,8 @@ article.post {
   clear: both;
 }
 
-.post-subheader span {
-  font-size: 12px;
-  color: var(--metatext-color);
-  text-transform: uppercase;
-  vertical-align: middle;
-}
-
-.post-tags a,
-.page-tags a {
-  font-size: 12px;
-  display: inline-block;
-  color: var(--tag-color);
-  vertical-align: middle;
-  letter-spacing: 1.3px;
-  margin-top: 2px;
-  margin-bottom: 5px;
-}
-
-.post-subheader {
-  padding: 5px 0px 5px 0px;
-  overflow: auto;
-  display: inline-block;
-  width: 100%;
-}
-
-.post-tags {
-  display: inline-block;
-  float: right;
-}
-
-.outer-post-tags {
-  float: right;
-  display: inline-block;
-}
-
 .excerpt {
   margin: 12px 0 10px;
-}
-
-.post-tag,
-.page-tag {
-  padding: 0.3em 0.9em;
-  margin: 0 0.5em 0 0;
-  white-space: nowrap;
-  background-color: var(--base-color);
-  border-radius: 12px;
-}
-
-.post-tag:hover {
-  background-color: var(--hover-color);
 }
 
 .share a {
@@ -223,10 +175,6 @@ article.post {
 p.excerpt {
   margin-bottom: 0.1em;
   float: left;
-}
-
-.page-tags {
-  margin-bottom: 30px;
 }
 
 .tag-title,
@@ -407,20 +355,6 @@ svg.fa.fa-arrow-right.fa-w-14 {
   }
 }
 
-@media only screen and (max-width: 600px) {
-  .post-tags {
-    display: block;
-    float: none;
-    clear: right;
-    margin-top: 5px;
-  }
-  .outer-post-tags {
-    display: block;
-    float: none;
-    clear: right;
-  }
-}
-
 .page-content .post-header h1 {
   margin-bottom: 0px;
 }
@@ -515,33 +449,6 @@ code.highlighter-rouge {
   }
 }
 // End of tips
-
-// Start of 'Type of content'
-.post-type,
-.tip-type {
-  padding: 0px;
-
-  span {
-    font-size: 0.8em;
-  }
-
-  span:before {
-    font-family: FontAwesome;
-    font-style: normal;
-    font-weight: normal;
-    text-decoration: inherit;
-    padding-right: 0.5em;
-  }
-}
-
-.post-type span:before {
-  content: "\f0f6";
-}
-
-.tip-type span:before {
-  content: "\f0eb";
-}
-// End of 'Type of content'
 
 .break-long-word {
    overflow-wrap: break-word;

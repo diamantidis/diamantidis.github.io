@@ -24,9 +24,9 @@ pagination:
             {{ post.title | escape  }}
           </a>
         </h2>
-        <div class="post-tags">
+        <div class="inline-block float-right max-sm:float-none max-sm:block max-sm:clear-right max-sm:mt-1">
           {% for tag in post.tags %}
-          <a class="post-tag" href="/tags#{{ tag | cgi_escape }}" title="{{ tag | strip }}">{{ tag | strip }}</a>
+          <a class="inline-block px-[0.9em] py-[0.3em] mb-1 mr-[0.5em] whitespace-nowrap bg-[var(--base-color)] text-[var(--tag-color)] rounded-[12px] text-[12px] align-middle tracking-[1.3px] mt-[2px] hover:bg-[var(--hover-color)]" href="/tags#{{ tag | cgi_escape }}" title="{{ tag | strip }}">{{ tag | strip }}</a>
           {% endfor %}
         </div>
         <p class="excerpt">
