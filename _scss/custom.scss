@@ -177,7 +177,6 @@ p.excerpt {
 }
 
 .tag-title,
-.archive-year,
 h1#bio, h1#personal, h1#stack {
   color: var(--title-color);
   font-weight: bold;
@@ -185,20 +184,11 @@ h1#bio, h1#personal, h1#stack {
   line-height: 1.3;
 }
 
-.archive-month {
-  color: var(--title-color);
-  font-weight: bold;
-  font-size: 1.2em;
-}
-
-.tags-post,
-.archive-year-content,
-.archive-month-content {
+.tags-post {
   padding-left: 30px;
   margin: 10px 0px;
 }
 
-.archive-post a.post-link,
 .tags-post a.post-link {
   font-size: 1.7em;
   letter-spacing: -1px;
@@ -407,7 +397,7 @@ code.highlighter-rouge {
   background-color: var(--highlight-background-color);
 }
 
-.archive-post, .tags-post {
+.tags-post {
   margin-top: 20px;
   border-width: 1px;
   border: solid var(--border-color);
