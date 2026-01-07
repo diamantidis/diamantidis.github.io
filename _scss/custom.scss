@@ -176,22 +176,11 @@ p.excerpt {
   float: left;
 }
 
-.tag-title,
 h1#bio, h1#personal, h1#stack {
   color: var(--title-color);
   font-weight: bold;
   font-size: 1.8em;
   line-height: 1.3;
-}
-
-.tags-post {
-  padding-left: 30px;
-  margin: 10px 0px;
-}
-
-.tags-post a.post-link {
-  font-size: 1.7em;
-  letter-spacing: -1px;
 }
 
 .highlight pre code {
@@ -395,14 +384,6 @@ svg.fa.fa-arrow-right.fa-w-14 {
 code.highlighter-rouge {
   color: var(--highlight-color);
   background-color: var(--highlight-background-color);
-}
-
-.tags-post {
-  margin-top: 20px;
-  border-width: 1px;
-  border: solid var(--border-color);
-  border-radius: 12px;
-  padding: 13px;
 }
 
 .break-long-word {
