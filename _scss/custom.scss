@@ -68,23 +68,11 @@ a:visited {
   padding-left: 0px;
 }
 
-.post-content,
-article.post {
-  border-bottom: 1px solid var(--border-color);
-  color: var(--title-color);
-  display: block;
-  padding-top: 1rem;
-  padding-right: 0px;
-  padding-bottom: 0.8rem;
-  padding-left: 0px;
-}
-
 .post-item h2 {
   margin-bottom: 0px;
 }
 
 .post-link,
-.post-title,
 .page-title {
   color: var(--text-color);
   font-weight: bold;
@@ -133,28 +121,6 @@ article.post {
   margin: 12px 0 10px;
 }
 
-.share a {
-  color: var(--base-color);
-  text-decoration: none;
-}
-
-.share a:hover {
-  color: var(--hover-color);
-}
-
-.socials {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-}
-
-@media only screen and (max-width: 600px) {
-  .socials {
-    display: grid;
-    grid-gap: 1em;
-  }
-}
-
 .page-header {
   text-align: center;
 }
@@ -165,10 +131,6 @@ article.post {
   color: var(--text-color);
   font-size: 1.25em;
   word-wrap: break-word;
-}
-
-.page-content .post-header {
-  margin-bottom: 10px;
 }
 
 p.excerpt {
@@ -389,13 +351,31 @@ code.highlighter-rouge {
 .break-long-word {
    overflow-wrap: break-word;
    word-wrap: break-word;
- 
+
    -ms-word-break: break-all;
    word-break: break-all;
    word-break: break-word;
- 
+
    -ms-hyphens: auto;
    -moz-hyphens: auto;
    -webkit-hyphens: auto;
    hyphens: auto;
+}
+
+@layer utilities {
+  .post-content h2 {
+    @apply text-2xl font-bold mt-6 mb-3 text-[var(--title-color)];
+  }
+
+  .post-content h3 {
+    @apply text-xl font-bold mt-5 mb-2 text-[var(--title-color)];
+  }
+
+  .post-content h4 {
+    @apply text-lg font-bold mt-4 mb-2 text-[var(--title-color)];
+  }
+
+  .post-content p {
+    @apply mb-4 leading-relaxed text-[var(--text-color)];
+  }
 }
