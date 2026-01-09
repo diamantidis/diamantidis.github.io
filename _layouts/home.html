@@ -2,14 +2,14 @@
 layout: default
 ---
 
-<div class="home">
+<div>
   {{ content }}
 
   {%- if paginator.total_pages > 0 -%}
-  <ul class="post-list">
+  <ul>
     {%- for post in paginator.posts -%}
-    <li class="post-item">
-      <h2>
+    <li class="border-b border-[var(--border-color)] text-[var(--title-color)] inline-block pt-4 pr-0 pb-3 pl-0">
+      <h2 class="mb-0">
         <a class="post-link break-long-word" href="{{ post.url | relative_url }}"
           title="{{ post.title | escape | strip }}">
           {{ post.title | escape }}
@@ -17,15 +17,15 @@ layout: default
       </h2>
       {% assign page_content = post %}
       {% include post-subheader.html %}
-      <p class="excerpt">
+      <p class="my-3 mx-0">
         {{ post.excerpt | strip_html | truncate: 156 }}
       </p>
-      <div class="post-footer">
+      <div class="float-right block clear-both">
         <div>
-          <a class="read-more animatable" href="{{ post.url | relative_url }}" title="Read more">
+          <a class="read-more animatable text-[var(--text-color)] p-1 text-center no-underline inline-block text-base my-1 mx-0.5 bg-transparent float-right hover:text-[var(--hover-color)] uppercase" href="{{ post.url | relative_url }}" title="Read more">
             Read more
             <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
-              class="fa fa-arrow-right fa-w-14">
+              class="fa fa-arrow-right fa-w-14 inline-block h-3.5 w-4">
               <path fill="currentColor"
                 d="M216.464 36.465l-7.071 7.07c-4.686 4.686-4.686 12.284 0 16.971L387.887 239H12c-6.627 0-12 5.373-12 12v10c0 6.627 5.373 12 12 12h375.887L209.393 451.494c-4.686 4.686-4.686 12.284 0 16.971l7.071 7.07c4.686 4.686 12.284 4.686 16.97 0l211.051-211.05c4.686-4.686 4.686-12.284 0-16.971L233.434 36.465c-4.686-4.687-12.284-4.687-16.97 0z"
                 class=""></path>
@@ -45,14 +45,14 @@ layout: default
 <div>
   {% if paginator.previous_page %}
   <div>
-    <a class="pagination-link" href="{{ paginator.previous_page_path | prepend: site.baseurl }}" title="Newer"
-      style="float:left;"><i class="fa fa-chevron-left"></i>Newer</a>
+    <a class="text-[var(--base-color)] border border-[var(--border-color)] p-3 no-underline inline-block" href="{{ paginator.previous_page_path | prepend: site.baseurl }}" title="Newer"
+      style="float:left;"><i class="fa fa-chevron-left px-1"></i>Newer</a>
   </div>
   {% endif %}
   {% if paginator.next_page %}
   <div>
-    <a class="pagination-link" href="{{ paginator.next_page_path | prepend: site.baseurl }}" title="Older"
-      style="float:right;">Older<i class="fa fa-chevron-right"></i></a>
+    <a class="text-[var(--base-color)] border border-[var(--border-color)] p-3 no-underline inline-block" href="{{ paginator.next_page_path | prepend: site.baseurl }}" title="Older"
+      style="float:right;">Older<i class="fa fa-chevron-right px-1"></i></a>
   </div>
   {% endif %}
 </div>
