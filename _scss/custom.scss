@@ -17,10 +17,6 @@ a:visited {
   border: none;
 }
 
-.home .post-list > li {
-  margin-bottom: 0px;
-}
-
 .site-header > .wrapper {
   display: flex;
   justify-content: space-between;
@@ -58,20 +54,6 @@ a:visited {
   color: var(--nav-color);
 }
 
-.post-item {
-  border-bottom: 1px solid var(--border-color);
-  color: var(--title-color);
-  display: inline-block;
-  padding-top: 1rem;
-  padding-right: 0px;
-  padding-bottom: 0.8rem;
-  padding-left: 0px;
-}
-
-.post-item h2 {
-  margin-bottom: 0px;
-}
-
 .post-link,
 .page-title {
   color: var(--text-color);
@@ -98,27 +80,6 @@ a:visited {
   height: 1px;
   background-color: var(--base-color);
   margin: 5px 0 5px;
-}
-
-.post-footer span,
-.post-footer a,
-.post-meta span,
-.post-meta a {
-  display: inline-block;
-  font-size: 12px;
-  color: var(--metatext-color);
-  text-transform: uppercase;
-  vertical-align: middle;
-}
-
-.post-footer {
-  float: right;
-  display: block;
-  clear: both;
-}
-
-.excerpt {
-  margin: 12px 0 10px;
 }
 
 .page-header {
@@ -238,60 +199,20 @@ blockquote {
   font-size: 15px;
 }
 
-.pagination-link {
-  color: var(--base-color);
-  border: var(--border-color);
-  border-width: 1pt;
-  border-style: solid;
-  padding: 12pt;
+/* Read more arrow animation */
+.read-more.animatable:hover svg {
+  animation: arrow-right 1s infinite;
 }
 
-.pagination-link i {
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-a.pagination-link,
-a.read-more {
-  color: var(--text-color);
-  padding: 5px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  background: transparent;
-  float: right;
-}
-
-svg.fa.fa-arrow-right.fa-w-14 {
-  height: 14px;
-  width: 16px;
-}
-
-.read-more.animatable:hover > svg.fa.fa-arrow-right.fa-w-14 {
-  color: var(--hover-color);
-  -webkit-transform: translateX(4px);
-  -moz-transform: translateX(4px);
-  -ms-transform: translateX(4px);
-  -o-transform: translateX(4px);
-  transform: translateX(4px);
-  -webkit-animation-name: arrow-right;
-  -webkit-animation-duration: 1s;
-  -webkit-animation-iteration-count: infinite;
-}
-
-@-webkit-keyframes arrow-right {
+@keyframes arrow-right {
   0% {
-    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
   }
-
   50% {
-    -webkit-transform: translateX(4px);
+    transform: translateX(4px);
   }
-
   100% {
-    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
   }
 }
 
