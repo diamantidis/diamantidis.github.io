@@ -9,7 +9,11 @@ module.exports = {
     "./*.{html,md}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      hyphens: {
+        'auto': 'auto',
+      },
+    },
   },
   plugins: [],
 }

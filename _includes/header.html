@@ -1,15 +1,15 @@
-<header class="site-header w-full" role="banner">
+<header class="site-header w-full shadow-[0_2px_2px_-2px_var(--divider-color)] border-none" role="banner">
     <div class="wrapper flex items-center justify-between px-4 md:px-8 py-4">
         {%- assign default_paths = site.pages | map: "path" -%}
         {%- assign page_paths = site.header_pages | default: default_paths -%}
-        <div class="left-container flex items-center gap-4">
+        <div class="flex flex-col items-start gap-2">
             <div class="title-wrapper">
-                <a class="site-title" rel="author" href="{{ "/" | relative_url }}">
+                <a class="site-title text-[var(--title-color)] visited:text-[var(--title-color)]" rel="author" href="{{ "/" | relative_url }}">
                     <span class="text-2xl">{{ site.title | escape }}</span>
                 </a>
             </div>
             <div class="footer-icons">
-                <ul class="flex gap-2">
+                <ul class="flex gap-2 justify-start">
                     {% assign dimension = "sm" %}
                     {% include icons.html %}
                 </ul>
@@ -17,7 +17,7 @@
         </div>
 
         {%- if page_paths -%}
-        <nav class="site-nav relative bg-transparent">
+        <nav class="site-nav relative bg-transparent shrink-0">
             <!-- Desktop Navigation -->
             <div class="hidden md:flex items-center gap-6">
                 <a class="page-link text-[var(--nav-color)] hover:text-[var(--hover-color)] transition-colors" href="/tips" title="Tips">Tips</a>
@@ -44,12 +44,12 @@
                 <!-- Mobile Dropdown -->
                 <div class="hidden peer-checked:block absolute top-full right-0 z-50 bg-[var(--page-color)] dark:bg-[var(--page-color)] shadow-lg rounded-lg py-2 border border-[var(--border-color)] min-w-[200px] mt-1">
                     <div class="flex flex-col">
-                        <a class="page-link block px-4 py-3 text-[var(--nav-color)] hover:bg-[var(--nav-hover-color)] transition-colors" href="/tips" title="Tips">Tips</a>
+                        <a class="page-link block px-4 py-3 text-[var(--nav-color)] hover:text-[var(--hover-color)] transition-colors" href="/tips" title="Tips">Tips</a>
                         {%- for path in page_paths -%}
                         {%- assign my_page = site.pages | where: "path", path | first -%}
                         {% unless my_page.exclude %}
                         {%- if my_page.title -%}
-                        <a class="page-link block px-4 py-3 text-[var(--nav-color)] hover:bg-[var(--nav-hover-color)] transition-colors" href="{{ my_page.url | relative_url }}"
+                        <a class="page-link block px-4 py-3 text-[var(--nav-color)] hover:text-[var(--hover-color)] transition-colors" href="{{ my_page.url | relative_url }}"
                             title="{{ my_page.title | escape }}">{{ my_page.title | escape }}</a>
                         {%- endif -%}
                         {% endunless %}
