@@ -33,32 +33,32 @@ Those symbols will be later used in conjunction with a primary key to form the s
 ## Some examples of useful shortcuts
 A list of commands that I primarily use are listed below: 
 
-* Go to line (`⌘` + `L`) <br><span class="list_item_description">As a result, an input text will pop up, and there you can add the number of the line you want to move to.
+* Go to line (`⌘` + `L`) <br><span class="text-[0.8em]">As a result, an input text will pop up, and there you can add the number of the line you want to move to.
 ![go to line screenshot]({{site.url}}/assets/shortcuts/line_number.png)
 </span>
 
-* Add breakpoint ( `⌘`+ `\`) <br><span class="list_item_description">A breakpoint will be added to the line. To activate/deactivate the debugger use `⌘` + `Y`.
+* Add breakpoint ( `⌘`+ `\`) <br><span class="text-[0.8em]">A breakpoint will be added to the line. To activate/deactivate the debugger use `⌘` + `Y`.
 </span>
 
-* Fold method (`⇧` + `⌥` + `⌘` + `←`) <br><span class="list_item_description">To unfold method (`⇧` + `⌥` + `⌘` + `→`)</span>
+* Fold method (`⇧` + `⌥` + `⌘` + `←`) <br><span class="text-[0.8em]">To unfold method (`⇧` + `⌥` + `⌘` + `→`)</span>
 
-* Build ( `⌘` + `B` ) <br><span class="list_item_description">Also, to clean (`⇧` + `⌘` + `K`)</span>
+* Build ( `⌘` + `B` ) <br><span class="text-[0.8em]">Also, to clean (`⇧` + `⌘` + `K`)</span>
 
-* Find call hierarchy (`⌃` + `⇧` + `⌘` + `H`) <br><span class="list_item_description">When on a function name, you can press the above-mentioned key combination to find the callers of the function.</span>
+* Find call hierarchy (`⌃` + `⇧` + `⌘` + `H`) <br><span class="text-[0.8em]">When on a function name, you can press the above-mentioned key combination to find the callers of the function.</span>
 	
-* Edit all in scope ( `⌃` + `⌘` + `E`) <br><span class="list_item_description">It can be useful in case of renaming a variable or function.</span>
+* Edit all in scope ( `⌃` + `⌘` + `E`) <br><span class="text-[0.8em]">It can be useful in case of renaming a variable or function.</span>
 
-* Jump to Definition (`⌃` + `⌘` + `J`) <br><span class="list_item_description">This can be used if you want to jump to the definition of the method. Also, use  `⌃` + `⌘` + `←` to go back to the invoker again if it's in a different file.</span>
+* Jump to Definition (`⌃` + `⌘` + `J`) <br><span class="text-[0.8em]">This can be used if you want to jump to the definition of the method. Also, use  `⌃` + `⌘` + `←` to go back to the invoker again if it's in a different file.</span>
 
-* Move focus to editor (`⌘` + `J`) <br><span class="list_item_description">To move the focus/cursor to the editor area. A new window will open and you can select if you want to move to the editor, to add to a new assistant editor or to move to an existing one.
+* Move focus to editor (`⌘` + `J`) <br><span class="text-[0.8em]">To move the focus/cursor to the editor area. A new window will open and you can select if you want to move to the editor, to add to a new assistant editor or to move to an existing one.
 ![move focus to editor screenshot]({{ site.url }}/assets/shortcuts/move_focus_to_editor.png)
 </span>
 	
-* Open is Assistant Editor (`⌥` + `⌘` + `,`) <br><span class="list_item_description">This can be used, if you are in the navigation controller and you want to open a file to the assistant editor.</span>
+* Open is Assistant Editor (`⌥` + `⌘` + `,`) <br><span class="text-[0.8em]">This can be used, if you are in the navigation controller and you want to open a file to the assistant editor.</span>
 
-* Move focus to next Area (`⌥` + `⌘` + `` ` ``) <br><span class="list_item_description">It can be used for scenarios when you are in the main editor and you want to move to the assistant editor. Also, (`⌥` + `⌘` + `⇧`  + `` ` ``) can be used to move back.</span>
+* Move focus to next Area (`⌥` + `⌘` + `` ` ``) <br><span class="text-[0.8em]">It can be used for scenarios when you are in the main editor and you want to move to the assistant editor. Also, (`⌥` + `⌘` + `⇧`  + `` ` ``) can be used to move back.</span>
 
-* Center selection (`⌃` + `L`) <br><span class="list_item_description">This can be used to move the screen so the selected area is in the center of the screen.</span>
+* Center selection (`⌃` + `L`) <br><span class="text-[0.8em]">This can be used to move the screen so the selected area is in the center of the screen.</span>
 
 These are only a subset of the available commands that I found really useful. Of course there are plenty more and I am trying to always enrich my list, so feel free to share with me on [Twitter](https://twitter.com/diamantidis_io) which one you are using.
  
