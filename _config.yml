@@ -67,6 +67,7 @@ exclude:
   - tailwind.config.js
   - README.md
   - LICENSE
+  - AGENTS.md
 
 # Disqus
 # disqus:
