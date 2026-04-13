@@ -6,3 +6,6 @@ vendor
 
 ### NPM ###
 /node_modules/
+
+### Generated CSS ###
+/assets/css/main.css
