@@ -1,7 +1,9 @@
 {
+  "scripts": {
+    "dev:css": "tailwindcss -i ./assets/css/input.css -o ./assets/css/main.css --watch",
+    "build:css": "tailwindcss -i ./assets/css/input.css -o ./assets/css/main.css --minify"
+  },
   "devDependencies": {
-    "cssnano": "^7.0.5",
-    "postcss": "^8.4.41",
     "tailwindcss": "^3.4.10"
   }
 }
