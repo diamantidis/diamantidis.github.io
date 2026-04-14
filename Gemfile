@@ -14,5 +14,5 @@ group :jekyll_plugins do
   gem "jekyll-sitemap", "~> 1.4.0"
   gem "github-pages", "~> 232"
   gem "jekyll-paginate-v2"
-  gem 'jekyll-postcss'
+
 end

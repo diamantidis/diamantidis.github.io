@@ -197,7 +197,6 @@ GEM
     jekyll-paginate (1.1.0)
     jekyll-paginate-v2 (3.0.0)
       jekyll (>= 3.0, < 5.0)
-    jekyll-postcss (0.5.0)
     jekyll-readme-index (0.3.0)
       jekyll (>= 3.0, < 5.0)
     jekyll-redirect-from (0.16.0)
@@ -336,7 +335,6 @@ DEPENDENCIES
   jekyll (~> 3.10.0)
   jekyll-feed (~> 0.17.0)
   jekyll-paginate-v2
-  jekyll-postcss
   jekyll-sitemap (~> 1.4.0)
   jemoji (~> 0.13.0)
   minima (~> 2.5.1)

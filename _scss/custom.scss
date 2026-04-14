@@ -174,30 +174,3 @@ code.highlighter-rouge {
   background-color: var(--highlight-background-color);
 }
 
-@layer utilities {
-  .post-content h2 {
-    @apply text-2xl font-bold mt-6 mb-3 text-[var(--title-color)];
-  }
-
-  .post-content h3 {
-    @apply text-xl font-bold mt-5 mb-2 text-[var(--title-color)];
-  }
-
-  .post-content h4 {
-    @apply text-lg font-bold mt-4 mb-2 text-[var(--title-color)];
-  }
-
-  .post-content p {
-    @apply mb-4 leading-relaxed text-[var(--text-color)];
-  }
-
-  blockquote {
-    @apply text-[15px];
-  }
-
-  h1#bio,
-  h1#personal,
-  h1#stack {
-    @apply text-[var(--title-color)] font-bold text-[1.8em] leading-[1.3];
-  }
-}

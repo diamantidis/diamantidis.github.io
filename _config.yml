@@ -29,10 +29,6 @@ plugins:
   - jemoji
   - jekyll-sitemap
   - jekyll-paginate
-  - jekyll-postcss
-
-postcss:
-  cache: false
 
 sass:
   sass_dir: _scss
@@ -63,7 +59,6 @@ exclude:
   - node_modules
   - package-lock.json
   - package.json
-  - postcss.config.js
   - tailwind.config.js
   - README.md
   - LICENSE
