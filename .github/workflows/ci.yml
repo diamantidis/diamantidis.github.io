@@ -14,12 +14,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout the code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v6
 
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
 
-      - uses: actions/cache@v3
+      - uses: actions/cache@v5
         with:
           path: vendor/bundle
           key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
@@ -32,7 +32,7 @@ jobs:
           bundle install --jobs 4 --retry 3
 
       - name: Install Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v6
         with:
           node-version: '22.2.0'
 
@@ -52,7 +52,7 @@ jobs:
       - name: Install proselint
         run: pip3 install --user proselint==0.14.0
 
-      - uses: MeilCli/danger-action@v5
+      - uses: MeilCli/danger-action@v6
         with:
           plugins_file: 'Gemfile'
           install_path: 'vendor/bundle'
