@@ -172,7 +172,7 @@ With this list in place, I am more confident that I will have a proper setup bef
 
 Thanks for reading this post, I hope you find it useful!
 
-I am really interested to know the steps that you take, so if you want to share them with me, or you have any other comment or question about this post, feel free to reach out to me on [Twitter]!!
+I am really interested to know the steps that you take, so if you want to share them with me, or you have any other comment or question about this post, feel free to reach out to me on [X]!!
 
 
 
@@ -187,4 +187,4 @@ I am really interested to know the steps that you take, so if you want to share 
 [R.swift]: https://github.com/mac-cain13/R.swift
 [R.swift's GitHub page]: https://github.com/mac-cain13/R.swift/blob/master/Documentation/Examples.md
 
-[Twitter]: https://twitter.com/diamantidis_io
+[X]: https://x.com/diamantidis_io

@@ -116,4 +116,4 @@ Furthermore, the addition of the CI jobs makes this [project](https://gitlab.com
 
 Of course, the current implementation can be further extended to run only on pull requests or to build the apps and upload the builds to AppCenter, TestFlight or Google Play, but this is a topic for another post!
 
-Thanks for reading and should you have any questions, suggestions or comments, just let me know on [Twitter](https://twitter.com/diamantidis_io) or [email me](mailto:diamantidis@outlook.com)!!
+Thanks for reading and should you have any questions, suggestions or comments, just let me know on [X](https://x.com/diamantidis_io) or [email me](mailto:diamantidis@outlook.com)!!

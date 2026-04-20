@@ -288,7 +288,7 @@ When it is set to `explicit`, it will use the `alignment` property to decide whe
 
 And this is it! I hope that you find this post useful and it has given you some insights into how to use `Scrollable.ensureVisible` and all its options to scroll to a specific widget on a scroll view.
 
-If you have any questions or comments about this post, feel free to reach out to me on [Twitter]!
+If you have any questions or comments about this post, feel free to reach out to me on [X]!
 
 Until next time!
 
@@ -296,5 +296,5 @@ Until next time!
 
 [dartpad.dev]: https://dartpad.dev/?id=33c44d2f905cf23d4e0f825b45d79d91&null_safety=true
 [api.flutter.dev]: https://api.flutter.dev/flutter/animation/Curves-class.html
-[Twitter]: https://twitter.com/diamantidis_io
+[X]: https://x.com/diamantidis_io
 

@@ -255,5 +255,5 @@ Now our app is ready!! Feel free to run it and start advertising and scanning fo
 In this post, we have seen how to use the `CoreBluetooth` framework to advertise that an application is running on a device and also scan for nearby devices that are running the application. These concepts can be used as a base and build more complex application that will rely on Bluetooth and the communication of nearby devices, like for example a chat app, or maybe an AirDrop-like solution to share documents with other non-Apple devices.
 
 Thanks for reading, I hope you find this post useful!
-Feel free to find me on [Twitter](https://twitter.com/diamantidis_io) and share your comments about this post!
+Feel free to find me on [X](https://x.com/diamantidis_io) and share your comments about this post!
 

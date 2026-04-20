@@ -270,7 +270,7 @@ And that's about it! In this post, we have seen how we can notify the users of a
 I hope that by adding this feature in your app more and more users will move to the latest version.
 
 Thanks for reading this post, I hope you find it useful!
-Feel free to follow me on [Twitter] and share your comments about this post!
+Feel free to follow me on [X] and share your comments about this post!
 
 
 [phased roll-out]: https://help.apple.com/app-store-connect/#/dev3d65fcee1
@@ -284,4 +284,4 @@ Feel free to follow me on [Twitter] and share your comments about this post!
 [gist]: https://gist.github.com/diamantidis/fa7a5d4dce336e5b8f83827cb229fa9c
 
 [Siren]: https://github.com/ArtSabintsev/Siren
-[Twitter]: https://twitter.com/diamantidis_io
+[X]: https://x.com/diamantidis_io

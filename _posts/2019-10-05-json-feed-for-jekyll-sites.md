@@ -98,4 +98,4 @@ Now, all you have to do is to find a feed reader app and use either the [Atom]({
 
 In the meantime, I will be able to focus on to the actual implementation of my feed reader using Kotlin Native!
 
-Thanks for reading, I hope that you found this post useful and should you have any suggestions on any other questions or comments, just let me know on [Twitter](https://twitter.com/diamantidis_io) or by [email](mailto:diamantidis@outlook.com)!
+Thanks for reading, I hope that you found this post useful and should you have any suggestions on any other questions or comments, just let me know on [X](https://x.com/diamantidis_io) or by [email](mailto:diamantidis@outlook.com)!

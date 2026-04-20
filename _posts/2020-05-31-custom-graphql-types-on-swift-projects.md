@@ -312,7 +312,7 @@ And that's about it! In this post, we have seen how to use GraphQL's features li
 
 Knowing about those possibilities is really valuable when working with GraphQL and can make a huge difference when it comes to designing a GraphQL schema. 
 
-In the posts to come, we are going to see how further improve this project by adding support for sorting, filtering, creating a new post, editing an existing, deleting, etc. So stay tuned and follow me on [Twitter] should you want to get notified once these posts are published or you have a question or comment about this post.
+In the posts to come, we are going to see how further improve this project by adding support for sorting, filtering, creating a new post, editing an existing, deleting, etc. So stay tuned and follow me on [X] should you want to get notified once these posts are published or you have a question or comment about this post.
 
 Thanks for reading this post, and see you next time!
 
@@ -321,4 +321,4 @@ Thanks for reading this post, and see you next time!
 [previous post]: {%post_url 2020-05-24-swift-loves-graphql-server-with-vapor-and-ios-app-client %}
 [Vapor]: https://github.com/vapor/vapor
 [Apollo iOS]: https://www.apollographql.com/docs/ios/
-[Twitter]: https://twitter.com/diamantidis_io
+[X]: https://x.com/diamantidis_io

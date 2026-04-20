@@ -235,7 +235,7 @@ To sum up, in this post, I have created a Scala project that uses Selenium to ca
 This could be of use if you make some UI changes on a webpage and you want to verify that everything looks great on different screen sizes, or if you want to keep a record of how the UI of a website evolves over time. 
 
 Thanks for reading this post, I hope you find it useful!
-Feel free to reach out to me on [Twitter] and share your comments about this post!
+Feel free to reach out to me on [X] and share your comments about this post!
 
 [Chrome's DevTools]: https://developers.google.com/web/tools/chrome-devtools
 [Device Mode]: https://developers.google.com/web/tools/chrome-devtools/device-mode
@@ -254,4 +254,4 @@ Feel free to reach out to me on [Twitter] and share your comments about this pos
 
 [ZIO]: https://zio.dev/
 
-[Twitter]: https://twitter.com/diamantidis_io
+[X]: https://x.com/diamantidis_io
