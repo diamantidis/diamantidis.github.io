@@ -118,7 +118,7 @@ And that's about for this intro on Apache Bench! By now, you should be able to u
 
 In the end, I would say that Apache Bench is an ideal solution if you want to perform a quick load test since it is probably already installed on your machine and it is really simple to use. In case you want to cover more advanced use cases like flows and random URL entries, then I think that there are other more modern and feature-complete tools. A few examples are [JMeter], [K6] and [Gatling].
 
-Thanks for reading, I hope that you find this post useful, and if you have any questions or comments about this post, feel free to reach out to me on [Twitter]!
+Thanks for reading, I hope that you find this post useful, and if you have any questions or comments about this post, feel free to reach out to me on [X]!
 
 Until next time!
 
@@ -129,4 +129,4 @@ Until next time!
 [K6]: https://k6.io/
 [Gatling]: https://gatling.io/
 
-[Twitter]: https://twitter.com/diamantidis_io
+[X]: https://x.com/diamantidis_io

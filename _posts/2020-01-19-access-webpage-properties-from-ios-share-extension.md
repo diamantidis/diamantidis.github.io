@@ -160,4 +160,4 @@ In this post, we have seen how to parse the webpage from our webpage Share Exten
 Depending on your case, you can follow a similar approach to access the webpage elements that you are interested in and later use them in your View Controller to populate some UI elements of the Share Extension or share it with the associated main app. 
 
 Thanks for reading, I hope you find this post useful!
-Feel free to follow me on [Twitter](https://twitter.com/diamantidis_io) and share your questions, suggestion or comments about this post!!
+Feel free to follow me on [X](https://x.com/diamantidis_io) and share your questions, suggestion or comments about this post!!

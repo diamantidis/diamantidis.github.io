@@ -595,4 +595,4 @@ To sum up, this post describes how to implement a JSON feed reader library with 
 Definitely the process of building this app, though it still lacks some basic functionality, helped me a lot to get more acquainted with Kotlin Native.
 Next step? To iterate over this implementation and add some more features like presenting the content of the post or adding some caching layer!!
 
-Thanks for reading and should you have any questions, suggestions or comments, just let me know on [Twitter](https://twitter.com/diamantidis_io) or [email me](mailto:diamantidis@outlook.com)!!
+Thanks for reading and should you have any questions, suggestions or comments, just let me know on [X](https://x.com/diamantidis_io) or [email me](mailto:diamantidis@outlook.com)!!

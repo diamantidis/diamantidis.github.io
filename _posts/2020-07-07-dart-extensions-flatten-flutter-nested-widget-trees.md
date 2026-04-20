@@ -124,10 +124,10 @@ As a result, this could help us flatten the widget hierarchy and reduce nesting.
 
 Thanks for reading, I hope you find this post useful!
 
-If you have any questions or comments about this post, feel free to reach out to me on [Twitter]!
+If you have any questions or comments about this post, feel free to reach out to me on [X]!
 
 Until next time!
 
 
 [dartpad.dev]: https://dartpad.dev/flutter
-[Twitter]: https://twitter.com/diamantidis_io
+[X]: https://x.com/diamantidis_io

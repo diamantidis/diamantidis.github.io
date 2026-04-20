@@ -198,10 +198,10 @@ And that's about it, if you now run the app, the text of the label will change w
 
 In this post, we have seen how to achieve bidirectional communication between a WebView and a web page. Using this, we can use events from the website to trigger actions on the app and similarly adjust the content of the loaded website based on the information we have on the app. 
 
-I hope that you find this post useful and if you have any questions or comments about this post, feel free to reach out to me on [Twitter]!
+I hope that you find this post useful and if you have any questions or comments about this post, feel free to reach out to me on [X]!
 
 Until next time!
 
 
 [webview_flutter]: https://pub.dev/packages/webview_flutter
-[Twitter]: https://twitter.com/diamantidis_io
+[X]: https://x.com/diamantidis_io

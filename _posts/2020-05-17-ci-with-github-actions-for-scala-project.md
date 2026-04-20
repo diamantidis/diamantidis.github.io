@@ -179,7 +179,7 @@ And that's why I believe that having a Continuous Integration setup is useful. I
 
 Thanks for reading this post, I hope you find it useful!
 
-If you would like to get notified when new posts come out or you want to share a question or commend about this post, feel free to follow me on [Twitter].
+If you would like to get notified when new posts come out or you want to share a question or commend about this post, feel free to follow me on [X].
 
 
 [GitHub Actions]: https://github.com/features/actions
@@ -194,4 +194,4 @@ If you would like to get notified when new posts come out or you want to share a
 
 [this gist]: https://gist.github.com/diamantidis/f2ffb96d6e874b23b5b39a9f51d91314
 
-[Twitter]: https://twitter.com/diamantidis_io
+[X]: https://x.com/diamantidis_io

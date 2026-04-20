@@ -43,7 +43,7 @@ header_pages:
 
 footer-links:
   rss: rss
-  twitter: diamantidis_io
+  x: diamantidis_io
   github: diamantidis
   email: diamantidis@outlook.com
   # facebook:
@@ -69,9 +69,9 @@ exclude:
 #   shortname: ioannisblog-1
 
 social:
-  - name: Twitter
-    icon: twitter
-    desc: Follow me on Twitter
+  - name: X
+    icon: x
+    desc: Follow me on X
     share: true
 
   - name: Facebook

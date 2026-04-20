@@ -189,4 +189,4 @@ And that's about it for this post. In this post, we have seen how we could creat
 As a next step, we can implement the logic to populate those fields with information like the title of the page and the URL. Probably this is a topic that I will cover in one of my next posts. So stay tuned!!
 
 Thanks for reading, I hope you find this post useful!
-If you have any questions, suggestions or comments about this post, just let me know on [Twitter](https://twitter.com/diamantidis_io), I would love to hear from you!!
+If you have any questions, suggestions or comments about this post, just let me know on [X](https://x.com/diamantidis_io), I would love to hear from you!!

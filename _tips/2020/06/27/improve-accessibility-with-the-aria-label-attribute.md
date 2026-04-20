@@ -20,7 +20,7 @@ Let's see an example...
 It's quite common, when we have a link to a social media account, to use the logo of the social media platform instead of the actual name. To make those links more accessible, you can add the `aria-label` on the anchor tag leading to the social media account, like in the following snippet:
 
 ```html
-<a href="https://twitter.com/diamantidis_io" aria-label="Twitter">
+<a href="https://x.com/diamantidis_io" aria-label="X">
  ...
 </a>
 ```

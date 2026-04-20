@@ -385,5 +385,5 @@ To sum up, in this post, we have seen a few cases of how Kotlin features are com
 
 The smaller scope and size of this kind of projects make them suitable for experimenting; be it a new implementation or a new feature introduced on a newer Kotlin version just like I did with the `-Xobjc-generics` argument that I mentioned before. And also they are a good candidate for reference purposes.
 
-Thanks for reading, I hope that you found this post useful and should you have any suggestions on how to enrich this playground or any other questions or comments, just let me know on [Twitter](https://twitter.com/diamantidis_io) or by [email](mailto:diamantidis@outlook.com)!
+Thanks for reading, I hope that you found this post useful and should you have any suggestions on how to enrich this playground or any other questions or comments, just let me know on [X](https://x.com/diamantidis_io) or by [email](mailto:diamantidis@outlook.com)!
 

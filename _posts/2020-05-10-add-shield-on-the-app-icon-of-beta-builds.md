@@ -116,8 +116,8 @@ In my experience, this comes really handy when distributing beta builds as it ma
 
 Thanks for reading this post, I hope you find it useful!
 
-If you would like to get notified when new posts come out or you want to share a question or commend about this post, feel free to follow me on [Twitter].
+If you would like to get notified when new posts come out or you want to share a question or commend about this post, feel free to follow me on [X].
 
 [`badge`]: https://github.com/HazAT/badge
 [ImageMagick]: https://imagemagick.org/index.php
-[Twitter]: https://twitter.com/diamantidis_io
+[X]: https://x.com/diamantidis_io

@@ -230,7 +230,7 @@ For this post I have used a quite simple example, for the sake of demonstrating 
 
 In the post to come, we are going to explore how to add support for sorting, filtering, creating a new post, editing an existing, deleting, etc.
 
-So stay tuned and follow me on [Twitter] should you want to get notified once these posts are published or you have a question or comment about this post.
+So stay tuned and follow me on [X] should you want to get notified once these posts are published or you have a question or comment about this post.
 
 Thanks for reading this post, and see you next time!
 
@@ -245,4 +245,4 @@ Thanks for reading this post, and see you next time!
 
 [Apollo iOS]: https://www.apollographql.com/docs/ios/
 
-[Twitter]: https://twitter.com/diamantidis_io
+[X]: https://x.com/diamantidis_io

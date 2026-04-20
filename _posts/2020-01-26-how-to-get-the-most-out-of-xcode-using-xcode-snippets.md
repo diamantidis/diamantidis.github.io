@@ -117,4 +117,4 @@ In conjunction with [Xcode Templates]({%post_url 2019-07-21-xcode-custom-templat
 Moreover, Xcode snippets can prove to be really helpful in live code presentations where they can both relieve you of the stress of mistyping something and also speed up the presentation by avoiding the unwanted pauses while typing.
 
 Thanks for reading, I hope you find this post useful!
-Feel free to follow me on [Twitter](https://twitter.com/diamantidis_io) and share your comments about this post!!
+Feel free to follow me on [X](https://x.com/diamantidis_io) and share your comments about this post!!

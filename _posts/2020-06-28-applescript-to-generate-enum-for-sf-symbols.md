@@ -245,13 +245,13 @@ This will alleviate all the pains that come with the use of an error-prone strin
 
 Thanks for reading, I hope you find this post useful.
 
-If you like this post and you want to get notified when a new post is published, you can follow me on [Twitter] or subscribe to the [RSS feed].
+If you like this post and you want to get notified when a new post is published, you can follow me on [X] or subscribe to the [RSS feed].
 
-Also, if you have any questions or comments about this post, feel free to contact me on [Twitter]!
+Also, if you have any questions or comments about this post, feel free to contact me on [X]!
 
 Until next time!
 
 [SF Symbols]: https://developer.apple.com/design/human-interface-guidelines/sf-symbols/overview/
 
 [RSS feed]: {{ "feed.xml" | absolute_url }}
-[Twitter]: https://twitter.com/diamantidis_io
+[X]: https://x.com/diamantidis_io

@@ -11,7 +11,7 @@ As you may have noticed from the URL, I am using [GitHub Pages] to host this blo
 
 I wanted to fix this but the problem was that I had no clue what each license means and how to choose one for my repository. As a result, I started to search and read more about Open Source licenses and in this post, I will try to document my learnings, in an attempt to help others who have the same problem and also have a post that could act as a future reference for myself.
 
-> Disclaimer: I am not a lawyer, so handle the following with care. If I have any error, misunderstanding or you have any suggestion, you can either contact me on [Twitter], fill an [issue] on GitHub or fork the [project] and submit a pull request against the [source] branch. :smiley:
+> Disclaimer: I am not a lawyer, so handle the following with care. If I have any error, misunderstanding or you have any suggestion, you can either contact me on [X], fill an [issue] on GitHub or fork the [project] and submit a pull request against the [source] branch. :smiley:
 
 ## Introduction
 
@@ -134,11 +134,11 @@ And that's about it! In this post, we have examined some terminology related to 
 Definitely, after writing this post, I now acknowledge why it is important to have one license in every repository and what are the differences between the licenses, which is quite useful when the time comes to choose one for your repository.
 
 Thanks for reading, I hope you find this post useful too!
-Feel free to reach out to me on [Twitter] and share your comments about this post!
+Feel free to reach out to me on [X] and share your comments about this post!
 
 
 [GitHub Pages]: https://pages.github.com/
-[Twitter]: https://twitter.com/diamantidis_io
+[X]: https://x.com/diamantidis_io
 [issue]: https://github.com/diamantidis/diamantidis.github.io/issues/new
 [project]: https://github.com/diamantidis/diamantidis.github.io
 [source]: https://github.com/diamantidis/diamantidis.github.io/tree/source

@@ -200,6 +200,6 @@ To sum up, this article can be used as a guide to create a custom template and p
 
 Thanks for reading, I hope you find this post useful!
 
-Feel free to follow me on [Twitter](https://twitter.com/diamantidis_io) and let me know what's your opinion about Xcode templates and whether you are using them in your projects!
+Feel free to follow me on [X](https://x.com/diamantidis_io) and let me know what's your opinion about Xcode templates and whether you are using them in your projects!
 
 [a gist]: https://gist.github.com/diamantidis/be9f31b35d301fa97c5f3531adde86c3

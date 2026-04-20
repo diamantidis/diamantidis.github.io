@@ -168,4 +168,4 @@ Voilà! You should get `{"message": "Hello world"}` as a response!
 
 To sum up, in this post we have seen how to run a simple HTTP server from an Android app using Ktor Server. In just 10 lines of code, we manage to create, set up and run an HTTP server. And with the JSON serialization installed. 
 
-Thanks for reading and should you have any questions, suggestions or comments, just let me know on [Twitter](https://twitter.com/diamantidis_io) or [email me](mailto:diamantidis@outlook.com)!!
+Thanks for reading and should you have any questions, suggestions or comments, just let me know on [X](https://x.com/diamantidis_io) or [email me](mailto:diamantidis@outlook.com)!!

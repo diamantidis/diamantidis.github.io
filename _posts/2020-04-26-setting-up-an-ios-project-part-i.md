@@ -91,7 +91,7 @@ This will also create the `.xcworkspace` file, which is the file you will have t
 
 To install any dependencies and to create the `Podfile.lock`, run `bundle exec pod install`
 
-> I am also considering the option of using [Swift Package Manager] for future projects. If you have some experience using both of them, feel free to reach me on [Twitter] and let me know about the pros and cons.
+> I am also considering the option of using [Swift Package Manager] for future projects. If you have some experience using both of them, feel free to reach me on [X] and let me know about the pros and cons.
 
 
 ## Configurations
@@ -161,7 +161,7 @@ And that's about it for this post. Until now, we have set a decent base on top o
 In the next post, I am going to focus on topics like [`Fastlane`], `CI`, project structure, file templates, tools like [`R.swift`] which allows you to have strongly typed assets and maybe more. 
 
 Thanks for reading this post, I hope you find it useful and stay tuned for the second part!
-Feel free to reach out to me on [Twitter] and share your comments about this post!
+Feel free to reach out to me on [X] and share your comments about this post!
 
 [Bundler]: https://bundler.io/
 [RubyGems]: https://rubygems.org/
@@ -177,4 +177,4 @@ Feel free to reach out to me on [Twitter] and share your comments about this pos
 
 [`Fastlane`]: https://fastlane.tools/
 [`R.swift`]: https://github.com/mac-cain13/R.swift
-[Twitter]: https://twitter.com/diamantidis_io
+[X]: https://x.com/diamantidis_io
