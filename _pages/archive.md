@@ -16,13 +16,7 @@ permalink: /archive
         <h4 class="text-[var(--title-color)] font-bold text-xl">{{ month.name }}</h4>
         <div class="pl-6 my-2">
             {% for post in month.items %}
-               <div class="mt-5 border border-[var(--border-color)] rounded-2xl p-3">
-                  <a class="post-link text-3xl tracking-tight" href="{{ post.url | relative_url }}">
-                    {{ post.title | escape }}
-                  </a>
-                  {% assign page_content = post %}
-                  {% include post-subheader.html %}
-              </div>
+              {% include card.html item=post type="post" %}
             {% endfor %}
         </div>
       {% endfor %}
