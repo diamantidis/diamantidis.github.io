@@ -26,7 +26,7 @@ pagination:
         </h2>
         <div class="inline-block float-right max-sm:float-none max-sm:block max-sm:clear-right max-sm:mt-1">
           {% for tag in post.tags %}
-          <a class="inline-block px-4 py-1 mb-1 mr-2 whitespace-nowrap bg-[var(--base-color)] text-[var(--tag-color)] rounded-3xl text-xs align-middle tracking-wide mt-0.5 hover:bg-[var(--hover-color)]" href="/tags#{{ tag | cgi_escape }}" title="{{ tag | strip }}">{{ tag | strip }}</a>
+          <a class="inline-block px-4 py-1 mb-1 mr-2 whitespace-nowrap bg-[var(--base-color)] text-[var(--tag-color)] rounded-3xl text-xs align-middle tracking-wide mt-0.5 hover:bg-[var(--hover-color)]  hover:text-[var(--tag-color)]" href="/tags#{{ tag | cgi_escape }}" title="{{ tag | strip }}">{{ tag | strip }}</a>
           {% endfor %}
         </div>
         <p class="my-3 mx-0 mb-2">

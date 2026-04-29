@@ -14,7 +14,7 @@
   <div class="float-right inline-block max-sm:float-none max-sm:block max-sm:clear-both">
     <div class="inline-block float-right max-sm:float-none max-sm:block max-sm:clear-right max-sm:mt-1">
       {% for tag in page_content.tags %}
-      <a class="inline-block px-[0.9em] py-[0.3em] mb-1 mr-[0.5em] whitespace-nowrap bg-[var(--base-color)] text-[var(--tag-color)] rounded-[12px] text-[12px] align-middle tracking-[1.3px] mt-[2px] hover:bg-[var(--hover-color)]" href="/tags#{{ tag | cgi_escape }}" title="{{ tag | strip }}">{{ tag | strip }}</a>
+      <a class="inline-block px-[0.9em] py-[0.3em] mb-1 mr-[0.5em] whitespace-nowrap bg-[var(--base-color)] text-[var(--tag-color)] rounded-[12px] text-[12px] align-middle tracking-[1.3px] mt-[2px] hover:bg-[var(--hover-color)] hover:text-[var(--tag-color)]" href="/tags#{{ tag | cgi_escape }}" title="{{ tag | strip }}">{{ tag | strip }}</a>
       {% endfor %}
     </div>
   </div>

@@ -34,29 +34,11 @@ permalink: /tags
     <div class="tag-content">
       <h2 id="{{ this_word | cgi_escape }}" class="text-[var(--title-color)] font-bold text-3xl leading-tight">{{ this_word }}</h2>
       {% for post in site.tags[this_word] %}{% if post.title != null %}
-        <div class="mt-5 mb-2 border border-[var(--border-color)] rounded-xl p-3">
-            <div class="py-1 overflow-auto inline-block w-full p-0">
-              <span class="text-xs text-[var(--metatext-color)] uppercase align-middle"><i class="fa fa-file-text-o mr-2" style="font-family: FontAwesome; font-style: normal; font-weight: normal; text-decoration: inherit;"></i>Post</span>
-            </div>
-            <a class="post-link text-3xl" href="{{ post.url | relative_url }}">
-              {{ post.title | escape }}
-            </a>
-            {% assign page_content = post %}
-            {% include post-subheader.html %}
-        </div>
+        {% include card.html item=post type="post" %}
       {% endif %}{% endfor %}
       {% for tip in site.tips %}
         {% if tip.tags contains this_word %}
-          <div class="mt-5 mb-2 border border-[var(--border-color)] rounded-xl p-3">
-            <div class="py-1 overflow-auto inline-block w-full p-0">
-              <span class="text-xs text-[var(--metatext-color)] uppercase align-middle"><i class="fa fa-lightbulb-o mr-2" style="font-family: FontAwesome; font-style: normal; font-weight: normal; text-decoration: inherit;"></i>Tip</span>
-            </div>
-            <a class="post-link text-3xl" href="{{ tip.url | relative_url }}">
-              {{ tip.title | escape }}
-            </a>
-            {% assign page_content = tip %}
-            {% include post-subheader.html %}
-          </div>
+          {% include card.html item=tip type="tip" %}
         {% endif %}
       {% endfor %}
     </div>
