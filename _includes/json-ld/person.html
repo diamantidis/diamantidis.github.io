@@ -1,0 +1,15 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "{{ site.author.name | escape }}",
+  "url": "{{ site.author.url }}",
+  "email": "{{ site.author.email }}",
+  "jobTitle": "Software Developer",
+  "sameAs": [
+    "https://github.com/{{ site.footer-links.github }}",
+    "https://x.com/{{ site.twitter.username }}",
+    "https://linkedin.com/in/{{ site.footer-links.linkedin }}"
+  ]
+}
+</script>

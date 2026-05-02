@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Archive
+description: Browse all blog posts organized by year and month.
 permalink: /archive
 ---
 

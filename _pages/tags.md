@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Tags
+description: Browse all blog posts and tips by tag.
 permalink: /tags
 ---
 
