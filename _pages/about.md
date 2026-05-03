@@ -1,6 +1,7 @@
 ---
 layout: page
 title: About
+description: About Ioannis Diamantidis — a polyglot software developer living in Stockholm, sharing thoughts on software development and technology.
 permalink: /about
 ---
 

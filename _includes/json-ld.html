@@ -1,0 +1,103 @@
+{%- capture home_crumb -%}
+  {"@type": "ListItem", "position": 1, "name": "Home", "item": "{{ "/" | absolute_url }}"}
+{%- endcapture -%}
+
+{%- case page.layout -%}
+
+  {%- when "home" -%}
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {{ home_crumb }}
+      ]
+    }
+    </script>
+    {%- include json-ld/website.html -%}
+
+  {%- when "post" -%}
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {{ home_crumb }},
+        {"@type": "ListItem", "position": 2, "name": "Blog", "item": {{ "/archive" | absolute_url | jsonify }}},
+        {"@type": "ListItem", "position": 3, "name": {{ page.title | escape | jsonify }}, "item": {{ page.url | absolute_url | jsonify }}}
+      ]
+    }
+    </script>
+
+  {%- when "tips" -%}
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {{ home_crumb }},
+        {"@type": "ListItem", "position": 2, "name": "Tips", "item": {{ "/tips" | absolute_url | jsonify }}},
+        {"@type": "ListItem", "position": 3, "name": {{ page.title | escape | jsonify }}, "item": {{ page.url | absolute_url | jsonify }}}
+      ]
+    }
+    </script>
+
+  {%- when "page" -%}
+    {%- if page.permalink == "/about" -%}
+      <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {{ home_crumb }},
+          {"@type": "ListItem", "position": 2, "name": "About", "item": {{ "/about" | absolute_url | jsonify }}}
+        ]
+      }
+      </script>
+      {%- include json-ld/person.html -%}
+    {%- elsif page.permalink == "/archive" -%}
+      <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {{ home_crumb }},
+          {"@type": "ListItem", "position": 2, "name": "Archive", "item": {{ "/archive" | absolute_url | jsonify }}}
+        ]
+      }
+      </script>
+    {%- elsif page.permalink == "/tags" -%}
+      <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {{ home_crumb }},
+          {"@type": "ListItem", "position": 2, "name": "Tags", "item": {{ "/tags" | absolute_url | jsonify }}}
+        ]
+      }
+      </script>
+    {%- elsif page.permalink == "/tips" -%}
+      <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {{ home_crumb }},
+          {"@type": "ListItem", "position": 2, "name": "Tips", "item": {{ "/tips" | absolute_url | jsonify }}}
+        ]
+      }
+      </script>
+    {%- else -%}
+      <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {{ home_crumb }}
+        ]
+      }
+      </script>
+    {%- endif -%}
+
+{%- endcase -%}

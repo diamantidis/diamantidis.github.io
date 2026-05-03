@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Why I start a blog
+description: Why I decided to start a software development blog and what I hope to achieve by writing about my ideas and topics I find interesting.
 date: 2018-09-23 10:15 +0200
 comments: true
 tags: [Personal, Blog]

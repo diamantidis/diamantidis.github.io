@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Tips
+description: A collection of short tips and tricks about software development.
 permalink: /tips
 pagination: 
   enabled: true

@@ -13,6 +13,7 @@
   <title>{{ site_title | strip }}</title>
 
   {%- seo title=false -%}
+  {%- include json-ld.html -%}
   
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
   <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">

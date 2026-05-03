@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Modifying UI elements with LLDB
+description: How to modify UI elements on the fly using LLDB, avoiding the rebuild loop when experimenting with colors, fonts and other visual properties in iOS development.
 date: 2018-09-30 10:48 +0200
 comments: true
 tags: [iOS, Xcode, LLDB]
