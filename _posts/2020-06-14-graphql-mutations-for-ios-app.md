@@ -266,9 +266,6 @@ Thanks for reading! If you found this post useful, consider [buying me a coffee]
 
 Until next time!
 
-Until next time!
-
-
 [Apollo iOS client]: https://www.apollographql.com/docs/ios/
 
 [how to setup an iOS project to fetch]: {%post_url 2020-05-24-swift-loves-graphql-server-with-vapor-and-ios-app-client %}
