@@ -338,7 +338,6 @@ DEPENDENCIES
   jekyll-paginate-v2
   jekyll-sitemap (~> 1.4.0)
   jemoji (~> 0.13.0)
-  minima (~> 2.5.1)
 
 BUNDLED WITH
    2.4.19
