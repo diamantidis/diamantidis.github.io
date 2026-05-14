@@ -114,10 +114,11 @@ In this post we have seen how we can use the `badge` gem to add a shield on the 
 
 In my experience, this comes really handy when distributing beta builds as it makes it much easier to recognize with a single glance the configuration and the version of the build.
 
-Thanks for reading this post, I hope you find it useful!
+Thanks for reading! If you found this post useful, consider [buying me a coffee] to support the blog. For questions or comments, feel free to reach out on [X]!
 
-If you would like to get notified when new posts come out or you want to share a question or commend about this post, feel free to follow me on [X].
+Until next time!
 
 [`badge`]: https://github.com/HazAT/badge
 [ImageMagick]: https://imagemagick.org/index.php
 [X]: https://x.com/diamantidis_io
+[buying me a coffee]: https://www.buymeacoffee.com/diamantidis

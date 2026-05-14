@@ -269,8 +269,9 @@ And that's about it! In this post, we have seen how we can notify the users of a
 
 I hope that by adding this feature in your app more and more users will move to the latest version.
 
-Thanks for reading this post, I hope you find it useful!
-Feel free to follow me on [X] and share your comments about this post!
+Thanks for reading! If you found this post useful, consider [buying me a coffee] to support the blog. For questions or comments, feel free to reach out on [X]!
+
+Until next time!
 
 
 [phased roll-out]: https://help.apple.com/app-store-connect/#/dev3d65fcee1
@@ -285,3 +286,4 @@ Feel free to follow me on [X] and share your comments about this post!
 
 [Siren]: https://github.com/ArtSabintsev/Siren
 [X]: https://x.com/diamantidis_io
+[buying me a coffee]: https://www.buymeacoffee.com/diamantidis

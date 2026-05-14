@@ -262,11 +262,9 @@ And that was it! If you now run the app, it will execute those queries in order.
 
 To sum up, in this post, we have made a brief introduction to Combine's `Future` and `Promise` and we have seen how we can use them to perform GraphQL mutations. More specifically, we have seen how to implement the logic to sequentially create, edit, and delete a post.
 
-Thanks for reading, I hope you find this post useful.
+Thanks for reading! If you found this post useful, consider [buying me a coffee] to support the blog. For questions or comments, feel free to reach out on [X]!
 
-If you like this post and you want to get notified when a new post is published, you can follow me on [X] or subscribe to the [RSS feed].
-
-Also, if you have any questions or comments about this post, feel free to contact me on [X]!
+Until next time!
 
 Until next time!
 
@@ -290,3 +288,4 @@ Until next time!
 
 [RSS feed]: {{ "feed.xml" | absolute_url }}
 [X]: https://x.com/diamantidis_io
+[buying me a coffee]: https://www.buymeacoffee.com/diamantidis

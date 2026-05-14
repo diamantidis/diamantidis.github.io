@@ -297,9 +297,9 @@ mutation DeletePost {
 And that's about it! In this post, we have seen how to add mutations to create, edit and delete a `Post` on a GraphQL server built with Vapor. We have also seen how to take advantage of GraphQL's Inputs for arguments with complex types and how to use [GraphQL Playground] to run our GraphQL queries. 
 
 In the next post, I am going to continue this GraphQL & Swift journey and I am going to investigate how to use the mutations that we defined in this post from an iOS app. 
-So stay tuned and follow me on [X] should you want to get notified once the next post is published or you have a question or comment about this post.
+Thanks for reading! If you found this post useful, consider [buying me a coffee] to support the blog. For questions or comments, feel free to reach out on [X]!
 
-Thanks for reading this post, and see you next time!
+Until next time!
 
 [GitHub]: https://github.com/diamantidis/vapor-graphql/tree/3db78ea
 [how to setup a GraphQL server with Vapor]: {%post_url 2020-05-24-swift-loves-graphql-server-with-vapor-and-ios-app-client %}
@@ -307,3 +307,4 @@ Thanks for reading this post, and see you next time!
 [a previous post]: {%post_url 2020-05-31-custom-graphql-types-on-swift-projects %}
 [GraphQL Playground]: https://github.com/prisma-labs/graphql-playground
 [X]: https://x.com/diamantidis_io
+[buying me a coffee]: https://www.buymeacoffee.com/diamantidis

@@ -111,5 +111,12 @@ Now, try to build the app again. This time, the iOS app will be successfully bui
 
 ## Conclusion
 
-And this is it!! If you are interested, you can find this project on [GitHub](https://github.com/diamantidis/KMP_base). This project, which is created by following these steps, will act as the base for my next posts on KMP. In the next post, I will try to delve deeper on the structure on the initial project and make some tweaks here and there. See you soon!!
+And this is it!! If you are interested, you can find this project on [GitHub](https://github.com/diamantidis/KMP_base). This project, which is created by following these steps, will act as the base for my next posts on KMP. In the next post, I will try to delve deeper on the structure on the initial project and make some tweaks here and there.
+
+Thanks for reading! If you found this post useful, consider [buying me a coffee] to support the blog. For questions or comments, feel free to reach out on [X]!
+
+Until next time!
+
+[buying me a coffee]: https://www.buymeacoffee.com/diamantidis
+[X]: https://x.com/diamantidis_io
 

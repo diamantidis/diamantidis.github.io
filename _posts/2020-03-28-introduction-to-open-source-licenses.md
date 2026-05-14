@@ -133,12 +133,14 @@ And that's about it! In this post, we have examined some terminology related to 
 
 Definitely, after writing this post, I now acknowledge why it is important to have one license in every repository and what are the differences between the licenses, which is quite useful when the time comes to choose one for your repository.
 
-Thanks for reading, I hope you find this post useful too!
-Feel free to reach out to me on [X] and share your comments about this post!
+Thanks for reading! If you found this post useful, consider [buying me a coffee] to support the blog. For questions or comments, feel free to reach out on [X]!
+
+Until next time!
 
 
 [GitHub Pages]: https://pages.github.com/
 [X]: https://x.com/diamantidis_io
+[buying me a coffee]: https://www.buymeacoffee.com/diamantidis
 [issue]: https://github.com/diamantidis/diamantidis.github.io/issues/new
 [project]: https://github.com/diamantidis/diamantidis.github.io
 [source]: https://github.com/diamantidis/diamantidis.github.io/tree/source

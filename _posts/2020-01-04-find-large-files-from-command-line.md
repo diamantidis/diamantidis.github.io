@@ -72,5 +72,9 @@ In my case I was quite surprised to find that it was the folder with my old proj
 
 And that's about it for this post. Though I was kind of annoyed when I first saw this notification, I would say that eventually it turned out well as I was able to find out more about which files occupy a great part of the storage disk and also have a command that will be there to help me if I face the same issue again in the future.
 
-Thanks for reading, I hope you find this post useful!
-If you have any questions, suggestions or comments about this post, just let me know on [X](https://x.com/diamantidis_io), I would love to hear from you!!
+Thanks for reading! If you found this post useful, consider [buying me a coffee] to support the blog. For questions or comments, feel free to reach out on [X]!
+
+Until next time!
+
+[buying me a coffee]: https://www.buymeacoffee.com/diamantidis
+[X]: https://x.com/diamantidis_io

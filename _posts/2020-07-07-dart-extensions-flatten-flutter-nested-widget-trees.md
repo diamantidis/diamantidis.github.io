@@ -122,12 +122,10 @@ To wrap up, in this post, we have followed an alternative approach on how to str
 
 As a result, this could help us flatten the widget hierarchy and reduce nesting. I have showcased a few examples of such extensions, but you can use the same concept in many other cases as you see fit.
 
-Thanks for reading, I hope you find this post useful!
-
-If you have any questions or comments about this post, feel free to reach out to me on [X]!
+Thanks for reading! If you found this post useful, consider [buying me a coffee] to support the blog. For questions or comments, feel free to reach out on [X]!
 
 Until next time!
 
-
 [dartpad.dev]: https://dartpad.dev/flutter
 [X]: https://x.com/diamantidis_io
+[buying me a coffee]: https://www.buymeacoffee.com/diamantidis

@@ -243,11 +243,7 @@ public extension UIImage {
 And that's about it! In this post, we have seen how we can utilize the ability of AppleScript to interact with other macOS apps to generate an enum for all the symbols on the `SF Symbols` app.
 This will alleviate all the pains that come with the use of an error-prone string literal when we create an Image based on an `SF Symbol`. Instead, with this enum we will be able to create those Images in a type-safe manner.
 
-Thanks for reading, I hope you find this post useful.
-
-If you like this post and you want to get notified when a new post is published, you can follow me on [X] or subscribe to the [RSS feed].
-
-Also, if you have any questions or comments about this post, feel free to contact me on [X]!
+Thanks for reading! If you found this post useful, consider [buying me a coffee] to support the blog. For questions or comments, feel free to reach out on [X]!
 
 Until next time!
 
@@ -255,3 +251,4 @@ Until next time!
 
 [RSS feed]: {{ "feed.xml" | absolute_url }}
 [X]: https://x.com/diamantidis_io
+[buying me a coffee]: https://www.buymeacoffee.com/diamantidis

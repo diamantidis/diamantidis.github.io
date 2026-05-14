@@ -170,9 +170,9 @@ And that's about it for now. In these two posts ([Part I here]({%post_url 2020-0
 With this list in place, I am more confident that I will have a proper setup before even starting writing any code. It's like the checklist that pilots use prior to the take off. :rocket: :smirk:
 
 
-Thanks for reading this post, I hope you find it useful!
+Thanks for reading! If you found this post useful, consider [buying me a coffee] to support the blog. For questions or comments, feel free to reach out on [X]!
 
-I am really interested to know the steps that you take, so if you want to share them with me, or you have any other comment or question about this post, feel free to reach out to me on [X]!!
+Until next time!
 
 
 
@@ -188,3 +188,4 @@ I am really interested to know the steps that you take, so if you want to share 
 [R.swift's GitHub page]: https://github.com/mac-cain13/R.swift/blob/master/Documentation/Examples.md
 
 [X]: https://x.com/diamantidis_io
+[buying me a coffee]: https://www.buymeacoffee.com/diamantidis

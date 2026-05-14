@@ -145,5 +145,11 @@ This can be executed by running `osascript applescript_download_profiles.scpt`.
 ## Conclusion
 It's always nice to experiment with technologies that you haven't use before and at the same time to explore new options and possibilities to make your life easier by enabling you to automate processes. This post only scratches the surface of the AppleScript capabilities and I am looking forward to start using AppleScript to automate tasks that I do quite often. Furthermore, it is a great opportunity to get a better idea on how it works underneath with use of the apple events, Open Scripting Architecture and the language components.
 
+Thanks for reading! If you found this post useful, consider [buying me a coffee] to support the blog. For questions or comments, feel free to reach out on [X]!
+
+Until next time!
+
 [gist with the Javascript implementation]: https://gist.github.com/diamantidis/0d2a9e28c12d2f1b3d3c02e7f32c7019
 [gist with the AppleScript implementation]:  https://gist.github.com/diamantidis/c688cc192d9d525248f55da6602fb4ad
+[buying me a coffee]: https://www.buymeacoffee.com/diamantidis
+[X]: https://x.com/diamantidis_io

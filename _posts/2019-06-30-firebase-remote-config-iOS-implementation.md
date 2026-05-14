@@ -272,4 +272,10 @@ And not only that, but, having Firebase Remote Config set up, you also get A/B t
 
 
 In a handful of steps we manage to integrate an iOS app with Firebase Remote Config and A/B testing using the login screen as an example. This enable us to control remotely some aspects of the user interface and at the same time experiment with the texts. 
-I hope you find it useful and let me know if you have any questions!!
+
+Thanks for reading! If you found this post useful, consider [buying me a coffee] to support the blog. For questions or comments, feel free to reach out on [X]!
+
+Until next time!
+
+[buying me a coffee]: https://www.buymeacoffee.com/diamantidis
+[X]: https://x.com/diamantidis_io

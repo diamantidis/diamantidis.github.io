@@ -94,4 +94,9 @@ To add a custom key binding someone has to follow the next steps:
 ## Conclusion
 I hope you find those shortcuts useful and start using them on your daily routine to save some time. Furthermore, being able to add custom bindings can prove to be really useful especially on cases that are not currently supported by Xcode and are quite common, like quickly moving up and down on a file. 
 
-Thanks for reading, and feel free to follow me on [X](https://x.com/diamantidis_io) and share your questions, suggestions or comments about this post!!
+Thanks for reading! If you found this post useful, consider [buying me a coffee] to support the blog. For questions or comments, feel free to reach out on [X]!
+
+Until next time!
+
+[buying me a coffee]: https://www.buymeacoffee.com/diamantidis
+[X]: https://x.com/diamantidis_io

@@ -58,3 +58,10 @@ My experience so far with Jekyll is amazing and on par with my expectations. One
 And this is the story and the decision process that I followed to end up choosing to use Jekyll. Maybe some time in the future I will have to move to another platform, but for now, Jekyll gives me the opportunity to focus on writing content instead of supporting the platform. Anyhow, I believe that having so many products competing each other is beneficial for everyone in the community as they are trying to provide a better offering and gain a bigger percentage of the pie.
 
 Finally, I believe that everyone (or better those that are interested and want to) should try and start a new blog, and most preferably a custom one, to better share their personality with the rest of the world, not only by their writings but also with the look and feel of their blog.
+
+Thanks for reading! If you found this post useful, consider [buying me a coffee] to support the blog. For questions or comments, feel free to reach out on [X]!
+
+Until next time!
+
+[buying me a coffee]: https://www.buymeacoffee.com/diamantidis
+[X]: https://x.com/diamantidis_io

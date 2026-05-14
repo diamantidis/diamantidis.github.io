@@ -198,8 +198,10 @@ The new module is ready to be used!
 
 To sum up, this article can be used as a guide to create a custom template and presents how easy and straight-forward is to do so. Of course it doesn't cover all the available options such as adding more fields/options when creating a template and not only the name and based on them to create different file (like the case with `Swift` or `Objective-C` option) and maybe creating a base template that can be used by many child templates (the case for most of the Xcode predefined templates). In general, Xcode custom templates can be used to ease, in some extend, the process of creating a new file or a new module, eventually resulting in a more efficient way for working since it will remove some time-consuming and not so interesting tasks. And maybe guarantee some consistency amongst team members in the way modules and files are created.
 
-Thanks for reading, I hope you find this post useful!
+Thanks for reading! If you found this post useful, consider [buying me a coffee] to support the blog. For questions or comments, feel free to reach out on [X]!
 
-Feel free to follow me on [X](https://x.com/diamantidis_io) and let me know what's your opinion about Xcode templates and whether you are using them in your projects!
+Until next time!
 
 [a gist]: https://gist.github.com/diamantidis/be9f31b35d301fa97c5f3531adde86c3
+[buying me a coffee]: https://www.buymeacoffee.com/diamantidis
+[X]: https://x.com/diamantidis_io

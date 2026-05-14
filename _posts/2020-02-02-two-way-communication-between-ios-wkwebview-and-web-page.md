@@ -223,5 +223,9 @@ And that's about it, if you now run the app, the text of the label will change w
 
 In this post, we have seen how to achieve bidirectional communication between a WKWebView and the website it loaded. Using this, we can use events from the website to trigger actions on the app and similarly adjust the loaded website based on the information we have on the app. 
 
-Thanks for reading, I hope you find this post useful!
-Feel free to follow me on [X](https://x.com/diamantidis_io) and share your comments about this post!
+Thanks for reading! If you found this post useful, consider [buying me a coffee] to support the blog. For questions or comments, feel free to reach out on [X]!
+
+Until next time!
+
+[buying me a coffee]: https://www.buymeacoffee.com/diamantidis
+[X]: https://x.com/diamantidis_io

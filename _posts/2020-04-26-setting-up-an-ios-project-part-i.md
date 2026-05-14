@@ -160,8 +160,9 @@ And that's about it for this post. Until now, we have set a decent base on top o
 
 In the next post, I am going to focus on topics like [`Fastlane`], `CI`, project structure, file templates, tools like [`R.swift`] which allows you to have strongly typed assets and maybe more. 
 
-Thanks for reading this post, I hope you find it useful and stay tuned for the second part!
-Feel free to reach out to me on [X] and share your comments about this post!
+Thanks for reading! If you found this post useful, consider [buying me a coffee] to support the blog. For questions or comments, feel free to reach out on [X]!
+
+Until next time!
 
 [Bundler]: https://bundler.io/
 [RubyGems]: https://rubygems.org/
@@ -178,3 +179,4 @@ Feel free to reach out to me on [X] and share your comments about this post!
 [`Fastlane`]: https://fastlane.tools/
 [`R.swift`]: https://github.com/mac-cain13/R.swift
 [X]: https://x.com/diamantidis_io
+[buying me a coffee]: https://www.buymeacoffee.com/diamantidis
