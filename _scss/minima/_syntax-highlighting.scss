@@ -16,8 +16,6 @@ code.highlighter-rouge {
 
 .highlight {
   background: #263239;
-  @extend %vertical-rhythm;
-
   .highlighter-rouge & {
     background: #263239;
     border-radius: 5px;
