@@ -48,3 +48,10 @@ The last step (`> default.realm`) is to redirect the content of the file to a fi
 
 And that's it! Now you will be able to copy the file from a device for an application that you have built without any error!
 
+Thanks for reading! If you found this tip useful, consider [buying me a coffee] to support the blog. For questions or comments, feel free to reach out on [X]!
+
+Until next time!
+
+[buying me a coffee]: https://www.buymeacoffee.com/diamantidis
+[X]: https://x.com/diamantidis_io
+

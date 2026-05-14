@@ -56,3 +56,10 @@ let resetButton = UITextField.ToolbarItem(title: "Reset", target: self, selector
 let doneButton = UITextField.ToolbarItem(title: "Done", target: self, selector: #selector(donePressed))
 textField.addToolbar(leading: [cancelButton, resetButton], trailing: [doneButton])
 ```
+
+Thanks for reading! If you found this tip useful, consider [buying me a coffee] to support the blog. For questions or comments, feel free to reach out on [X]!
+
+Until next time!
+
+[buying me a coffee]: https://www.buymeacoffee.com/diamantidis
+[X]: https://x.com/diamantidis_io

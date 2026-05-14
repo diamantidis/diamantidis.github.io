@@ -29,5 +29,11 @@ I hope that this post will make you more aware of this topic and motivates you t
 
 If you are interested to find potential accessibility issues on your websites, you can use [Lighthouse in Google DevTools] or the [web.dev Measure] tool provided by Google. 
 
+Thanks for reading! If you found this tip useful, consider [buying me a coffee] to support the blog. For questions or comments, feel free to reach out on [X]!
+
+Until next time!
+
 [Lighthouse in Google DevTools]: https://developers.google.com/web/tools/lighthouse#devtools
 [web.dev Measure]: https://web.dev/measure/
+[buying me a coffee]: https://www.buymeacoffee.com/diamantidis
+[X]: https://x.com/diamantidis_io

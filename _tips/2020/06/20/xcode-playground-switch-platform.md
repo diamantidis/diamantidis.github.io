@@ -26,3 +26,10 @@ You can change that on the File Inspector tab, which you can either access from 
 
 
 With that change in place, your Playground will compile and run successfully :rocket:
+
+Thanks for reading! If you found this tip useful, consider [buying me a coffee] to support the blog. For questions or comments, feel free to reach out on [X]!
+
+Until next time!
+
+[buying me a coffee]: https://www.buymeacoffee.com/diamantidis
+[X]: https://x.com/diamantidis_io
