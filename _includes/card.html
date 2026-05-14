@@ -1,8 +1,8 @@
 <div
-  class="mt-5 mb-2 border border-[var(--border-color)] rounded-xl p-3 grid grid-rows-[max-content_max-content_max-content_auto_max-content] grid-gap-0 shadow-[4px_4px_10px_5px_var(--tips-card-shadow-color)]">
+  class="mt-5 mb-2 border border-(--border-color) rounded-xl p-3 grid grid-rows-[max-content_max-content_max-content_auto_max-content] grid-gap-0 shadow-[4px_4px_10px_5px_var(--tips-card-shadow-color)]">
   <!-- Content Type Label -->
   <div class="py-1 overflow-auto inline-block w-full p-0">
-    <span class="text-xs text-[var(--metatext-color)] uppercase align-middle">
+    <span class="text-xs text-(--metatext-color) uppercase align-middle">
       {% if include.type == "tip" %}
       <i class="fa fa-lightbulb-o mr-2"
         style="font-family: FontAwesome; font-style: normal; font-weight: normal; text-decoration: inherit;"></i>Tip
@@ -14,7 +14,7 @@
   </div>
 
   <!-- Title -->
-  <a class="text-[var(--text-color)] text-3xl tracking-tight font-bold after:content-[''] after:block after:w-1/2 after:max-w-48 after:h-px after:bg-[var(--base-color)] after:my-1"
+  <a class="text-(--text-color) text-3xl tracking-tight font-bold after:content-[''] after:block after:w-1/2 after:max-w-48 after:h-px after:bg-(--base-color) after:my-1"
     href="{{ include.item.url | relative_url }}" title="{{ include.item.title | escape | strip }}">
     {{ include.item.title | escape }}
   </a>
@@ -24,12 +24,12 @@
   {% include post-subheader.html %}
 
   <!-- Excerpt -->
-  <p class="mb-px mx-0 text-[var(--title-color)]">{{ include.item.excerpt | strip_html | truncate: 156 }}</p>
+  <p class="mb-px mx-0 text-(--title-color)">{{ include.item.excerpt | strip_html | truncate: 156 }}</p>
 
   <!-- Read More Link -->
   <div class="float-right block clear-both">
     <div>
-      <a class="text-[var(--text-color)] p-1 text-center no-underline inline-block text-base my-1 mx-0.5 bg-transparent float-right read-more animatable uppercase align-middle"
+      <a class="text-(--text-color) p-1 text-center no-underline inline-block text-base my-1 mx-0.5 bg-transparent float-right read-more animatable uppercase align-middle"
         href="{{ include.item.url | relative_url }}" title="Read more">
         Read more
         <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"

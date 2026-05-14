@@ -1,11 +1,11 @@
 ---
 layout: default
 ---
-<article class="border-b border-[var(--border-color)] text-[var(--title-color)] block pt-4 pr-0 pb-3 pl-0">
+<article class="border-b border-(--border-color) text-(--title-color) block pt-4 pr-0 pb-3 pl-0">
 
   <header class="mb-2.5">
     <h1 class="mb-0">
-      <span class="text-[var(--text-color)] font-bold text-2xl m-0 leading-tight break-words hyphens-auto">{{ page.title
+      <span class="text-(--text-color) font-bold text-2xl m-0 leading-tight break-words hyphens-auto">{{ page.title
         | escape }}</span>
     </h1>
 
@@ -13,7 +13,7 @@ layout: default
     {% include post-subheader.html %}
   </header>
 
-  <div class="post-content border-b border-[var(--border-color)] text-[var(--title-color)] block pt-4 pr-0 pb-3 pl-0">
+  <div class="post-content border-b border-(--border-color) text-(--title-color) block pt-4 pr-0 pb-3 pl-0">
     {{ content }}
   </div>
 
@@ -29,7 +29,7 @@ layout: default
       {% capture full_url %}{{ site.url }}{{ site.baseurl }}{{ page.url }}{% endcapture %}
       {% if social.name == "X" and social.share == true %}
       <a href="https://x.com/intent/tweet?text={{ page.title | cgi_escape }}&url={{ full_url | cgi_escape}}"
-        class="text-[var(--base-color)] no-underline hover:text-[var(--hover-color)]" aria-label="Share on X"
+        class="text-(--base-color) no-underline hover:text-(--hover-color)" aria-label="Share on X"
         onclick="window.open(this.href, 'x-share', 'width=550,height=255');return false;">
         <span class="fa-stack fa-lg">
           <i class="fa fa-circle fa-stack-2x"></i>
@@ -44,7 +44,7 @@ layout: default
       {% endif %}
       {% if social.name == "Facebook" and social.share == true %}
       <a href="//www.facebook.com/sharer.php?t={{ page.title | cgi_escape }}&u={{ full_url | cgi_escape}}"
-        class="text-[var(--base-color)] no-underline hover:text-[var(--hover-color)]" aria-label="Share on Facebook"
+        class="text-(--base-color) no-underline hover:text-(--hover-color)" aria-label="Share on Facebook"
         onclick="window.open(this.href, '{{ social.icon }}-share', 'width=550,height=255');return false;">
         <span class="fa-stack fa-lg">
           <i class="fa fa-circle fa-stack-2x"></i>
@@ -54,7 +54,7 @@ layout: default
       {% endif %}
       {% if social.name == "LinkedIn" and social.share == true %}
       <a href="//www.linkedin.com/shareArticle?mini=true&url={{ full_url | cgi_escape}}"
-        class="text-[var(--base-color)] no-underline hover:text-[var(--hover-color)]" aria-label="Share on LinkedIn"
+        class="text-(--base-color) no-underline hover:text-(--hover-color)" aria-label="Share on LinkedIn"
         onclick="window.open(this.href, '{{ social.icon }}-share', 'width=550,height=255');return false;">
         <span class="fa-stack fa-lg">
           <i class="fa fa-circle fa-stack-2x"></i>

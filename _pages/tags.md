@@ -23,7 +23,7 @@ permalink: /tags
   {% for item in (0..tag_words.size) %}{% unless forloop.last %}
   {% assign tag = tag_words[item] %}
   {% assign tip_tag = grouped_tip_tags | where:"name", tag | first %}
-    <a class="inline-block px-4 py-1 mb-1 mr-2 whitespace-nowrap bg-[var(--base-color)] text-[var(--tag-color)] rounded-xl text-xs align-middle tracking-[1.3px] hover:bg-[var(--hover-color)]" href="/tags#{{ tag | cgi_escape }}">{{ tag }} ({{ site.tags[tag].size | plus: tip_tag.size }})  </a>
+    <a class="inline-block px-4 py-1 mb-1 mr-2 whitespace-nowrap bg-(--base-color) text-(--tag-color) rounded-xl text-xs align-middle tracking-[1.3px] hover:bg-(--hover-color)" href="/tags#{{ tag | cgi_escape }}">{{ tag }} ({{ site.tags[tag].size | plus: tip_tag.size }})  </a>
   {% endunless %}{% endfor %}
 </div>
 
@@ -33,7 +33,7 @@ permalink: /tags
   {% for item in (0..tag_words.size) %}{% unless forloop.last %}
     {% capture this_word %}{{ tag_words[item] }}{% endcapture %}
     <div class="tag-content">
-      <h2 id="{{ this_word | cgi_escape }}" class="text-[var(--title-color)] font-bold text-3xl leading-tight">{{ this_word }}</h2>
+      <h2 id="{{ this_word | cgi_escape }}" class="text-(--title-color) font-bold text-3xl leading-tight">{{ this_word }}</h2>
       {% for post in site.tags[this_word] %}{% if post.title != null %}
         {% include card.html item=post type="post" %}
       {% endif %}{% endfor %}
