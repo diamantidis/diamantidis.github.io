@@ -1,14 +1,14 @@
-<header class="site-header w-full shadow-[0_2px_2px_-2px_var(--divider-color)] border-none" role="banner">
-    <div class="wrapper flex items-center justify-between px-4 md:px-8 py-4">
+<header class="w-full shadow-[0_2px_2px_-2px_var(--divider-color)] border-none border-t-[5px] border-b border-[#e8e8e8] min-h-[55.95px] relative" role="banner">
+    <div class="max-w-[800px] mx-auto px-[30px] max-md:px-[15px] flex items-center justify-between py-4">
         {%- assign default_paths = site.pages | map: "path" -%}
         {%- assign page_paths = site.header_pages | default: default_paths -%}
         <div class="flex flex-col items-start gap-2">
-            <div class="title-wrapper">
-                <a class="site-title text-[var(--title-color)] visited:text-[var(--title-color)]" rel="author" href="{{ "/" | relative_url }}">
+            <div>
+                <a class="text-[var(--title-color)] visited:text-[var(--title-color)]" rel="author" href="{{ "/" | relative_url }}">
                     <span class="text-2xl">{{ site.title | escape }}</span>
                 </a>
             </div>
-            <div class="footer-icons">
+            <div>
                 <ul class="flex gap-2 justify-start">
                     {% assign dimension = "sm" %}
                     {% include icons.html %}
