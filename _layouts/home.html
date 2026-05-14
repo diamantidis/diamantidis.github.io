@@ -20,13 +20,13 @@ layout: default
 <div>
   {% if paginator.previous_page %}
   <div>
-    <a class="text-[var(--base-color)] border border-[var(--border-color)] p-3 no-underline inline-block" href="{{ paginator.previous_page_path | prepend: site.baseurl }}" title="Newer"
+    <a class="text-(--base-color) border border-(--border-color) p-3 no-underline inline-block" href="{{ paginator.previous_page_path | prepend: site.baseurl }}" title="Newer"
       style="float:left;"><i class="fa fa-chevron-left px-1"></i>Newer</a>
   </div>
   {% endif %}
   {% if paginator.next_page %}
   <div>
-    <a class="text-[var(--base-color)] border border-[var(--border-color)] p-3 no-underline inline-block" href="{{ paginator.next_page_path | prepend: site.baseurl }}" title="Older"
+    <a class="text-(--base-color) border border-(--border-color) p-3 no-underline inline-block" href="{{ paginator.next_page_path | prepend: site.baseurl }}" title="Older"
       style="float:right;">Older<i class="fa fa-chevron-right px-1"></i></a>
   </div>
   {% endif %}

@@ -1,9 +1,9 @@
 <div class="py-1 overflow-auto inline-block w-full">
-  <span class="text-[12px] text-[var(--metatext-color)] uppercase align-middle">
+  <span class="text-[12px] text-(--metatext-color) uppercase align-middle">
     {{ page_content.date | date: "%B %-d, %Y" }}
   </span>
-  <span class="text-[12px] text-[var(--metatext-color)] uppercase align-middle">-</span>
-  <span class="text-[12px] text-[var(--metatext-color)] uppercase align-middle">
+  <span class="text-[12px] text-(--metatext-color) uppercase align-middle">-</span>
+  <span class="text-[12px] text-(--metatext-color) uppercase align-middle">
     {% capture words %}
       {{ page_content.content | number_of_words }}
     {% endcapture %}

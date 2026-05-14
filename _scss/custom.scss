@@ -6,10 +6,8 @@ body {
   background-color: var(--page-color);
 }
 
-a:hover,
-a:visited {
+a:hover {
   text-decoration: none;
-  color: var(--hover-color);
 }
 
 .highlight pre code {
