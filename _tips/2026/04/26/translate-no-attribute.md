@@ -20,7 +20,7 @@ Let's look at a practical example. Imagine you have a brand named "TechNova". Wi
 
 In summary, the `translate="no"` attribute is a simple yet powerful tool for web developers and content creators to maintain brand consistency across different languages. It's a small addition that can make a big difference in how your brand is perceived globally.
 
-Thanks for reading. If this tip helped, consider [buying me a coffee] to support the blog. For questions or comments, feel free to reach out on [X]!
+Thanks for reading! If you found this tip useful, consider [buying me a coffee] to support the blog. For questions or comments, feel free to reach out on [X]!
 
 Until next time!
 

@@ -43,3 +43,10 @@ ifconfig en0 | grep "inet " | awk '{print $2}'
 This will output your IP on the Terminal in the format `192.168.0.XXX`. 
 
 Type this IP followed by `:4000` on your favorite browser and you will be able to now browse your blog from the mobile device!! :rocket:
+
+Thanks for reading! If you found this tip useful, consider [buying me a coffee] to support the blog. For questions or comments, feel free to reach out on [X]!
+
+Until next time!
+
+[buying me a coffee]: https://www.buymeacoffee.com/diamantidis
+[X]: https://x.com/diamantidis_io

@@ -148,5 +148,12 @@ Furthermore, we can add the following snippet in the end of the `shared/build.gr
 
 ## Conclusion
 
-In this post, we have seen how to setup fastlane on both iOS and Android apps and what are the commands to run the test for each project individually. Now, every time we make a code change, we can run one of those commands to make sure that we haven't break anything. Of course, unit tests and knowing how to run them is important but making sure that they are kept updated and that they run frequently and on every change is equally important to get the most out of them. Setting up Continuous integration and code coverage are some steps towards that direction but those are big topics on their own that I will probably cover in one of the next posts. Until then, have fun and do let me know if you have any questions!!
+In this post, we have seen how to setup fastlane on both iOS and Android apps and what are the commands to run the test for each project individually. Now, every time we make a code change, we can run one of those commands to make sure that we haven't break anything. Of course, unit tests and knowing how to run them is important but making sure that they are kept updated and that they run frequently and on every change is equally important to get the most out of them. Setting up Continuous integration and code coverage are some steps towards that direction but those are big topics on their own that I will probably cover in one of the next posts.
+
+Thanks for reading! If you found this post useful, consider [buying me a coffee] to support the blog. For questions or comments, feel free to reach out on [X]!
+
+Until next time!
+
+[buying me a coffee]: https://www.buymeacoffee.com/diamantidis
+[X]: https://x.com/diamantidis_io
 

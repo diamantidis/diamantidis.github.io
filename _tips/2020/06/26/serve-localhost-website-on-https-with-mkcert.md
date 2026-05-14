@@ -33,4 +33,10 @@ jekyll server --ssl-cert ./cert.pem --ssl-key ./key.pem
 
 Now, you can browse your local Jekyll site on [`https://localhost:4000`](https://localhost:4000)! :tada:
 
+Thanks for reading! If you found this tip useful, consider [buying me a coffee] to support the blog. For questions or comments, feel free to reach out on [X]!
+
+Until next time!
+
 [mkcert]: https://github.com/FiloSottile/mkcert
+[buying me a coffee]: https://www.buymeacoffee.com/diamantidis
+[X]: https://x.com/diamantidis_io

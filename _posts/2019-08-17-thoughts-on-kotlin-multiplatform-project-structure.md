@@ -266,5 +266,11 @@ The project, now, has a folder structure that keeps both the iOS and the Android
 
 Since I am still doing my first baby steps on Kotlin Multiplatform Project, I may have to make some adaptations to this structure as I learn more, but for now, I believe that these changes on the current project will help me it the long run.
 Having said that and with a folder structure that I believe that it seems to be more suitable, I will continue my exploration on Kotlin Multiplatform Project with a post on setting up and running unit tests for the apps and the shared library and how to built a CI solution for this project. 
-I hope that you find this post useful and let me know if you have any questions! See you soon!
+
+Thanks for reading! If you found this post useful, consider [buying me a coffee] to support the blog. For questions or comments, feel free to reach out on [X]!
+
+Until next time!
+
+[buying me a coffee]: https://www.buymeacoffee.com/diamantidis
+[X]: https://x.com/diamantidis_io
 

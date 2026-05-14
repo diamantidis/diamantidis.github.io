@@ -51,3 +51,10 @@ All the directories that we have visited are stored in a stack. To display this 
 You can now use the number on the left of the directory to navigate through the stack. In our case, we are using `cd ~2` to navigate to the item in position 2.
 
 Isn't that cool? Especially compared to the alternative(`cd ../../child1/grandchild1`)? :sunglasses:
+
+Thanks for reading! If you found this tip useful, consider [buying me a coffee] to support the blog. For questions or comments, feel free to reach out on [X]!
+
+Until next time!
+
+[buying me a coffee]: https://www.buymeacoffee.com/diamantidis
+[X]: https://x.com/diamantidis_io

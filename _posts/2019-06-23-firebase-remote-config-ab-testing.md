@@ -87,3 +87,10 @@ And that's it!! Nothing else to do!!
 
 As we saw in this post, setting up Firebase A/B testing in conjunction with Remote Config is definitely neither difficult nor a time-consuming process, especially compared to the potential results it may have on user satisfaction, conversion and retention.
 In the [next article]({% post_url 2019-06-30-firebase-remote-config-iOS-implementation %}) of this series, I will delve deeper into the implementation of a demo iOS app that will make use of all the things discussed in this article. Stay tuned!!
+
+Thanks for reading! If you found this post useful, consider [buying me a coffee] to support the blog. For questions or comments, feel free to reach out on [X]!
+
+Until next time!
+
+[buying me a coffee]: https://www.buymeacoffee.com/diamantidis
+[X]: https://x.com/diamantidis_io

@@ -203,8 +203,9 @@ You can find the code for this [`PickerTextField`](https://gist.github.com/diama
 ## Conclusion
 And that's about it! In this post, we have first seen what is the current level of support for keyboard types on SwiftUI's `TextField`. Then, we investigated how we can provide support for more options by relying on the UIKit's UITextField, and its property `inputView`. This way, we can present a keyboard with a `UIPickerView`, or any other view we may want.
 
-Thanks for reading, I hope you find this post useful and if you have any questions or comments about this post, feel free to contact me on [X]!
+Thanks for reading! If you found this post useful, consider [buying me a coffee] to support the blog. For questions or comments, feel free to reach out on [X]!
 
 Until next time!
 
 [X]: https://x.com/diamantidis_io
+[buying me a coffee]: https://www.buymeacoffee.com/diamantidis

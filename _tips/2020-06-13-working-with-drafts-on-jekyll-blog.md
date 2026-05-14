@@ -34,3 +34,10 @@ jekyll server --watch --drafts
 And that's it!
 
 You can now streamline your writing process using drafts! :rocket:
+
+Thanks for reading! If you found this tip useful, consider [buying me a coffee] to support the blog. For questions or comments, feel free to reach out on [X]!
+
+Until next time!
+
+[buying me a coffee]: https://www.buymeacoffee.com/diamantidis
+[X]: https://x.com/diamantidis_io

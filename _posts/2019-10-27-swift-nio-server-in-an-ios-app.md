@@ -185,4 +185,9 @@ For this reason, as alternatives to SwiftNIO, there are also some other high-lev
 
 SwiftNIO or not, knowing that it is possible to run a server in an iOS app is something that could be useful in many ways!!
 
-Thanks for reading and should you have any questions, suggestions or comments, just let me know on [X](https://x.com/diamantidis_io) or [email me](mailto:diamantidis@outlook.com)!!
+Thanks for reading! If you found this post useful, consider [buying me a coffee] to support the blog. For questions or comments, feel free to reach out on [X]!
+
+Until next time!
+
+[buying me a coffee]: https://www.buymeacoffee.com/diamantidis
+[X]: https://x.com/diamantidis_io

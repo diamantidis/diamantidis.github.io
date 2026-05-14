@@ -22,4 +22,10 @@ It's also worth mentioning that the vast majority of modern browsers support thi
 
 Hope you find this little tip helpful! :rocket:
 
+Thanks for reading! If you found this tip useful, consider [buying me a coffee] to support the blog. For questions or comments, feel free to reach out on [X]!
+
+Until next time!
+
 [designMode]: https://developer.mozilla.org/en-US/docs/Web/API/Document/designMode
+[buying me a coffee]: https://www.buymeacoffee.com/diamantidis
+[X]: https://x.com/diamantidis_io

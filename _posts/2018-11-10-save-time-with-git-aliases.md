@@ -65,3 +65,10 @@ The next step is to learn the commands and start using them. :smile:
 Writing git commands on a Terminal is an integral part of my daily routine, so improving this part leads to a better daily programming experience. Saving a few keystrokes here and there, doesn't seem so, but in the long run, it saves a lot of time. Furthermore, as the commands are shorter, it lowers the risk of typos like `git chekcout` :smile:. Last but not least, it is kind of cool and hackish to run these shortcuts, especially when running them in front of others who do have to type the full git commands to stage, commit and push files. :computer:
 
 I hope that you find it interesting and you will start using the git aliases on your daily routine from now on!
+
+If you found this post useful, consider [buying me a coffee] to support the blog. For questions or comments, feel free to reach out on [X]!
+
+Until next time!
+
+[buying me a coffee]: https://www.buymeacoffee.com/diamantidis
+[X]: https://x.com/diamantidis_io

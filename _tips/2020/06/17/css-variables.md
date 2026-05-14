@@ -39,3 +39,10 @@ Then, we define a media query for the screen with width larger than `600px`. Ins
 
 Besides that, CSS variables can help in various other cases, such as defining multiple color themes,
 and using them will eventually result in shorter and much easier to maintain CSS files! :smirk:
+
+Thanks for reading! If you found this tip useful, consider [buying me a coffee] to support the blog. For questions or comments, feel free to reach out on [X]!
+
+Until next time!
+
+[buying me a coffee]: https://www.buymeacoffee.com/diamantidis
+[X]: https://x.com/diamantidis_io

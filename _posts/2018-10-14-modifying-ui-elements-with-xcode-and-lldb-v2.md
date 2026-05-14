@@ -161,5 +161,11 @@ Furthermore, I decided to follow this flow and not just mention the final soluti
 > There is nothing impossible to him who will try.
 > - Alexander the Great
 
+Thanks for reading! If you found this post useful, consider [buying me a coffee] to support the blog. For questions or comments, feel free to reach out on [X]!
+
+Until next time!
+
 
 [gist]: https://gist.github.com/diamantidis/d95531fd571c360078fcc795d1967ded
+[buying me a coffee]: https://www.buymeacoffee.com/diamantidis
+[X]: https://x.com/diamantidis_io

@@ -143,6 +143,11 @@ For example,
 
 This is just an introduction to the full list of options that SwiftLint provides. Despite the fact that only a handful of options are mentioned, it is clear that SwiftLint is a great tool to use and can help to provide consistency in the codebase and reduce the code smells.
 
+Thanks for reading! If you found this post useful, consider [buying me a coffee] to support the blog. For questions or comments, feel free to reach out on [X]!
+
 This is my last blog post for 2018, so ... <br>
 Merry Christmas and a Happy New Year!! :santa::christmas_tree:
+
+[buying me a coffee]: https://www.buymeacoffee.com/diamantidis
+[X]: https://x.com/diamantidis_io
 

@@ -249,12 +249,14 @@ In the first one, I am making use of `SKStoreReviewController` to trigger the in
 
 Making it easier for your user to rate the app and with the right strategy in place (when, to which users), it will most likely have a positive impact on the App Store presence of your app and it is something I would totally recommend using.
 
-Thanks for reading this post, I hope you find this post useful!
-Feel free to reach out to me on [X] and share your comments about this post!
+Thanks for reading! If you found this post useful, consider [buying me a coffee] to support the blog. For questions or comments, feel free to reach out on [X]!
+
+Until next time!
 
 
 [SKStoreReviewController]: https://developer.apple.com/documentation/storekit/skstorereviewcontroller
 [documentation]: https://developer.apple.com/design/human-interface-guidelines/ios/system-capabilities/ratings-and-reviews#system-rating-and-review-prompts
 
 [X]: https://x.com/diamantidis_io
+[buying me a coffee]: https://www.buymeacoffee.com/diamantidis
 [gist]: https://gist.github.com/diamantidis/7c615a886acb04b87428a81f9c1029b8
