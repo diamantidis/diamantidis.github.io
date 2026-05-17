@@ -51,12 +51,16 @@ Ioannis Diamantidis's personal blog — a software development blog built with J
 │   └── [post dirs]/    # Per-post image assets
 ├── .github/
 │   └── workflows/
-│       ├── ci.yml            # CI: build + Danger prose lint on PRs
-│       └── github-pages.yml  # Build & deploy to GitHub Pages on push to source
+│       ├── ci.yml            # CI: build + Lighthouse + Danger prose lint on PRs
+│       ├── lighthouse.yml    # Nightly Lighthouse CI against live site (cron + manual)
+│       └── github-pages.yml  # Build & deploy to GitHub Pages + post-deploy Lighthouse
 ├── _config.yml         # Jekyll configuration
+├── lighthouserc.json        # Lighthouse CI config — local (PR checks, staticDistDir)
+├── lighthouserc.live.json   # Lighthouse CI config — live site (nightly, post-deploy)
+├── lighthouserc.smoke.json  # Lighthouse CI config — dev smoke test (1 page, 1 run)
 ├── tailwind.config.js  # Tailwind content paths config
 ├── Dangerfile          # Danger + prose linting rules
-├── package.json        # Node.js dependencies (tailwindcss) + scripts
+├── package.json        # Node.js dependencies (tailwindcss, @lhci/cli) + scripts
 ├── Gemfile             # Ruby dependencies (Jekyll plugins)
 └── .ruby-version       # Ruby version (3.3.4)
 ```
@@ -68,6 +72,7 @@ Ioannis Diamantidis's personal blog — a software development blog built with J
 - **Tips Collection**: Short-form content at `/tips/` using Jekyll collections
 - **Analytics**: TelemetryDeck and PostHog (production environment only)
 - **CI/CD**: GitHub Actions CI with Danger + proselint for prose linting on PRs
+- **Lighthouse CI**: Automated Lighthouse audits on PRs (local), post-deploy (live), and nightly (live)
 - **SEO**: jekyll-sitemap, jekyll-feed, and jekyll-seo-tag
 - **Prose Linting**: Danger-prose checks spelling and prose style on every PR
 - **Buy Me a Coffee**: Support widget integrated in page head
@@ -171,6 +176,73 @@ This project uses the Tailwind CSS standalone CLI (not PostCSS or jekyll-postcss
 - **Build script**: `npm run build:css` — minified output for production
 - **CI/CD**: `npm run build:css` runs before `jekyll build` in both CI and deploy workflows
 
+## Lighthouse CI
+
+Automated Lighthouse audits using `@lhci/cli`. Three configs for different use cases:
+
+### Configs
+
+| Config | File | Target | Pages | Runs | Purpose |
+|---|---|---|---|---|---|
+| Local | `lighthouserc.json` | `_site/` (static) | 8 pages | 3 | PR checks, catch regressions before merge |
+| Live | `lighthouserc.live.json` | `https://diamantidis.github.io` | 8 pages | 3 | Nightly cron + post-deploy verification |
+| Smoke | `lighthouserc.smoke.json` | `_site/` (static) | 1 page (`/`) | 1 | Quick dev feedback, all warnings |
+
+### Assertion Thresholds
+
+| Category | Local | Live | Smoke |
+|---|---|---|---|
+| Performance | warn >= 0.8 | warn >= 0.8 | warn >= 0.8 |
+| Accessibility | error >= 0.9 | error >= 0.9 | warn >= 0.9 |
+| Best Practices | error >= 0.9 | error >= 0.9 | warn >= 0.9 |
+| SEO | error >= 0.9 | error >= 0.9 | warn >= 0.9 |
+
+- The local config disables `is-on-https` (false positive from local static server)
+- The live config tests real HTTPS — no overrides needed
+- The smoke config uses no preset, only category-level warnings (always exits 0)
+
+### NPM Scripts
+
+```bash
+# Full local audit (build + 8 pages × 3 runs, errors block CI)
+npm run lighthouse
+
+# Quick smoke test (1 page × 1 run, warnings only, ~10 seconds)
+npm run lighthouse:smoke
+
+# Run against live site (no build needed)
+npx lhci autorun --config=lighthouserc.live.json
+```
+
+### Testing a New Post Before Publishing
+
+When adding a new post or tip, run the smoke test to quickly verify it meets Lighthouse thresholds:
+
+```bash
+# 1. Build the site
+npm run build:css && JEKYLL_ENV=production bundle exec jekyll build
+
+# 2a. Run the smoke test for home page (~10 seconds)
+npm run lighthouse:smoke
+
+# 2b. Test the specific new page - temporarily update smoke config URL:
+# Edit lighthouserc.smoke.json, change "url": ["/"] to:
+# "url": ["/2026/05/17/your-new-post-title.html"]
+# Then run:
+npm run lighthouse:smoke
+
+# 3. To test all 8 pages with full assertions, run full local audit
+npm run lighthouse
+```
+
+The URL format follows the permalink pattern `/:year/:month/:day/:title.html` (or `/tips/:year/:month/:day/:title.html` for tips).
+
+### GitHub Actions Workflows
+
+- **PR (`ci.yml`)**: Builds site + runs `npm run lighthouse` (local config). Errors block merge.
+- **Nightly (`lighthouse.yml`)**: Cron at 03:00 UTC + manual trigger. Runs against live site.
+- **Post-deploy (`github-pages.yml`)**: Runs live config after deploy. Uses `continue-on-error: true` (warns, doesn't block deploys).
+
 ## Verifying Changes with Playwright MCP
 
 **Important Navigation Principle**: Always navigate through the UI starting from the home page. Never open URLs directly. This ensures you test the actual user flow.
@@ -268,6 +340,8 @@ gh pr create \
   - Home page navigation works
   - Blog post page loads with content
   - Static pages (About, Archive, Tags) render correctly
+- Lighthouse smoke test: PASS
+  - Run \`npm run lighthouse:smoke\` after build
 - Visual verification: Images display correctly
 - CI checks: Danger prose lint passes"
 ```
@@ -285,8 +359,9 @@ gh pr create \
 - **Tests section**:
   - Manual verification performed
   - Playwright smoke test results (PASS/FAIL)
+  - Lighthouse smoke test results (PASS/FAIL)
   - Specific steps verified
-  - CI check results (Danger prose lint)
+  - CI check results (Danger prose lint + Lighthouse)
 
 ### After PR Creation
 
@@ -326,3 +401,4 @@ gh pr merge <PR_NUMBER>
 11. **Use snapshots** to understand page state before interactions
 12. **Don't edit `master` branch** — it's auto-generated from CI
 13. **Tailwind classes go in `assets/css/input.css`** via `@apply` directives in `@layer utilities`, not in HTML templates directly
+14. **Run `npm run lighthouse:smoke`** after building to verify Lighthouse thresholds before pushing
