@@ -1,9 +1,12 @@
 {
   "scripts": {
     "dev:css": "tailwindcss -i ./assets/css/input.css -o ./assets/css/main.css --watch",
-    "build:css": "tailwindcss -i ./assets/css/input.css -o ./assets/css/main.css --minify"
+    "build:css": "tailwindcss -i ./assets/css/input.css -o ./assets/css/main.css --minify",
+    "lighthouse": "lhci autorun",
+    "lighthouse:smoke": "lhci autorun --config=lighthouserc.smoke.json"
   },
   "devDependencies": {
+    "@lhci/cli": "^0.15",
     "@tailwindcss/cli": "^4",
     "tailwindcss": "^4"
   }
