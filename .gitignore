@@ -9,3 +9,6 @@ vendor
 
 ### Generated CSS ###
 /assets/css/main.css
+
+### Lighthouse CI ###
+.lighthouseci
