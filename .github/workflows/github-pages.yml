@@ -69,3 +69,23 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5
+
+  lighthouse:
+    needs: deploy
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: '22.2.0'
+          cache: npm
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run Lighthouse CI
+        run: npx lhci autorun --config=lighthouserc.live.json

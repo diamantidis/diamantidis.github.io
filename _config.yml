@@ -62,6 +62,9 @@ exclude:
   - README.md
   - LICENSE
   - AGENTS.md
+  - lighthouserc.json
+  - lighthouserc.smoke.json
+  - lighthouserc.live.json
 
 # Disqus
 # disqus:
