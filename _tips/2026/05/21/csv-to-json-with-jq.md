@@ -16,7 +16,7 @@ Recently, while working on a task to bulk-import data from a CSV file, I was loo
 
 Let's say you have a CSV file named `exercises.csv` with exercise data:
 
-```csv
+```text
 name,muscle_group,description,difficulty
 Push-up,Chest,Lower the body by bending the arms and push back up,Beginner
 Pull-up,Back,Lift the body by pulling up on a fixed bar,Intermediate
