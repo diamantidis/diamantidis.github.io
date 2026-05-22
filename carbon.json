@@ -1,0 +1,29 @@
+{
+  "blog": {
+    "paddingVertical": "0px",
+    "paddingHorizontal": "0px",
+    "backgroundImage": null,
+    "backgroundImageSelection": null,
+    "backgroundMode": "color",
+    "backgroundColor": "rgba(206,228,252,0)",
+    "dropShadow": false,
+    "dropShadowOffsetY": "20px",
+    "dropShadowBlurRadius": "68px",
+    "theme": "material",
+    "windowTheme": "none",
+    "language": "application/x-sh",
+    "fontFamily": "Hack",
+    "fontSize": "14px",
+    "lineHeight": "146%",
+    "windowControls": true,
+    "widthAdjustment": false,
+    "lineNumbers": true,
+    "firstLineNumber": 1,
+    "exportSize": "2x",
+    "watermark": false,
+    "squaredImage": false,
+    "hiddenCharacters": false,
+    "name": "",
+    "width": "695"
+  }
+}
