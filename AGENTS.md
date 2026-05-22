@@ -58,9 +58,10 @@ Ioannis Diamantidis's personal blog — a software development blog built with J
 ├── lighthouserc.json        # Lighthouse CI config — local (PR checks, staticDistDir)
 ├── lighthouserc.live.json   # Lighthouse CI config — live site (nightly, post-deploy)
 ├── lighthouserc.smoke.json  # Lighthouse CI config — dev smoke test (1 page, 1 run)
+├── carbon.json              # Carbon Now CLI config for social image generation
 ├── tailwind.config.js  # Tailwind content paths config
 ├── Dangerfile          # Danger + prose linting rules
-├── package.json        # Node.js dependencies (tailwindcss, @lhci/cli) + scripts
+├── package.json        # Node.js dependencies (tailwindcss, @lhci/cli, carbon-now-cli) + scripts
 ├── Gemfile             # Ruby dependencies (Jekyll plugins)
 └── .ruby-version       # Ruby version (3.3.4)
 ```
@@ -163,6 +164,37 @@ if [ -f .css-watcher.pid ]; then
   echo "CSS watcher stopped"
 fi
 ```
+
+## Carbon Now CLI — Social Image Generation
+
+Social images for posts and tips are generated from code snippets using [carbon-now-cli](https://github.com/mixn/carbon-now-cli), which wraps [carbon.now.sh](https://carbon.now.sh) in a headless browser.
+
+### Setup
+
+The CLI is installed as a devDependency and configured via `carbon.json` in the project root. The `blog` preset defines the visual style (theme, font, colors, dimensions).
+
+### Generating an Image
+
+```bash
+# From a snippet file
+npx carbon snippet.swift --save-to /tmp --save-as my-image
+
+# With line range selection (avoids extra blank lines)
+npx carbon snippet.swift --start 1 --end 11 --save-to /tmp --save-as my-image
+
+# With per-run setting overrides (e.g., different language)
+npx carbon snippet.swift --settings '{"language": "swift"}' --save-to /tmp --save-as my-image
+
+# Via stdin
+echo 'let x = 42' | npx carbon-now-cli --config carbon.json --preset blog --save-to /tmp --save-as my-image
+```
+
+### Notes
+
+- Always use `--start` and `--end` to match the exact snippet lines — this prevents extra blank lines in the output
+- The snippet file should not have a trailing newline (use `printf` instead of `cat` when creating temp files)
+- Image dimensions vary per snippet (Carbon auto-sizes to content); `width` is fixed via the config, height depends on line count
+- The `exportSize: "2x"` setting produces retina-quality output
 
 ## Tailwind CSS Setup
 
