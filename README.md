@@ -24,10 +24,11 @@ On every PR against the `source` branch, a `GitHub Actions` workflow runs using 
 
 ### The Jekyll project
 
-#### Requirements
+### Requirements
 * [Git]
 * [Ruby]
 * [Bundler]
+* [Node.js]
 
 #### Steps
 * Run the following commands:
@@ -35,10 +36,23 @@ On every PR against the `source` branch, a `GitHub Actions` workflow runs using 
 git clone -b source https://github.com/diamantidis/diamantidis.github.io.git
 cd diamantidis.github.io
 bundle install
+npm install
 bundle exec jekyll serve
 ```
 * Open [`http://127.0.0.1:4000`] in your favorite browser
 
+
+## Social Images
+
+Social images for posts and tips are generated from code snippets using [carbon-now-cli](https://github.com/mixn/carbon-now-cli), a CLI wrapper for [carbon.now.sh](https://carbon.now.sh). The visual style is configured in `carbon.json` via the `blog` preset.
+
+```bash
+# Generate an image from a snippet file
+npx carbon snippet.swift --start 1 --end 11 --save-to /tmp --save-as my-image
+
+# Override settings per run
+npx carbon snippet.swift --settings '{"language": "swift"}' --save-to /tmp --save-as my-image
+```
 
 ## Contributing
 
@@ -73,6 +87,7 @@ This project is licensed under the terms of the MIT license. See the [LICENSE] f
 [Git]: http://git-scm.com/
 [Ruby]: https://www.ruby-lang.org/en/
 [Bundler]: https://bundler.io/
+[Node.js]: https://nodejs.org/
 [`http://127.0.0.1:4000`]: http://127.0.0.1:4000
 [issue]: https://github.com/diamantidis/diamantidis.github.io/issues/new
 [LICENSE]: LICENSE
