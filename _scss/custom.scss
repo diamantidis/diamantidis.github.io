@@ -157,7 +157,8 @@ a:hover {
 
 .post-content a:not(:visited):not(:hover):not(:active) {
   color: var(--link-color);
-  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-skip-ink: auto;
 }
 
 code.highlighter-rouge {
