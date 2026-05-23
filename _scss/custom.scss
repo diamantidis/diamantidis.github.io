@@ -125,10 +125,11 @@ a:hover {
   --page-color: hsla(0, 0%, 100%, 1);
   --divider-color: hsla(0, 0%, 0%, 0.2);
   --border-color: hsla(208, 27%, 65%, 1);
-  --nav-color: hsla(0, 0%, 46%, 1);
+  --nav-color: hsla(0, 0%, 38%, 1);
   --link-color: hsla(208, 56%, 46%, 1);
   --title-color: hsla(0, 0%, 33%, 1);
   --tag-color: hsla(0, 0%, 100%, 1);
+  --tag-bg-color: hsla(208, 75%, 31%, 1);
   --highlight-color: hsla(208, 5%, 30%, 1);
   --highlight-background-color: hsla(208, 75%, 85%, 1);
   --tips-card-background-color: hsla(0, 0%, 100%, 1);
@@ -137,7 +138,7 @@ a:hover {
 
 @media screen and (prefers-color-scheme: dark) {
   :root {
-    --base-color: hsla(208, 56%, 46%, 1);
+    --base-color: hsla(208, 75%, 75%, 1);
     --hover-color: hsla(208, 73%, 55%, 1);
     --metatext-color: hsla(208, 15%, 70%, 1);
     --nav-color: hsla(208, 75%, 75%, 1);
@@ -148,6 +149,7 @@ a:hover {
     --border-color: hsla(208, 27%, 65%, 1);
     --title-color: hsla(0, 0%, 93%, 1);
     --tag-color: hsla(0, 0%, 100%, 1);
+    --tag-bg-color: hsla(208, 56%, 46%, 1);
     --highlight-color: hsla(208, 75%, 99%, 1);
     --highlight-background-color: hsla(208, 75%, 25%, 1);
     --tips-card-background-color: hsla(208, 7%, 21%, 1);
