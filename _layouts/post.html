@@ -20,7 +20,7 @@ layout: default
   <div class="grid gap-1 sm:flex sm:items-baseline sm:justify-between pt-4">
     <!-- Buy me a coffee button -->
     <a href="https://www.buymeacoffee.com/diamantidis" target="_blank">
-      <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee"
+      <img loading="lazy" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee"
         style="height: 60px !important;width: 217px !important;">
     </a>
     <div>
@@ -29,37 +29,23 @@ layout: default
       {% capture full_url %}{{ site.url }}{{ site.baseurl }}{{ page.url }}{% endcapture %}
       {% if social.name == "X" and social.share == true %}
       <a href="https://x.com/intent/tweet?text={{ page.title | cgi_escape }}&url={{ full_url | cgi_escape}}"
-        class="text-(--base-color) no-underline hover:text-(--hover-color)" aria-label="Share on X"
+        class="text-(--base-color) no-underline hover:text-(--hover-color) inline-flex items-center justify-center w-[42px] h-[42px]" style="border-radius:50%;background-color:currentColor" aria-label="Share on X"
         onclick="window.open(this.href, 'x-share', 'width=550,height=255');return false;">
-        <span class="fa-stack fa-lg">
-          <i class="fa fa-circle fa-stack-2x"></i>
-          <svg
-            style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 45%; height: 45%; fill: #ffffff;"
-            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-            <path
-              d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
-          </svg>
-        </span>
+        <svg width="38%" height="38%" viewBox="0 0 512 512" fill="#fff" xmlns="http://www.w3.org/2000/svg" style="overflow:visible"><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg>
       </a>
       {% endif %}
       {% if social.name == "Facebook" and social.share == true %}
-      <a href="//www.facebook.com/sharer.php?t={{ page.title | cgi_escape }}&u={{ full_url | cgi_escape}}"
-        class="text-(--base-color) no-underline hover:text-(--hover-color)" aria-label="Share on Facebook"
+      <a href="https://www.facebook.com/sharer.php?t={{ page.title | cgi_escape }}&u={{ full_url | cgi_escape}}"
+        class="text-(--base-color) no-underline hover:text-(--hover-color) inline-flex items-center justify-center w-[42px] h-[42px]" style="border-radius:50%;background-color:currentColor" aria-label="Share on Facebook"
         onclick="window.open(this.href, '{{ social.icon }}-share', 'width=550,height=255');return false;">
-        <span class="fa-stack fa-lg">
-          <i class="fa fa-circle fa-stack-2x"></i>
-          <i class="fa fa-{{social.icon}} fa-stack-1x fa-inverse"></i>
-        </span>
+        <svg width="42%" height="42%" viewBox="0 0 512 512" fill="#fff" xmlns="http://www.w3.org/2000/svg" style="overflow:visible"><path d="M288 176v-72c0-22.18 17.82-40 40-40h40V0h-64c-53 0-96 43-96 96v80h-80v64h80v272h80V240h56l24-64h-80z"/></svg>
       </a>
       {% endif %}
       {% if social.name == "LinkedIn" and social.share == true %}
-      <a href="//www.linkedin.com/shareArticle?mini=true&url={{ full_url | cgi_escape}}"
-        class="text-(--base-color) no-underline hover:text-(--hover-color)" aria-label="Share on LinkedIn"
+      <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ full_url | cgi_escape}}"
+        class="text-(--base-color) no-underline hover:text-(--hover-color) inline-flex items-center justify-center w-[42px] h-[42px]" style="border-radius:50%;background-color:currentColor" aria-label="Share on LinkedIn"
         onclick="window.open(this.href, '{{ social.icon }}-share', 'width=550,height=255');return false;">
-        <span class="fa-stack fa-lg">
-          <i class="fa fa-circle fa-stack-2x"></i>
-          <i class="fa fa-{{social.icon}} fa-stack-1x fa-inverse"></i>
-        </span>
+        <svg width="38%" height="38%" viewBox="0 0 448 512" fill="#fff" xmlns="http://www.w3.org/2000/svg" style="overflow:visible"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
       </a>
       {% endif %}
       {% endfor %}

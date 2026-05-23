@@ -4,11 +4,9 @@
   <div class="py-1 overflow-auto inline-block w-full p-0">
     <span class="text-xs text-(--metatext-color) uppercase align-middle">
       {% if include.type == "tip" %}
-      <i class="fa fa-lightbulb-o mr-2"
-        style="font-family: FontAwesome; font-style: normal; font-weight: normal; text-decoration: inherit;"></i>Tip
+      <svg class="inline-block align-middle mr-2" width="14" height="14" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="M940 128h-88v440c0 30-27 56-56 56s-56-26-56-56v-440h-88c-18 0-32-14-32-32s14-32 32-32h288c18 0 32 14 32 32s-14 32-32 32zm364 1520l-108-384h-512l-108 384h-88l380-1344h144l380 1344h-88zm-148-480l-188-668-188 668h376z"/></svg>Tip
       {% else %}
-      <i class="fa fa-file-text-o mr-2"
-        style="font-family: FontAwesome; font-style: normal; font-weight: normal; text-decoration: inherit;"></i>Post
+      <svg class="inline-block align-middle mr-2" width="14" height="14" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="M1468 380c28 28 48 76 48 116v1344c0 44-36 80-80 80h-1296c-44 0-80-36-80-80v-1600c0-44 36-80 80-80h896c40 0 88 20 116 48zm-444-244v376h376c-6-18-14-34-24-44l-308-308c-10-10-26-18-44-24zm388 1528v-1024h-416c-44 0-80-36-80-80v-416h-768v1520h1264zm-924-1016v-48c0-8 8-16 16-16h480c8 0 16 8 16 16v48c0 8-8 16-16 16h-480c-8 0-16-8-16-16zm0 192v-48c0-8 8-16 16-16h800c8 0 16 8 16 16v48c0 8-8 16-16 16h-800c-8 0-16-8-16-16zm0 192v-48c0-8 8-16 16-16h800c8 0 16 8 16 16v48c0 8-8 16-16 16h-800c-8 0-16-8-16-16zm0 192v-48c0-8 8-16 16-16h800c8 0 16 8 16 16v48c0 8-8 16-16 16h-800c-8 0-16-8-16-16z"/></svg>Post
       {% endif %}
     </span>
   </div>
@@ -31,7 +29,7 @@
     <div>
       <a class="text-(--text-color) hover:text-(--hover-color) p-1 text-center no-underline inline-block text-base my-1 mx-0.5 bg-transparent float-right read-more animatable uppercase align-middle"
         href="{{ include.item.url | relative_url }}" title="Read more">
-        Read more
+        Read more<span class="sr-only"> about {{ include.item.title | escape | strip }}</span>
         <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
           class="fa fa-arrow-right fa-w-14 h-4 w-4">
           <path fill="currentColor"
