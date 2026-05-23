@@ -6,12 +6,25 @@
       "url": ["/"]
     },
     "assert": {
+      "preset": "lighthouse:recommended",
       "assertions": {
-        "categories:performance": ["warn", { "minScore": 0.8 }],
+        "categories:performance": ["warn", { "minScore": 0.9 }],
         "categories:accessibility": ["warn", { "minScore": 0.9 }],
         "categories:best-practices": ["warn", { "minScore": 0.9 }],
         "categories:seo": ["warn", { "minScore": 0.9 }],
-        "is-on-https": "off"
+        "is-on-https": "off",
+        "color-contrast": ["warn", { "minScore": 0.9 }],
+        "link-text": ["warn", { "minScore": 0.9 }],
+        "render-blocking-resources": ["warn", { "maxLength": 3 }],
+        "legacy-javascript": "off",
+        "unused-javascript": "off",
+        "uses-long-cache-ttl": "off",
+        "cache-insight": "off",
+        "duplicated-javascript-insight": "off",
+        "network-dependency-tree-insight": "off",
+        "render-blocking-insight": "off",
+        "font-display-insight": "off",
+        "legacy-javascript-insight": "off"
       }
     }
   }
