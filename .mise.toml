@@ -1,2 +1,6 @@
 [settings.ruby]
 compile = false
+
+[tools]
+node = "22.2.0"
+ruby = "3.4.4"
