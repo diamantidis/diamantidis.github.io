@@ -12,3 +12,6 @@ vendor
 
 ### Lighthouse CI ###
 .lighthouseci
+
+### mise ###
+.mise.local.toml

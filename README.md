@@ -26,15 +26,15 @@ On every PR against the `source` branch, a `GitHub Actions` workflow runs using 
 
 ### Requirements
 * [Git]
-* [Ruby]
+* [mise]
 * [Bundler]
-* [Node.js]
 
 #### Steps
 * Run the following commands:
 ```
 git clone -b source https://github.com/diamantidis/diamantidis.github.io.git
 cd diamantidis.github.io
+mise install
 bundle install
 npm install
 bundle exec jekyll serve
@@ -85,9 +85,8 @@ This project is licensed under the terms of the MIT license. See the [LICENSE] f
 [Danger]: https://github.com/danger/danger
 [Danger-prose]: https://github.com/dbgrandi/danger-prose
 [Git]: http://git-scm.com/
-[Ruby]: https://www.ruby-lang.org/en/
+[mise]: https://mise.jdx.dev/
 [Bundler]: https://bundler.io/
-[Node.js]: https://nodejs.org/
 [`http://127.0.0.1:4000`]: http://127.0.0.1:4000
 [issue]: https://github.com/diamantidis/diamantidis.github.io/issues/new
 [LICENSE]: LICENSE

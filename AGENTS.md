@@ -63,7 +63,7 @@ Ioannis Diamantidis's personal blog — a software development blog built with J
 ├── Dangerfile          # Danger + prose linting rules
 ├── package.json        # Node.js dependencies (tailwindcss, @lhci/cli, carbon-now-cli) + scripts
 ├── Gemfile             # Ruby dependencies (Jekyll plugins)
-└── .ruby-version       # Ruby version (3.3.4)
+├── .tool-versions       # mise tool versions (Ruby + Node.js)
 ```
 
 ## Key Features
@@ -83,13 +83,15 @@ Ioannis Diamantidis's personal blog — a software development blog built with J
 
 ### Prerequisites
 
-- **Ruby** 3.3.4 (see `.ruby-version`)
-- **Node.js** 22.2.0
+- **mise** (manages Ruby and Node.js versions — see `.tool-versions`)
 - **Bundler** (Ruby gem manager)
 
 ### Installation
 
 ```bash
+# Install Ruby and Node.js via mise
+mise install
+
 # Install Ruby dependencies
 bundle install
 
