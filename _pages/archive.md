@@ -14,7 +14,7 @@ permalink: /archive
     <div class="pl-6 my-2">
       {% assign posts_by_month = year.items | group_by_exp:"post", "post.date | date: '%B'" %}
       {% for month in posts_by_month %}
-        <h4 class="text-(--title-color) font-bold text-xl">{{ month.name }}</h4>
+        <h3 class="text-(--title-color) font-bold text-xl">{{ month.name }}</h3>
         <div class="pl-6 my-2">
             {% for post in month.items %}
               {% include card.html item=post type="post" %}
