@@ -123,7 +123,7 @@ Then, we will set `javascriptMode` to `unrestricted` to allow the execution of J
 
 The only thing left is to call this function from the `Widget build(BuildContext context)`, add the required imports and run the app. If you do so, you will be able to see the page with the label and the toggle!
 
-![WKWebView with a toggle screenshot]({{site.url}}/assets/fl_webview/toggle_off.jpeg)
+<img src="{{site.url}}/assets/fl_webview/toggle_off.jpeg" alt="WKWebView with a toggle screenshot" loading="lazy" width="320" height="692">
 
 ## Adding a message handler
 
@@ -192,7 +192,10 @@ In this snippet, we are creating a variable with the JavaScript code to change t
 
 And that's about it, if you now run the app, the text of the label will change when the toggle is switched on or off. 
 
-![WebView with toggle on and off screenshot]({{site.url}}/assets/fl_webview/toggle_animation.gif)
+<video autoplay loop muted playsinline width="320" height="692">
+  <source src="{{site.url}}/assets/fl_webview/toggle_animation.mp4" type="video/mp4">
+  <img src="{{site.url}}/assets/fl_webview/toggle_animation.gif" alt="WebView with toggle on and off screenshot" loading="lazy" width="320" height="692">
+</video>
 
 ## Conclusion
 
