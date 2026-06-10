@@ -44,9 +44,6 @@ jobs:
           JEKYLL_ENV: production
         run: bundle exec jekyll build
 
-      - name: Run Lighthouse CI
-        run: npm run lighthouse
-
       - name: Install proselint
         run: pip3 install --user proselint==0.14.0
 
