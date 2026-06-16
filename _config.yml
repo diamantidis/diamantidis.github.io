@@ -58,7 +58,6 @@ exclude:
   - node_modules
   - package-lock.json
   - package.json
-  - tailwind.config.js
   - README.md
   - LICENSE
   - AGENTS.md
