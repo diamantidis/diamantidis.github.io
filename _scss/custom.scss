@@ -134,6 +134,13 @@ a:hover {
   --highlight-background-color: hsla(208, 75%, 85%, 1);
   --tips-card-background-color: hsla(0, 0%, 100%, 1);
   --tips-card-shadow-color: hsla(0, 0%, 46%, 1);
+
+  /* Glass surface (desktop header + mobile tab bar) */
+  --glass-bg: hsla(0, 0%, 100%, 0.7);
+  --glass-border: hsla(0, 0%, 0%, 0.08);
+  --glass-text: hsla(0, 0%, 40%, 1);
+  --glass-active-bg: hsla(208, 56%, 46%, 0.12);
+  --glass-active-text: hsla(208, 75%, 31%, 1);
 }
 
 @media screen and (prefers-color-scheme: dark) {
@@ -154,6 +161,21 @@ a:hover {
     --highlight-background-color: hsla(208, 75%, 25%, 1);
     --tips-card-background-color: hsla(208, 7%, 21%, 1);
     --tips-card-shadow-color: hsla(0, 0%, 15%, 1);
+
+    /* Glass surface (desktop header + mobile tab bar) */
+    --glass-bg: hsla(208, 7%, 22%, 0.85);
+    --glass-border: hsla(208, 27%, 65%, 0.2);
+    --glass-text: hsla(208, 30%, 75%, 1);
+    --glass-active-bg: hsla(208, 56%, 46%, 0.3);
+    --glass-active-text: hsla(208, 75%, 85%, 1);
+  }
+}
+
+/* Hide floating chrome when printing */
+@media print {
+  nav,
+  footer {
+    display: none !important;
   }
 }
 
