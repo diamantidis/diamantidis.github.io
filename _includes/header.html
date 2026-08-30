@@ -1,7 +1,5 @@
-<header class="w-full shadow-[0_2px_2px_-2px_var(--divider-color)] border-none border-t-[5px] border-b border-[#e8e8e8] min-h-[55.95px] relative" role="banner">
+<header class="w-full backdrop-blur-md bg-(--glass-bg) shadow-[0_2px_2px_-2px_var(--divider-color)] border-none border-t-[5px] border-b border-(--glass-border) min-h-[55.95px] relative" role="banner">
     <div class="max-w-[800px] mx-auto px-[30px] max-md:px-[15px] flex items-center justify-between py-4">
-        {%- assign default_paths = site.pages | map: "path" -%}
-        {%- assign page_paths = site.header_pages | default: default_paths -%}
         <div class="flex flex-col items-start gap-2">
             <div>
                 <a class="text-(--title-color) visited:text-(--title-color)" rel="author" href="{{ "/" | relative_url }}">
@@ -16,48 +14,22 @@
             </div>
         </div>
 
-        {%- if page_paths -%}
-        <nav class="relative bg-transparent shrink-0">
-            <!-- Desktop Navigation -->
+        <nav class="relative bg-transparent shrink-0" aria-label="Main navigation">
             <div class="hidden md:flex items-center gap-6">
-                <a class="text-(--nav-color) hover:text-(--hover-color) transition-colors" href="/tips" title="Tips">Tips</a>
-                {%- for path in page_paths -%}
-                {%- assign my_page = site.pages | where: "path", path | first -%}
-                {% unless my_page.exclude %}
-                {%- if my_page.title -%}
-                <a class="text-(--nav-color) hover:text-(--hover-color) transition-colors" href="{{ my_page.url | relative_url }}"
-                    title="{{ my_page.title | escape }}">{{ my_page.title | escape }}</a>
-                {%- endif -%}
-                {% endunless %}
-                {%- endfor -%}
-            </div>
-
-            <!-- Mobile Navigation -->
-            <div class="md:hidden">
-                <input type="checkbox" id="nav-trigger" class="peer sr-only" aria-label="Toggle navigation menu" />
-                <label for="nav-trigger" style="display: flex !important; float: none !important; align-items: center !important; justify-content: center !important;" class="cursor-pointer p-2 text-(--nav-color) hover:text-(--hover-color) transition-colors bg-transparent border border-(--border-color) rounded-md">
-                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
-                        <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"/>
-                    </svg>
-                </label>
-
-                <!-- Mobile Dropdown -->
-                <div class="hidden peer-checked:block absolute top-full right-0 z-50 bg-(--page-color) dark:bg-(--page-color) shadow-lg rounded-lg py-2 border border-(--border-color) min-w-[200px] mt-1">
-                    <div class="flex flex-col">
-                        <a class="block px-4 py-3 text-(--nav-color) hover:text-(--hover-color) transition-colors" href="/tips" title="Tips">Tips</a>
-                        {%- for path in page_paths -%}
-                        {%- assign my_page = site.pages | where: "path", path | first -%}
-                        {% unless my_page.exclude %}
-                        {%- if my_page.title -%}
-                        <a class="block px-4 py-3 text-(--nav-color) hover:text-(--hover-color) transition-colors" href="{{ my_page.url | relative_url }}"
-                            title="{{ my_page.title | escape }}">{{ my_page.title | escape }}</a>
-                        {%- endif -%}
-                        {% endunless %}
-                        {%- endfor -%}
-                    </div>
-                </div>
+                {% for item in site.data.navigation %}
+                {% assign is_active = false %}
+                {% if item.url == "/" %}
+                    {% if page.url == "/" or page.url contains "/page/" %}
+                    {% assign is_active = true %}
+                    {% endif %}
+                {% elsif page.url == item.url or page.url contains item.url %}
+                {% assign is_active = true %}
+                {% endif %}
+                <a class="text-sm font-medium transition-colors {% if is_active %}text-(--glass-active-text){% else %}text-(--glass-text) hover:text-(--glass-active-text) focus-visible:text-(--glass-active-text){% endif %}"
+                    href="{{ item.url | relative_url }}" title="{{ item.label | escape }}"
+                    {% if is_active %}aria-current="page"{% endif %}>{{ item.label }}</a>
+                {% endfor %}
             </div>
         </nav>
-        {%- endif -%}
     </div>
 </header>
