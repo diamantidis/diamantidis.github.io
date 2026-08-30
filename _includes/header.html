@@ -19,7 +19,7 @@
                 {% for item in site.data.navigation %}
                 {% assign is_active = false %}
                 {% if item.url == "/" %}
-                    {% if page.url == "/" or page.url contains "/page/" %}
+                    {% if page.url == "/" or page.url == "/index.html" or page.url contains "/page/" or page.collection == "posts" %}
                     {% assign is_active = true %}
                     {% endif %}
                 {% elsif page.url == item.url or page.url contains item.url %}
