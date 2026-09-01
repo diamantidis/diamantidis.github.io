@@ -35,10 +35,6 @@ sass:
 
 include:
   - _pages
-header_pages:
-  - _pages/about.md
-  - _pages/archive.md
-  - _pages/tags.md
 
 footer-links:
   rss: rss
