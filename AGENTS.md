@@ -28,7 +28,6 @@ Ioannis Diamantidis's personal blog — a software development blog built with J
 │   ├── favicon.html    # Favicon links
 │   ├── icons.html      # SVG icons
 │   ├── post-subheader.html  # Post metadata (date, tags)
-│   ├── tips-subheader.html  # Tips metadata
 │   ├── posthog.html    # PostHog analytics (production only)
 │   └── telemetry-deck.html  # TelemetryDeck analytics (production only)
 ├── _pages/             # Static pages
