@@ -116,6 +116,11 @@ a:hover {
   }
 }
 
+.read-more.animatable:hover > svg.fa-arrow-right {
+  color: var(--hover-color);
+  animation: arrow-right 1s infinite;
+}
+
 :root {
   color-scheme: light dark;
   --base-color: hsla(208, 56%, 46%, 1);
