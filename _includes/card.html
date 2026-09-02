@@ -12,7 +12,7 @@
   </div>
 
   <!-- Title -->
-  <a class="text-(--text-color) text-3xl tracking-tight font-bold after:content-[''] after:block after:w-1/2 after:max-w-48 after:h-px after:bg-(--base-color) after:my-1"
+  <a class="text-(--text-color) text-3xl tracking-tight font-bold min-w-0 break-words after:content-[''] after:block after:w-1/2 after:max-w-48 after:h-px after:bg-(--base-color) after:my-1"
     href="{{ include.item.url | relative_url }}" title="{{ include.item.title | escape | strip }}">
     {{ include.item.title | escape }}
   </a>
@@ -27,7 +27,7 @@
   <!-- Read More Link -->
   <div class="float-right block clear-both">
     <div>
-      <a class="text-(--text-color) hover:text-(--hover-color) p-1 text-center no-underline inline-block text-base my-1 mx-0.5 bg-transparent float-right read-more animatable uppercase align-middle"
+      <a class="text-(--text-color) hover:text-(--hover-color) p-1 no-underline inline-flex items-center gap-2 text-base my-1 mx-0.5 bg-transparent float-right read-more animatable uppercase"
         href="{{ include.item.url | relative_url }}" title="Read more">
         Read more<span class="sr-only"> about {{ include.item.title | escape | strip }}</span>
         <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
