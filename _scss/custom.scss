@@ -10,10 +10,6 @@ a:hover {
   text-decoration: none;
 }
 
-.highlight pre code {
-  overflow-x: scroll;
-}
-
 .gist .blob-code-inner {
   white-space: pre-wrap !important;
 }
@@ -22,9 +18,44 @@ a:hover {
   color: var(--nav-color);
 }
 
-.highlighter-rouge .highlight {
-  overflow-x: scroll;
-  max-width: 740px;
+/* Code blocks: one source of truth for box styling (token colors live in minima/syntax-highlighting) */
+.highlighter-rouge > .highlight,
+figure.highlight {
+  margin: 1.25rem 0;
+  background-color: var(--code-block-bg);
+  border: 1px solid var(--code-block-border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.highlight pre {
+  margin: 0;
+  padding: 0.75rem 1rem;
+  overflow-x: auto;
+  background-color: transparent;
+  color: #abb2bf;
+  font-size: 0.9375em;
+  line-height: 1.6;
+  scrollbar-width: thin;
+}
+
+.highlight pre code {
+  padding: 0;
+  background-color: transparent;
+  color: inherit;
+}
+
+.highlight pre::-webkit-scrollbar {
+  height: 8px;
+}
+
+.highlight pre::-webkit-scrollbar-thumb {
+  background-color: hsla(0, 0%, 100%, 0.25);
+  border-radius: 4px;
+}
+
+.highlight pre::-webkit-scrollbar-track {
+  background-color: transparent;
 }
 
 @media only screen and (max-width: 600px) {
@@ -52,24 +83,6 @@ a:hover {
   .gist .gist-file {
     max-width: 350px;
   }
-
-  .highlighter-rouge {
-    max-width: 350px;
-  }
-
-  .highlighter-rouge .highlight,
-  figure.highlight {
-    overflow-x: scroll;
-    max-width: 350px;
-  }
-
-  li .highlighter-rouge {
-    max-width: 315px;
-  }
-
-  li .highlighter-rouge .highlight {
-    max-width: 315px;
-  }
 }
 
 @media only screen and (max-width: 320px) {
@@ -80,24 +93,6 @@ a:hover {
   iframe#ghcard-gohugoio-1,
   iframe#ghcard-jekyll-1 {
     max-width: 300px;
-  }
-
-  .highlighter-rouge {
-    max-width: 280px;
-  }
-
-  .highlighter-rouge .highlight,
-  figure.highlight {
-    overflow-x: scroll;
-    max-width: 280px;
-  }
-
-  li .highlighter-rouge {
-    max-width: 260px;
-  }
-
-  li .highlighter-rouge .highlight {
-    max-width: 260px;
   }
 }
 
@@ -137,6 +132,8 @@ a:hover {
   --tag-bg-color: hsla(208, 75%, 31%, 1);
   --highlight-color: hsla(208, 5%, 30%, 1);
   --highlight-background-color: hsla(208, 75%, 85%, 1);
+  --code-block-bg: hsla(220, 13%, 17%, 1);
+  --code-block-border: transparent;
   --tips-card-background-color: hsla(0, 0%, 100%, 1);
   --tips-card-shadow-color: hsla(0, 0%, 46%, 1);
 
@@ -164,6 +161,8 @@ a:hover {
     --tag-bg-color: hsla(208, 56%, 46%, 1);
     --highlight-color: hsla(208, 75%, 99%, 1);
     --highlight-background-color: hsla(208, 75%, 25%, 1);
+    --code-block-bg: hsla(220, 13%, 17%, 1);
+    --code-block-border: hsla(208, 27%, 65%, 0.2);
     --tips-card-background-color: hsla(208, 7%, 21%, 1);
     --tips-card-shadow-color: hsla(0, 0%, 15%, 1);
 
@@ -190,7 +189,11 @@ a:hover {
   text-decoration-skip-ink: auto;
 }
 
-code.highlighter-rouge {
+/* Inline code (Rouge highlights inline snippets as code.highlighter-rouge outside pre) */
+:not(pre) > code.highlighter-rouge {
+  padding: 0.15em 0.4em;
+  border-radius: 4px;
+  font-size: 0.9375em;
   color: var(--highlight-color);
   background-color: var(--highlight-background-color);
 }

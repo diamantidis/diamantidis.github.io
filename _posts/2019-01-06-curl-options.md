@@ -23,7 +23,7 @@ So let's start!!!
 # Verbose mode
 
 When making a request, sometimes you are not only interested about the content of the response, but maybe also for some other information like the response status or the headers. To get this kind of information, along with a more detailed representation of both the request and the response, you can append your command with the option `-v` or `--verbose`. For example, you can write a command like this, 
-```
+```bash
 curl 'http://localhost:8080/todos' -v
 ```
 
@@ -35,7 +35,7 @@ To get more information on the exact duration that each step of the request take
 
 As an example you can use this command
 
-```
+```bash
 curl \
 --output /dev/null \
 --silent \
@@ -65,7 +65,7 @@ For example, you can create a file, with the name `curl_format.txt` and the foll
 
 And then run the command:
 
-```
+```bash
 curl \
 -o /dev/null \
 -s \
@@ -81,7 +81,7 @@ and you will get a familiar response as before.
 # Proxy 
 
 If you want to pass the request through a proxy, like [Charles](https://www.charlesproxy.com/) you can use the option `-x` or `--proxy`, for example 
-```
+```bash
 curl -x http://localhost:8888 http://localhost:8080/todos
 ```
 
@@ -108,11 +108,11 @@ The results will be:
 
 Lastly, you can provide a set of options inside curly brackets, like in the following command
 
-```
+```bash
 curl 'http://localhost:8080/todos/{1,2,4}'
 ```
 which will result in three request for these ids. The values can be alphanumeric, so this can be used with letters or words too, like for example 
-```
+```bash
 curl 'http://localhost:8080/todos/{a,b,c}'
 ```
 
@@ -121,7 +121,7 @@ And also they can be used simultaneously when constructing a url like, `curl 'ht
 # File upload
 
 When you want to upload a file you can use the following curl command:
-```
+```bash
 curl -X POST \
 'http://localhost:8080/upload' \
 -H 'Content-Type: multipart/form-data;' \
