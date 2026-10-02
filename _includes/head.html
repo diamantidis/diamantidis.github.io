@@ -27,6 +27,8 @@
   {%- endif -%}
 
   {%- if jekyll.environment == 'production' and site.posthog_app_id -%}
+    <link rel="preconnect" href="https://eu-assets.i.posthog.com" crossorigin>
+    <link rel="preconnect" href="https://eu.i.posthog.com" crossorigin>
     {%- include posthog.html -%}
   {%- endif -%}
 
