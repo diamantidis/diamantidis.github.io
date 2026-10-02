@@ -3,5 +3,7 @@
     posthog.init('{{ site.posthog_app_id }}', {
         api_host: 'https://eu.i.posthog.com',
         defaults: '2026-05-30',
+        disable_surveys: true,
+        disable_session_recording: true,
     })
 </script>
