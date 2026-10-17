@@ -28,8 +28,7 @@ Ioannis Diamantidis's personal blog — a software development blog built with J
 │   ├── favicon.html    # Favicon links
 │   ├── icons.html      # SVG icons
 │   ├── post-subheader.html  # Post metadata (date, tags)
-│   ├── posthog.html    # PostHog analytics (production only)
-│   └── telemetry-deck.html  # TelemetryDeck analytics (production only)
+│   └── posthog.html    # PostHog analytics (production only)
 ├── _pages/             # Static pages
 │   ├── about.md        # About page
 │   ├── archive.md      # Post archive
@@ -69,7 +68,7 @@ Ioannis Diamantidis's personal blog — a software development blog built with J
 - **Pagination**: Jekyll Paginate V2 with 7 posts per page
 - **Dark Mode**: Automatic via CSS custom properties (`prefers-color-scheme` media query)
 - **Tips Collection**: Short-form content at `/tips/` using Jekyll collections
-- **Analytics**: TelemetryDeck and PostHog (production environment only)
+- **Analytics**: PostHog (production environment only)
 - **CI/CD**: GitHub Actions CI with Danger + proselint for prose linting on PRs
 - **Lighthouse CI**: Automated Lighthouse audits on PRs (local), post-deploy (live), and nightly (live)
 - **SEO**: jekyll-sitemap, jekyll-feed, and jekyll-seo-tag
