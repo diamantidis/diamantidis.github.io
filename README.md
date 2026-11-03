@@ -41,6 +41,8 @@ bundle exec jekyll serve
 ```
 * Open [`http://127.0.0.1:4000`] in your favorite browser
 
+Ruby and Node.js versions are pinned in `.mise.toml` (the same file CI uses). The commands above assume a shell where [mise] is activated. If it isn't, prefix any command with `mise exec --`, e.g. `mise exec -- bundle exec jekyll serve`. Avoid hardcoding version-specific `PATH` entries — they go stale on the next version bump.
+
 
 ## Social Images
 

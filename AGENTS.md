@@ -60,7 +60,7 @@ Ioannis Diamantidis's personal blog — a software development blog built with J
 ├── Dangerfile          # Danger + prose linting rules
 ├── package.json        # Node.js dependencies (tailwindcss, @lhci/cli, carbon-now-cli) + scripts
 ├── Gemfile             # Ruby dependencies (Jekyll plugins)
-├── .tool-versions       # mise tool versions (Ruby + Node.js)
+├── .mise.toml          # mise tool versions (Ruby + Node.js) — read by CI too
 ```
 
 ## Key Features
@@ -80,8 +80,27 @@ Ioannis Diamantidis's personal blog — a software development blog built with J
 
 ### Prerequisites
 
-- **mise** (manages Ruby and Node.js versions — see `.tool-versions`)
+- **mise** (manages Ruby and Node.js versions — see `.mise.toml`)
 - **Bundler** (Ruby gem manager)
+
+### Tool versions (mise)
+
+`.mise.toml` is the single source of truth for Ruby and Node.js versions; CI reads the same file via `jdx/mise-action`, so local and CI versions cannot drift.
+
+- **Node.js must be >= 22.12.** Node 22.12+ allows `require()` of ES modules, and some dependencies are ESM-only (e.g. `uuid@14`, pulled in by `@lhci/cli`). Older Node fails every `lhci` command with `ERR_REQUIRE_ESM`.
+- Run every project command inside the mise-managed environment:
+
+```bash
+# Preferred: run one command with the pinned tools
+mise exec -- npm run lighthouse:smoke
+mise exec -- bundle exec jekyll build
+
+# Alternative: drop into a subshell with the pinned tools on PATH
+mise shell          # or: eval "$(mise activate zsh)" once per shell
+```
+
+- **Do not** hand-prefix `PATH` with a version-specific bin directory (e.g. `PATH="$HOME/.local/share/mise/installs/node/22.23.4/bin:$PATH"`). That freezes one version into the command line and silently ignores `.mise.toml` after the next bump. If a command resolves the wrong tool, run `mise ls` / `mise current` and re-activate the shell instead.
+- After changing `.mise.toml`, run `mise install` and start a fresh shell (or use `mise exec --`) so already-running shells stop using the old version.
 
 ### Installation
 
@@ -433,3 +452,5 @@ gh pr merge <PR_NUMBER>
 12. **Don't edit `master` branch** — it's auto-generated from CI
 13. **Tailwind classes go in `assets/css/input.css`** via `@apply` directives in `@layer utilities`, not in HTML templates directly
 14. **Run `npm run lighthouse:smoke`** after building to verify Lighthouse thresholds before pushing
+15. **Run tools through mise** — prefix one-off commands with `mise exec --` (or work in a `mise`-activated shell). Never hardcode a version-specific `PATH`; `.mise.toml` is the only place versions are pinned
+16. **Never lower the Node.js version** below what `.mise.toml` pins — `@lhci/cli` needs Node >= 22.12 to `require()` ESM-only dependencies
