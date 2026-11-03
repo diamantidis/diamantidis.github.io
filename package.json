@@ -1,4 +1,5 @@
 {
+  "name": "diamantidis.github.io",
   "scripts": {
     "dev:css": "tailwindcss -i ./assets/css/input.css -o ./assets/css/main.css --watch",
     "build:css": "tailwindcss -i ./assets/css/input.css -o ./assets/css/main.css --minify",
@@ -7,7 +8,7 @@
     "carbon": "carbon-now-cli --config carbon.json --preset blog"
   },
   "devDependencies": {
-    "@lhci/cli": "^0.15",
+    "@lhci/cli": "^0.16.0",
     "@tailwindcss/cli": "^4.3.3",
     "carbon-now-cli": "^2.1.0",
     "tailwindcss": "^4.3.3"
