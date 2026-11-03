@@ -7,3 +7,6 @@ ruby = "3.4.4"
 [tools."npm:carbon-now-cli"]
 version = "2.1.0"
 allow_low_downloads = true
+
+[tools."npm:@lhci/cli"]
+version = "0.15.1"
