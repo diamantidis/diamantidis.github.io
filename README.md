@@ -43,6 +43,8 @@ bundle exec jekyll serve
 
 Ruby and Node.js versions are pinned in `.mise.toml` (the same file CI uses). The commands above assume a shell where [mise] is activated. If it isn't, prefix any command with `mise exec --`, e.g. `mise exec -- bundle exec jekyll serve`. Avoid hardcoding version-specific `PATH` entries — they go stale on the next version bump.
 
+GitHub Pages pins the supported Jekyll/plugin versions (see https://pages.github.com/versions.json). Keep the versions in `Gemfile`/`Gemfile.lock` in sync with that list when upgrading; this repo intentionally does not use the `github-pages` gem and builds/deploy via GitHub Actions instead. Note that `versions.json` pins Ruby 3.3.4 while `.mise.toml` pins 3.4.4 — Jekyll 3.10 runs on both, but keep that in mind if strict parity with Pages is required.
+
 
 ## Social Images
 

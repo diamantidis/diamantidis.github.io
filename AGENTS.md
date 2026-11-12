@@ -454,3 +454,5 @@ gh pr merge <PR_NUMBER>
 14. **Run `npm run lighthouse:smoke`** after building to verify Lighthouse thresholds before pushing
 15. **Run tools through mise** — prefix one-off commands with `mise exec --` (or work in a `mise`-activated shell). Never hardcode a version-specific `PATH`; `.mise.toml` is the only place versions are pinned
 16. **Never lower the Node.js version** below what `.mise.toml` pins — `@lhci/cli` needs Node >= 22.12 to `require()` ESM-only dependencies
+17. **Validate Jekyll/plugin versions** against `https://pages.github.com/versions.json` before bumping — this site targets GitHub Pages and intentionally does not use the `github-pages` gem (builds/deploy via `.github/workflows/github-pages.yml`). Keep `Gemfile` pins aligned with that list.
+18. **Ruby parity note**: `versions.json` pins Ruby 3.3.4 while `.mise.toml` pins 3.4.4. Jekyll 3.10 runs on both; revisit if strict parity with Pages is required.
