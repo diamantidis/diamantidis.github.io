@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
 gem 'jekyll', "~> 4.4.1"
-gem 'danger'
+gem 'danger', "~> 9.6.2"
 gem 'danger-prose'
 
 # If you have any plugins, put them here!
